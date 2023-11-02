@@ -11,7 +11,6 @@ const answers = [
   {word: "Processus articularis superior" , abbreviations: ["Proc articularis superior" , "Proc. articularis superior"]}, 
   {word: "Processus articularis inferior" , abbreviations: ["Proc articularis inferior" , "Proc. articularis inferior"]} 
 ];   
-
 searchInput.addEventListener('input', () => {
   const input = searchInput.value.trim().toLowerCase();
 
@@ -32,18 +31,8 @@ searchInput.addEventListener('input', () => {
       searchInput.value = '';
 
       // Verwende das ursprüngliche Wort, ohne Groß- und Kleinschreibung zu ändern
-      const resultElement = document.getElementById(`${index + 1}`);
-      resultElement.innerHTML = `${index + 1} ${word}`;
-      resultElement.style.fontWeight = 'normal'; // Ändere das font-weight auf "normal"
-
-      const answerLabel = `${answerIndex + 1}`; // Label wird nicht mehr fett gedruckt.
-        const divs = document.querySelectorAll('.label');
-
-        for (const div of divs) {  
-            if (div.textContent === answerLabel) {
-            div.style.fontWeight = '200'; 
-            break; // Sobald das gesuchte Div gefunden wurde, Schleife abbrechen
-            }
+      document.getElementById(`${index + 1}`).innerHTML = `${index + 1}  ${word}`;
+      // ...
 
       answers[index] = { ...answers[index], found: true };
       console.log(answers);
@@ -53,6 +42,17 @@ searchInput.addEventListener('input', () => {
         gratulation.style.display = 'block';
         console.log('Gratuliere');
       }
+
+      const answerLabel = `${answerIndex + 1}`; // Label wird nicht mehr fett gedruckt.
+        const divs = document.querySelectorAll('.label');
+
+        for (const div of divs) {  
+            if (div.textContent === answerLabel) {
+            div.style.fontWeight = '200'; 
+            break; // Sobald das gesuchte Div gefunden wurde, Schleife abbrechen
+            }
+      }
+
     }
   });
 });
