@@ -3,7 +3,7 @@ const answers = [
   {word: "Corpus vertebrae" , abbreviations: [""]},
   {word: "Lamina arcus vertebrae" , abbreviations: [""]},
   {word: "Pediculus arcus vertebrae" , abbreviations: [""]},
-  {word: "Processus spinosus" , abbreviations: ["Proc spinosus " , "Proc. spinosus"]},              
+  {word: "Processus spinosus" , abbreviations: ["Proc spinosus" , "Proc. spinosus"]},              
   {word: "Processus transversus" , abbreviations: ["Proc transversus" , "Proc. transversus"]},
   {word: "Fovea costalis" , abbreviations: [""]}, 
   {word: "Fovea costalis processus transversi" , abbreviations: ["Fovea costalis proc transversi" , "Fovea costalis proc. transversi"]},
@@ -43,14 +43,14 @@ searchInput.addEventListener('input', () => {
         console.log('Gratuliere');
       }
 
-      const answerLabel = `${answerIndex + 1}`; // Label wird nicht mehr fett gedruckt.
-        const divs = document.querySelectorAll('.label');
-
-        for (const div of divs) {  
-            if (div.textContent === answerLabel) {
-            div.style.fontWeight = '200'; 
-            break; // Sobald das gesuchte Div gefunden wurde, Schleife abbrechen
-            }
+      const answerLabel = `${index + 1}`; // Use 'index' instead of 'answerIndex'
+      const divs = document.querySelectorAll('.label');
+      
+      for (const div of divs) {
+          if (div.textContent === answerLabel) {
+              div.style.fontWeight = '200';
+              break; // Once the matching div is found, exit the loop
+          }
       }
 
     }
