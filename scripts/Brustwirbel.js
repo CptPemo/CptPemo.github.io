@@ -27,8 +27,8 @@ searchInput.addEventListener('input', () => {
     const lowerCaseWord = word.toLowerCase();
     const abbreviations = answer.abbreviations.map(abbr => abbr.toLowerCase());
 
-    if (lowerCaseWord === input || abbreviations.includes(input)) {
-      // Hier wurde eine Übereinstimmung gefunden
+    if (!answers[index].found && (lowerCaseWord === input || abbreviations.includes(input))) {
+      // Hier wurde eine Übereinstimmung gefunden, aber nur, wenn das Wort nicht bereits erraten wurde
       searchInput.value = '';
 
       // Verwende das ursprüngliche Wort, ohne Groß- und Kleinschreibung zu ändern
@@ -46,6 +46,7 @@ searchInput.addEventListener('input', () => {
     }
   });
 });
+
 
 
 
