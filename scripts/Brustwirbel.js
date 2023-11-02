@@ -6,7 +6,7 @@ const answers = [
   {word: "Processus spinosus" , abbreviations: ["Proc spinosus " , "Proc. spinosus"]},              
   {word: "Processus transversus" , abbreviations: ["Proc transversus" , "Proc. transversus"]},
   {word: "Fovea costalis" , abbreviations: [""]}, 
-  {word: "Fovea costalis processus transversi" , abbreviations: ["Fovea costali proc transversi" , "Fovea costalis proc. transversi"]},
+  {word: "Fovea costalis processus transversi" , abbreviations: ["Fovea costalis proc transversi" , "Fovea costalis proc. transversi"]},
   {word: "Foramen vertebrale", abbreviations: [""]},
   {word: "Processus articularis superior" , abbreviations: ["Proc articularis superior" , "Proc. articularis superior"]}, 
   {word: "Processus articularis inferior" , abbreviations: ["Proc articularis inferior" , "Proc. articularis inferior"]} 
@@ -32,7 +32,9 @@ searchInput.addEventListener('input', () => {
       searchInput.value = '';
 
       // Verwende das ursprüngliche Wort, ohne Groß- und Kleinschreibung zu ändern
-      document.getElementById(`${index + 1}`).innerHTML = `${index + 1}  ${word}`;
+      const resultElement = document.getElementById(`${index + 1}`);
+      resultElement.innerHTML = `${index + 1} ${word}`;
+      resultElement.style.fontWeight = 'normal'; // Ändere das font-weight auf "normal"
       // ...
 
       answers[index] = { ...answers[index], found: true };
@@ -46,6 +48,7 @@ searchInput.addEventListener('input', () => {
     }
   });
 });
+
 
 
 
