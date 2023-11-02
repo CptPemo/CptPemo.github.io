@@ -55,7 +55,6 @@ searchInput.addEventListener('input', () => {
 });
 
 
-
 /*
 const answers = [
   {word: "Corpus vertebrae" abbreviations: [""]}
