@@ -15,6 +15,11 @@ const answers = [
 searchInput.addEventListener('input', () => {
   const input = searchInput.value.trim().toLowerCase();
 
+  // Überprüfe, ob das Eingabefeld leer ist
+  if (input === '') {
+    return;
+  }
+
   answers.forEach((answer, index) => {
     const word = answer.word;
 
@@ -41,11 +46,6 @@ searchInput.addEventListener('input', () => {
     }
   });
 });
-
-
-
-
-
 
 
 
