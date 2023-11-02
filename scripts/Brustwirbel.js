@@ -1,32 +1,44 @@
+
+/*
+const answers = [
+  {word: "Corpus vertebrae" abbreviations: [""]}
+  {word: "Lamina arcus vertebrae" abbreviations: [""]}
+  {word: "Pediculus arcus vertebrae" abbreviations: [""]}
+  {word: "Processus spinosus" abbreviations: ["Proc spinosus"]}              
+  {word: "Processus transversus" abbreviations: ["Proc transversus" , "Proc. transversus"]}
+  {word: "Fovea costalis" abbreviations: [""]} 
+  {word: "Fovea costalis processus transversi" abbreviations: ["Fovea costali proc transversi" , "Fovea costalis proc. transversi"]}
+  {word: "Foramen vertebrale" abbreviations: [""]}
+  {word: "Processus articularis superior" abbreviations: ["Proc articularis superior" , "Proc. articularis superior"]} 
+  {word: "Processus articularis inferior" abbreviations: ["Proc articularis inferior" , "Proc. articularis inferior"]} 
+];          
+
+*/
+
+/* Alte Wortsammlung
 const answers = ['Corpus vertebrae', 'Lamina arcus vertebrae', 'Pediculus arcus vertebrae','Proc. spinosus', 
                  'Proc. transversus','Fovea costalis', 'Fovea costalis proc. transversi', 'Foramen vertebrale', 
-                 'Proc. articularis superior', 'Proc. articularis inferior'];          
+                 'Proc. articularis superior', 'Proc. articularis inferior'];  
+*/
 
 
-/* Alter code -----
-function checkWord() {
-    const input = document.getElementById("textInput").value;
-    const resultElement = document.getElementById("result");    
-  
-    if (answers.includes(input)) {
-        const answerIndex = answers.indexOf(input);
-        document.getElementById(`${answerIndex + 1}`).innerHTML = `${answerIndex + 1}  ${input}`; // darstellen der richtigen Antwort
-
-
-
-        const answerLabel = `${answerIndex + 1}`; // Label wird nicht mehr fett gedruckt.
-        const divs = document.querySelectorAll('.label');
-
-        for (const div of divs) {  
-            if (div.textContent === answerLabel) {
-            div.style.fontWeight = '200'; 
-            break; // Sobald das gesuchte Div gefunden wurde, Schleife abbrechen
+/*
+function checkAnswer(input) {
+    const lowerCaseInput = input.toLowerCase(); // Um Groß- und Kleinschreibung zu ignorieren
+    for (const entry of wordDatabase) {
+        if (entry.word.toLowerCase() === lowerCaseInput) {
+            return true; // Die Antwort ist korrekt
+        }
+        for (const abbreviation of entry.abbreviations) {
+            if (abbreviation.toLowerCase() === lowerCaseInput) {
+                return true; // Die Abkürzung ist korrekt
             }
-      }
-          
-    } 
-  }*/
+        }
+*/
 
+
+
+/* Alter Code
 
 const searchInput = document.getElementById('textInput');
   
@@ -67,3 +79,71 @@ const searchInput = document.getElementById('textInput');
       }
     });
   });
+
+*/
+
+const searchInput = document.getElementById('textInput');
+const answers = [
+  {word: "Corpus vertebrae" abbreviations: [""]},
+  {word: "Lamina arcus vertebrae" abbreviations: [""]},
+  {word: "Pediculus arcus vertebrae" abbreviations: [""]},
+  {word: "Processus spinosus" abbreviations: ["Proc spinosus"]},              
+  {word: "Processus transversus" abbreviations: ["Proc transversus" , "Proc. transversus"]},
+  {word: "Fovea costalis" abbreviations: [""]}, 
+  {word: "Fovea costalis processus transversi" abbreviations: ["Fovea costali proc transversi" , "Fovea costalis proc. transversi"]},
+  {word: "Foramen vertebrale" abbreviations: [""]},
+  {word: "Processus articularis superior" abbreviations: ["Proc articularis superior" , "Proc. articularis superior"]}, 
+  {word: "Processus articularis inferior" abbreviations: ["Proc articularis inferior" , "Proc. articularis inferior"]} 
+];   
+
+searchInput.addEventListener('input', () => {
+  const input = searchInput.value.trim().toLowerCase();
+
+  answers.forEach((answer, index) => {
+    const word = answer.word.toLowerCase();
+    const abbreviations = answer.abbreviations.map(abbr => abbr.toLowerCase());
+
+    if (word === input || abbreviations.includes(input)) {
+      // Hier wurde eine Übereinstimmung gefunden
+      searchInput.value = '';
+
+      // Deine weiteren Aktionen hier
+      document.getElementById(`${index + 1}`).innerHTML = `${index + 1}  ${word}`;
+      // ...
+
+      answers[index] = { ...answers[index], found: true };
+      console.log(answers);
+
+      if (answers.every(item => item.found)) {
+        const gratulation = document.querySelector('.gratulation');
+        gratulation.style.display = 'block';
+        console.log('Gratuliere');
+      }
+    }
+  });
+});
+
+
+/* Alter code -----
+function checkWord() {
+    const input = document.getElementById("textInput").value;
+    const resultElement = document.getElementById("result");    
+  
+    if (answers.includes(input)) {
+        const answerIndex = answers.indexOf(input);
+        document.getElementById(`${answerIndex + 1}`).innerHTML = `${answerIndex + 1}  ${input}`; // darstellen der richtigen Antwort
+
+
+
+        const answerLabel = `${answerIndex + 1}`; // Label wird nicht mehr fett gedruckt.
+        const divs = document.querySelectorAll('.label');
+
+        for (const div of divs) {  
+            if (div.textContent === answerLabel) {
+            div.style.fontWeight = '200'; 
+            break; // Sobald das gesuchte Div gefunden wurde, Schleife abbrechen
+            }
+      }
+          
+    } 
+  }*/
