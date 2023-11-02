@@ -82,7 +82,7 @@ const searchInput = document.getElementById('textInput');
 
 */
 
-const searchInput = document.getElementById('textInput');
+const searchInput = {document.getElementById('textInput')};
 const answers = [
   {word: "Corpus vertebrae" abbreviations: [""]},
   {word: "Lamina arcus vertebrae" abbreviations: [""]},
