@@ -1,0 +1,33 @@
+.quiz-grid{
+    padding-top: 100px;
+    font-family: Raleway;
+
+    display: flex;
+    justify-content: center;
+}
+
+.quiz-preview{
+    border: 1px solid  black;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.quiz-preview:hover {
+    border: 2px solid black;
+    margin: 4px;
+}
+
+.thumbnail{
+    width: 400px;
+    position: relative;
+}
+
+.quiz-info{
+    font-size: 40px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}

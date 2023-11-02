@@ -1,0 +1,64 @@
+
+.pictureFrame{
+    display: inline-block;
+    width: 800px;
+    position: relative;
+}
+
+
+.quizPicture{
+    width: 100%;
+}
+
+
+
+.answerFrame{
+    display: inline-block;
+    width: 500px;
+    vertical-align: top;
+    margin-top: 100px;
+}
+
+.guess-bar{
+    font-family: Raleway;
+    width: 500px;
+    font-size: 30px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.answer{
+    font-size: 20px;
+    padding: 5px;
+    margin: 2px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.line {
+    position: absolute;
+    border-top: 1px solid black;
+   /*  width: 65px;
+   top: 100px; 
+    transform: translateX(186px) rotate(45deg) ;*/
+  }
+  
+  .label{
+    position: absolute;
+    font-size: 27px;
+    font-weight: 600;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .gratulation{
+    font-size: 50px;
+    display: none;
+  }
+
+  a:visited {
+    text-decoration: none; /* Entfernt den Unterstrich */
+    color: black; /* Ändere die Farbe hier nach Bedarf */  
+  }

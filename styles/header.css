@@ -1,0 +1,136 @@
+
+.Titel{
+    font-family: Raleway;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    z-index: 100;
+
+    display: flex;
+    font-family: Raleway;
+    background-color: white;
+   
+
+    flex-direction: row;
+    justify-content: space-between;
+
+    font-size: 15px;
+    margin-top: 0px;
+    text-align: top;
+    border-width:1px;
+    border-style:solid;
+    border-color:black; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.left-section {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-shrink: 0;
+
+}
+
+
+.middle-section {
+    display: flex;
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 30px;
+    max-width: 600px;
+    align-items: center;
+}
+
+.search-bar{
+    flex: 1;
+    width: 500px;
+    height: 36px;
+    font-size: 20px;
+    font-family: Raleway;
+}
+
+.right-section {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-shrink: 0;
+}
+
+
+
+.home-button{
+    font-family: Raleway;
+    font-size: 20px;
+    width: 100px;
+    margin-right: 20px;
+    background-color: white;
+    border: none ;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.menu-button{
+    font-family: Raleway;
+    font-size: 20px;
+    margin-right: 100px;
+    background-color: white;
+    border: none ;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+.login-button{
+    font-family: Raleway;
+    font-size: 20px;
+    margin-right: 50px;
+    background-color: white;
+    border: none ;
+    cursor: pointer;
+}
+
+.FrontpagePicture{
+    width: 600px;
+}
+
+.titlepicture{
+    display: inline-block;
+}
+
+.quiz{
+    width: 300px;
+    text-align: center;
+    display: inline-block;
+}
+
+.quiztitle{
+    font-family: Raleway;
+    text-align: center;
+    font-size: 25px;
+}
+
+.startbild{
+    width: 400px;
+}
+
+a:visited {
+    text-decoration: none; /* Entfernt den Unterstrich */
+    color: black; /* Ändere die Farbe hier nach Bedarf */  
+  }
