@@ -3,7 +3,7 @@ const answers = [
   {word: "Corpus vertebrae" , abbreviations: [""]},
   {word: "Lamina arcus vertebrae" , abbreviations: [""]},
   {word: "Pediculus arcus vertebrae" , abbreviations: [""]},
-  {word: "Processus spinosus" , abbreviations: ["Proc spinosus" , "Proc. spinosus"]},              
+  {word: "Processus spinosus" , abbreviations: ["Proc spinosus " , "Proc. spinosus"]},              
   {word: "Processus transversus" , abbreviations: ["Proc transversus" , "Proc. transversus"]},
   {word: "Fovea costalis" , abbreviations: [""]}, 
   {word: "Fovea costalis processus transversi" , abbreviations: ["Fovea costalis proc transversi" , "Fovea costalis proc. transversi"]},
@@ -35,7 +35,12 @@ searchInput.addEventListener('input', () => {
       const resultElement = document.getElementById(`${index + 1}`);
       resultElement.innerHTML = `${index + 1} ${word}`;
       resultElement.style.fontWeight = 'normal'; // Ändere das font-weight auf "normal"
-      // ...
+
+      // Hier ändern wir das font-weight für <div> Elemente mit der Klasse "answer" und der ID "index+1"
+      const answerElement = document.querySelector(`.answer#${index + 1}`);
+      if (answerElement) {
+        answerElement.style.fontWeight = 'normal';
+      }
 
       answers[index] = { ...answers[index], found: true };
       console.log(answers);
@@ -48,10 +53,6 @@ searchInput.addEventListener('input', () => {
     }
   });
 });
-
-
-
-
 
 
 
