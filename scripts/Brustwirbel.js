@@ -82,18 +82,18 @@ const searchInput = document.getElementById('textInput');
 
 */
 
-const searchInput = {document.getElementById('textInput')};
+const searchInput = document.getElementById('textInput');
 const answers = [
-  {word: "Corpus vertebrae" abbreviations: [""]},
-  {word: "Lamina arcus vertebrae" abbreviations: [""]},
-  {word: "Pediculus arcus vertebrae" abbreviations: [""]},
-  {word: "Processus spinosus" abbreviations: ["Proc spinosus"]},              
-  {word: "Processus transversus" abbreviations: ["Proc transversus" , "Proc. transversus"]},
-  {word: "Fovea costalis" abbreviations: [""]}, 
-  {word: "Fovea costalis processus transversi" abbreviations: ["Fovea costali proc transversi" , "Fovea costalis proc. transversi"]},
-  {word: "Foramen vertebrale" abbreviations: [""]},
-  {word: "Processus articularis superior" abbreviations: ["Proc articularis superior" , "Proc. articularis superior"]}, 
-  {word: "Processus articularis inferior" abbreviations: ["Proc articularis inferior" , "Proc. articularis inferior"]} 
+  {word: "Corpus vertebrae" , abbreviations: [""]},
+  {word: "Lamina arcus vertebrae" , abbreviations: [""]},
+  {word: "Pediculus arcus vertebrae" , abbreviations: [""]},
+  {word: "Processus spinosus" , abbreviations: ["Proc spinosus"]},              
+  {word: "Processus transversus" , abbreviations: ["Proc transversus" , "Proc. transversus"]},
+  {word: "Fovea costalis" , abbreviations: [""]}, 
+  {word: "Fovea costalis processus transversi" , abbreviations: ["Fovea costali proc transversi" , "Fovea costalis proc. transversi"]},
+  {word: "Foramen vertebrale", abbreviations: [""]},
+  {word: "Processus articularis superior" , abbreviations: ["Proc articularis superior" , "Proc. articularis superior"]}, 
+  {word: "Processus articularis inferior" , abbreviations: ["Proc articularis inferior" , "Proc. articularis inferior"]} 
 ];   
 
 searchInput.addEventListener('input', () => {
