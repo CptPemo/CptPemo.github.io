@@ -1,3 +1,55 @@
+const searchInput = document.getElementById('textInput');
+const answers = [
+  {word: "Corpus vertebrae" , abbreviations: [""]},
+  {word: "Lamina arcus vertebrae" , abbreviations: [""]},
+  {word: "Pediculus arcus vertebrae" , abbreviations: [""]},
+  {word: "Processus spinosus" , abbreviations: ["Proc spinosus ", "Proc. spinosus"]},              
+  {word: "Processus transversus" , abbreviations: ["Proc transversus" , "Proc. transversus"]},
+  {word: "Fovea costalis" , abbreviations: [""]}, 
+  {word: "Fovea costalis processus transversi" , abbreviations: ["Fovea costali proc transversi" , "Fovea costalis proc. transversi"]},
+  {word: "Foramen vertebrale", abbreviations: [""]},
+  {word: "Processus articularis superior" , abbreviations: ["Proc articularis superior" , "Proc. articularis superior"]}, 
+  {word: "Processus articularis inferior" , abbreviations: ["Proc articularis inferior" , "Proc. articularis inferior"]} 
+];   
+
+searchInput.addEventListener('input', () => {
+  const input = searchInput.value.trim().toLowerCase();
+
+  answers.forEach((answer, index) => {
+    const word = answer.word;
+
+    // Ignoriere Groß- und Kleinschreibung nur bei der Eingabe des Benutzers
+    const lowerCaseWord = word.toLowerCase();
+    const abbreviations = answer.abbreviations.map(abbr => abbr.toLowerCase());
+
+    if (lowerCaseWord === input || abbreviations.includes(input)) {
+      // Hier wurde eine Übereinstimmung gefunden
+      searchInput.value = '';
+
+      // Verwende das ursprüngliche Wort, ohne Groß- und Kleinschreibung zu ändern
+      document.getElementById(`${index + 1}`).innerHTML = `${index + 1}  ${word}`;
+      // ...
+
+      answers[index] = { ...answers[index], found: true };
+      console.log(answers);
+
+      if (answers.every(item => item.found)) {
+        const gratulation = document.querySelector('.gratulation');
+        gratulation.style.display = 'block';
+        console.log('Gratuliere');
+      }
+    }
+  });
+});
+
+
+
+
+
+
+
+
+
 
 /*
 const answers = [
@@ -81,13 +133,13 @@ const searchInput = document.getElementById('textInput');
   });
 
 */
-
+/* CHATGPT funktionstüchtig
 const searchInput = document.getElementById('textInput');
 const answers = [
   {word: "Corpus vertebrae" , abbreviations: [""]},
   {word: "Lamina arcus vertebrae" , abbreviations: [""]},
   {word: "Pediculus arcus vertebrae" , abbreviations: [""]},
-  {word: "Processus spinosus" , abbreviations: ["Proc spinosus"]},              
+  {word: "Processus spinosus" , abbreviations: ["Proc spinosus ", "Proc. spinosus"]},              
   {word: "Processus transversus" , abbreviations: ["Proc transversus" , "Proc. transversus"]},
   {word: "Fovea costalis" , abbreviations: [""]}, 
   {word: "Fovea costalis processus transversi" , abbreviations: ["Fovea costali proc transversi" , "Fovea costalis proc. transversi"]},
@@ -122,7 +174,7 @@ searchInput.addEventListener('input', () => {
     }
   });
 });
-
+*/
 
 /* Alter code -----
 function checkWord() {
