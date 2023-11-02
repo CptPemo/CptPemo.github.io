@@ -1,0 +1,83 @@
+.quiz-grid{
+    padding-top: 100px;
+    font-family: Raleway;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    gap: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.quiz-preview{
+    border: 1px solid  black;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: white;
+    width: 400px;
+    
+}
+
+.quiz-preview:hover {
+    outline: 1px solid black; /* Fügt einen 2px-Rahmen hinzu, wenn über das Element gehovert wird */
+    
+}
+
+.quiz-preview a {
+    display: flex; /* Damit das <a>-Element block-level wird */
+    flex-direction: column;
+    width: 100%; /* 100% Breite des übergeordneten .quiz-preview-Buttons */
+    height: 100%; /* 100% Höhe des übergeordneten .quiz-preview-Buttons */
+    text-decoration: none; /* Entfernen Sie die Standard-Unterstreichung von Links */
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.quiz-picture{
+    position: relative;
+    overflow: hidden; /* Sorgt dafür, dass das Bild im Rahmen bleibt */
+}
+
+.thumbnail{
+    width: 100%;
+    position: relative;
+    height: auto;
+    object-fit: cover;
+}
+
+.quiz-info{
+    font-size: 40px;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    text-align: center;
+}
+
+
+@media (max-width: 750px){
+    .quiz-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 1249px){
+    .quiz-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1250px){
+    .quiz-grid{
+        grid-template-columns:1fr 1fr 1fr 1fr;
+    }
+}

@@ -1,0 +1,28 @@
+p{
+    font-family: Raleway;
+}
+
+body {
+    margin: 10px;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    max-width: 100vw; /* Festgelegte maximale Breite der Seite */
+    margin: 0 auto; /* Zentriert die Seite horizontal im Browser-Fenster */
+}
+
+div{
+    font-family: Raleway;
+}
+
+button{
+    font-family: Raleway;
+    background-color: white;
+    border-radius: 2px;
+}
+
+a:visited {
+    text-decoration: none; /* Entfernt den Unterstrich */
+    color: black; /* Ändere die Farbe hier nach Bedarf */  
+  }
