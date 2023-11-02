@@ -36,11 +36,14 @@ searchInput.addEventListener('input', () => {
       resultElement.innerHTML = `${index + 1} ${word}`;
       resultElement.style.fontWeight = 'normal'; // Ändere das font-weight auf "normal"
 
-      // Hier ändern wir das font-weight für <div> Elemente mit der Klasse "answer" und der ID "index+1"
-      const answerElement = document.querySelector(`.answer#${index + 1}`);
-      if (answerElement) {
-        answerElement.style.fontWeight = 'normal';
-      }
+      const answerLabel = `${answerIndex + 1}`; // Label wird nicht mehr fett gedruckt.
+        const divs = document.querySelectorAll('.label');
+
+        for (const div of divs) {  
+            if (div.textContent === answerLabel) {
+            div.style.fontWeight = '200'; 
+            break; // Sobald das gesuchte Div gefunden wurde, Schleife abbrechen
+            }
 
       answers[index] = { ...answers[index], found: true };
       console.log(answers);
