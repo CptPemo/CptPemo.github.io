@@ -3,7 +3,7 @@ const answers = [
   {word: "Corpus vertebrae" , abbreviations: [""]},
   {word: "Lamina arcus vertebrae" , abbreviations: [""]},
   {word: "Pediculus arcus vertebrae" , abbreviations: [""]},
-  {word: "Processus spinosus" , abbreviations: ["Proc spinosus ", "Proc. spinosus"]},              
+  {word: "Processus spinosus" , abbreviations: ["Proc spinosus " , "Proc. spinosus"]},              
   {word: "Processus transversus" , abbreviations: ["Proc transversus" , "Proc. transversus"]},
   {word: "Fovea costalis" , abbreviations: [""]}, 
   {word: "Fovea costalis processus transversi" , abbreviations: ["Fovea costali proc transversi" , "Fovea costalis proc. transversi"]},
