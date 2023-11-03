@@ -11,19 +11,19 @@
     margin-right: 10px;
 }
 
-@media (max-width: 500px){
+@media (max-width: 1250px){
     .quiz-grid{
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media (min-width: 501px) and (max-width: 700px){
+@media (min-width: 1251px) and (max-width: 1650px){
     .quiz-grid{
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
-@media (min-width: 701px){
+@media (min-width: 1651px){
     .quiz-grid{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
