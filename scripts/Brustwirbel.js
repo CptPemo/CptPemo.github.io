@@ -31,7 +31,7 @@ function updateTimer() {
     timerElement.style.color = 'black';
   }
 
-  timerElement.textContent = `Time Left: ${timeRemaining} seconds`;
+  timerElement.textContent = `verbleibende Zeit: ${timeRemaining} Sekunden`;
 
   if (timeRemaining <= 0) {
     stopQuiz();
@@ -64,7 +64,7 @@ textInput.addEventListener('input', () => {
       if (answers.every(item => item.found)) {
         const gratulation = document.querySelector('.gratulation');
         gratulation.style.display = 'block';
-        console.log('Congratulations');
+        console.log('Gratuliere, du hast alle Begriffe richtig erraten.');
       }
 
       const answerLabel = `${index + 1}`;
