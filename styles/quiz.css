@@ -1,10 +1,14 @@
 
 .pictureFrame{
     display: inline-block;
-    width: 800px;
+    width: 50%;
     position: relative;
 }
-
+.answerFrame {
+  display: inline-block;
+  width: 50%;
+  position: relative;
+}
 
 .quizPicture{
     width: 100%;
