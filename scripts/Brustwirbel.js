@@ -1,4 +1,5 @@
 const searchInput = document.getElementById('textInput');
+const stopButton = document.getElementById('stopButton');
 const answers = [
   {word: "Corpus vertebrae" , abbreviations: [""]},
   {word: "Lamina arcus vertebrae" , abbreviations: [""]},
@@ -10,59 +11,79 @@ const answers = [
   {word: "Foramen vertebrale", abbreviations: [""]},
   {word: "Processus articularis superior" , abbreviations: ["Proc articularis superior" , "Proc. articularis superior" , "Proc. articularis sup" , "Proc articularis sup"]}, 
   {word: "Processus articularis inferior" , abbreviations: ["Proc articularis inferior" , "Proc. articularis inferior" , "Proc. articularis inf" , "Proc articularis inf"]} 
-];   
-searchInput.addEventListener('input', () => {
-  const input = searchInput.value.trim().toLowerCase();
+  // Add more answers
+];
+let timeRemaining = 60; // Change this to your desired time
+let timerInterval = null;
+let timerStarted = false;
 
-  // Überprüfe, ob das Eingabefeld leer ist
+function startCountdown() {
+  timerStarted = true; // Set timerStarted to true when the timer starts
+  timerInterval = setInterval(updateTimer, 1000);
+}
+
+function updateTimer() {
+  const timerElement = document.getElementById('timer');
+
+  if (timeRemaining <= 10) {
+    timerElement.style.color = 'red';
+  } else {
+    timerElement.style.color = 'black';
+  }
+
+  timerElement.textContent = `Time Left: ${timeRemaining} seconds`;
+
+  if (timeRemaining <= 0) {
+    stopQuiz();
+  } else {
+    timeRemaining--;
+  }
+}
+
+textInput.addEventListener('input', () => {
+  const input = textInput.value.trim().toLowerCase();
+
+  if (!timerStarted) {
+    startCountdown(); // Start the timer when the first input is detected
+  }
+
   if (input === '') {
     return;
   }
 
   answers.forEach((answer, index) => {
     const word = answer.word;
-
-    // Ignoriere Groß- und Kleinschreibung nur bei der Eingabe des Benutzers
     const lowerCaseWord = word.toLowerCase();
     const abbreviations = answer.abbreviations.map(abbr => abbr.toLowerCase());
 
     if (!answers[index].found && (lowerCaseWord === input || abbreviations.includes(input))) {
-      // Hier wurde eine Übereinstimmung gefunden, aber nur, wenn das Wort nicht bereits erraten wurde
       searchInput.value = '';
-
-      // Verwende das ursprüngliche Wort, ohne Groß- und Kleinschreibung zu ändern
       document.getElementById(`${index + 1}`).innerHTML = `${index + 1}  ${word}`;
-      // ...
-
       answers[index] = { ...answers[index], found: true };
-      console.log(answers);
 
       if (answers.every(item => item.found)) {
         const gratulation = document.querySelector('.gratulation');
         gratulation.style.display = 'block';
-        console.log('Gratuliere');
+        console.log('Congratulations');
       }
 
-      const answerLabel = `${index + 1}`; // Use 'index' instead of 'answerIndex'
+      const answerLabel = `${index + 1}`;
       const divs = document.querySelectorAll('.label');
-      
-      for (const div of divs) {
-          if (div.textContent === answerLabel) {
-              div.style.fontWeight = '200';
-              break; // Once the matching div is found, exit the loop
-          }
-      }
 
+      for (const div of divs) {
+        if (div.textContent === answerLabel) {
+          div.style.fontWeight = '200';
+          break;
+        }
+      }
     }
   });
 });
 
-// Add this code to your existing JavaScript code
-const stopButton = document.getElementById('stopButton');
 stopButton.addEventListener('click', stopQuiz);
 
 function stopQuiz() {
-  // Iterate through the answers and update the missing ones in red
+  clearInterval(timerInterval);
   answers.forEach((answer, index) => {
     if (!answer.found) {
       const answerElement = document.getElementById(`${index + 1}`);
@@ -70,26 +91,12 @@ function stopQuiz() {
     }
   });
 
-  // Display a message or take any other actions when the quiz is stopped
   const stopMessage = document.querySelector('.stop-message');
   stopMessage.style.display = 'block';
-
-  // Optionally, you can disable the input field to prevent further attempts
   searchInput.disabled = true;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+// Call the startCountdown function to begin the timer when typing starts
 
 
 
