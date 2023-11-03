@@ -57,6 +57,49 @@ searchInput.addEventListener('input', () => {
   });
 });
 
+// Add this code to your existing JavaScript code
+const stopButton = document.getElementById('stopButton');
+stopButton.addEventListener('click', stopQuiz);
+
+function stopQuiz() {
+  // Iterate through the answers and update the missing ones in red
+  answers.forEach((answer, index) => {
+    if (!answer.found) {
+      const answerElement = document.getElementById(`${index + 1}`);
+      answerElement.innerHTML = `<span style="color: red">${index + 1}  ${answer.word}</span>`;
+    }
+  });
+
+  // Display a message or take any other actions when the quiz is stopped
+  const stopMessage = document.querySelector('.stop-message');
+  stopMessage.style.display = 'block';
+
+  // Optionally, you can disable the input field to prevent further attempts
+  searchInput.disabled = true;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 const answers = [
