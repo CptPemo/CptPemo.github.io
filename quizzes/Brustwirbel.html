@@ -45,62 +45,64 @@
 
         <main>
             <div class="quizFrame">
-                <div class="pictureFrame">
-                    <img class="quizPicture" src="../bilder/Brustwirbel.png">
-                    <div class="line" style="top: 570px; transform: translateX(230px) rotate(-25deg); width: 120px;"></div>
-                    <div class="label" style="left: 210px; top: 580px;">1</div>
-                    <div class="line" style="top: 260px; transform: translateX(450px) rotate(-55deg); width: 70px;"></div>
-                    <div class="label" style="left: 505px; top: 195px;">2</div>
-                    <div class="line" style="top: 380px; transform: translateX(490px); width: 90px;"></div>
-                    <div class="label" style="left: 580px; top: 355px;">3</div>
-                    <div class="line" style="top: 140px; transform: translateX(290px) rotate(15deg); width: 120px;"></div>
-                    <div class="label" style="left: 260px; top: 100px;">4</div>
-                    <div class="line" style="top: 200px; transform: translateX(167px) rotate(90deg); width: 100px;"></div>
-                    <div class="label" style="left: 205px; top: 100px;">5</div>
-                    <div class="line" style="top: 420px; transform: translateX(220px) rotate(0deg); width: 70px;"></div>
-                    <div class="label" style="left: 190px; top: 400px;">6</div>
-                    <div class="line" style="top: 265px; transform: translateX(92px) rotate(90deg); width: 80px;"></div>
-                    <div class="label" style="left: 120px; top: 300px;">7</div>
-                    <div class="label" style="left: 390px; top: 350px;">8</div>
-                    <div class="line" style="top: 325px; transform: translateX(220px) rotate(0deg); width: 70px;"></div>
-                    <div class="label" style="left: 190px; top: 300px;">9</div>
-                </div>
-                <div id="timer">Time Left: 60 seconds</div>
+                
+                    <div class="pictureFrame">
+                        <img class="quizPicture" src="../bilder/Brustwirbel.png">
+                        <div class="line" style="top: 570px; transform: translateX(230px) rotate(-25deg); width: 120px;"></div>
+                        <div class="label" style="left: 210px; top: 580px;">1</div>
+                        <div class="line" style="top: 260px; transform: translateX(450px) rotate(-55deg); width: 70px;"></div>
+                        <div class="label" style="left: 505px; top: 195px;">2</div>
+                        <div class="line" style="top: 380px; transform: translateX(490px); width: 90px;"></div>
+                        <div class="label" style="left: 580px; top: 355px;">3</div>
+                        <div class="line" style="top: 140px; transform: translateX(290px) rotate(15deg); width: 120px;"></div>
+                        <div class="label" style="left: 260px; top: 100px;">4</div>
+                        <div class="line" style="top: 200px; transform: translateX(167px) rotate(90deg); width: 100px;"></div>
+                        <div class="label" style="left: 205px; top: 100px;">5</div>
+                        <div class="line" style="top: 420px; transform: translateX(220px) rotate(0deg); width: 70px;"></div>
+                        <div class="label" style="left: 190px; top: 400px;">6</div>
+                        <div class="line" style="top: 265px; transform: translateX(92px) rotate(90deg); width: 80px;"></div>
+                        <div class="label" style="left: 120px; top: 300px;">7</div>
+                        <div class="label" style="left: 390px; top: 350px;">8</div>
+                        <div class="line" style="top: 325px; transform: translateX(220px) rotate(0deg); width: 70px;"></div>
+                        <div class="label" style="left: 190px; top: 300px;">9</div>
+                    </div>
+                
                 <div class="answerFrame">
+                    <div id="timer">Time Left: 60 seconds</div>
                     <div>
                         <input class="guess-bar" id="textInput" type="text" placeholder="Guess">
                         <!-- <button onclick="checkWord()">Überprüfen</button> -->
                         <p id="result"></p>
                     </div>
                     <div class="answer" id="1">
-                        1
+                        1.
                     </div>
                     <div class="answer" id="2">
-                        2
+                        2.
                     </div>
                     <div class="answer" id="3">
-                        3
+                        3.
                     </div>
                     <div class="answer" id="4">
-                        4
+                        4.
                     </div>
                     <div class="answer" id="5">
-                        5
+                        5.
                     </div>
                     <div class="answer" id="6">
-                        6
+                        6.
                     </div>
                     <div class="answer" id="7">
-                        7
+                        7.
                     </div>
                     <div class="answer" id="8">
-                        8
+                        8.
                     </div>
                     <div class="answer" id="9">
-                        9
+                        9.
                     </div>
                     <div class="answer" id="10">
-                        10
+                        10.
                     </div>
                     <div class="stop-message" style="display: none;">You stopped the quiz.</div>
                     <button id="stopButton">Stop Quiz</button>
@@ -112,6 +114,7 @@
         <footer class="footer">
             <p>&copy; 2023 Advanced Anatomy. Alle Rechte vorbehalten.</p>
         </footer>   
+    <script src="../scripts/lines.js"></script>
     <script src="../scripts/Brustwirbel.js"></script>
     </body>
 </html>

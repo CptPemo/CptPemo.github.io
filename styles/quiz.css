@@ -1,68 +1,72 @@
-
 .pictureFrame{
-    display: inline-block;
-    width: 50%;
-    position: relative;
-}
-.answerFrame {
   display: inline-block;
-  width: 50%;
+  width: 800px;
   position: relative;
+  margin-left: 1%;
 }
+
 
 .quizPicture{
-    width: 100%;
+  width: 100%;
 }
 
 
 
 .answerFrame{
-    display: inline-block;
-    width: 500px;
-    vertical-align: top;
-    margin-top: 100px;
+  display: inline-block;
+  width: 500px;
+  vertical-align: top;
+  margin-top: 100px;
+  margin-left: 1%;
 }
 
 .guess-bar{
-    font-family: Raleway;
-    width: 500px;
-    font-size: 30px;
-    padding: 5px;
-    margin-bottom: 10px;
-    border: 1px solid black;
-    border-radius: 3px;
+  font-family: Raleway;
+  width: 100%;
+  font-size: 30px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 3px;
 }
 
 .answer{
-    font-size: 20px;
-    padding: 5px;
-    margin: 2px;
-    border: 1px solid black;
-    border-radius: 3px;
+  font-size: 20px;
+  padding: 5px;
+  margin: 2px;
+  border: 1px solid black;
+  border-radius: 3px;
+  width:100%;
 }
 
 .line {
-    position: absolute;
-    border-top: 1px solid black;
-   /*  width: 65px;
-   top: 100px; 
-    transform: translateX(186px) rotate(45deg) ;*/
-  }
-  
-  .label{
-    position: absolute;
-    font-size: 27px;
-    font-weight: 600;
-    padding: 5px;
-    text-align: center;
-  }
+  position: absolute;
+  border-top: 1px solid black;
+ /*  width: 65px;
+ top: 100px; 
+  transform: translateX(186px) rotate(45deg) ;*/
+}
 
-  .gratulation{
-    font-size: 50px;
-    display: none;
-  }
+.label{
+  position: absolute;
+  font-size: 27px;
+  font-weight: 600;
+  padding: 5px;
+  text-align: center;
+}
 
-  a:visited {
-    text-decoration: none; /* Entfernt den Unterstrich */
-    color: black; /* Ändere die Farbe hier nach Bedarf */  
+.gratulation{
+  font-size: 50px;
+  display: none;
+}
+
+a:visited {
+  text-decoration: none; /* Entfernt den Unterstrich */
+  color: black; /* Ändere die Farbe hier nach Bedarf */  
+} 
+
+@media (max-width: 1250px){
+  .quizFrame{
+      grid-template-columns: 1fr 1fr;
   }
+}
