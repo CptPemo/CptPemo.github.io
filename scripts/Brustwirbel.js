@@ -1,5 +1,6 @@
 const searchInput = document.getElementById('textInput');
 const stopButton = document.getElementById('stopButton');
+const restartButton = document.getElementById('restartButton'); // Add a Restart button
 const answers = [
   {word: "Corpus vertebrae" , abbreviations: [""]},
   {word: "Lamina arcus vertebrae" , abbreviations: [""]},
@@ -31,7 +32,7 @@ function updateTimer() {
     timerElement.style.color = 'black';
   }
 
-  timerElement.textContent = `verbleibende Zeit: ${timeRemaining} Sekunden`;
+  timerElement.textContent = `Time Left: ${timeRemaining} seconds`;
 
   if (timeRemaining <= 0) {
     stopQuiz();
@@ -40,8 +41,8 @@ function updateTimer() {
   }
 }
 
-textInput.addEventListener('input', () => {
-  const input = textInput.value.trim().toLowerCase();
+searchInput.addEventListener('input', () => {
+  const input = searchInput.value.trim().toLowerCase();
 
   if (!timerStarted) {
     startCountdown(); // Start the timer when the first input is detected
@@ -64,7 +65,10 @@ textInput.addEventListener('input', () => {
       if (answers.every(item => item.found)) {
         const gratulation = document.querySelector('.gratulation');
         gratulation.style.display = 'block';
-        console.log('Gratuliere, du hast alle Begriffe richtig erraten.');
+        console.log('Congratulations');
+        // Hide the Stop button and show the Restart button
+        stopButton.style.display = 'none';
+        restartButton.style.display = 'block';
       }
 
       const answerLabel = `${index + 1}`;
@@ -81,6 +85,9 @@ textInput.addEventListener('input', () => {
 });
 
 stopButton.addEventListener('click', stopQuiz);
+restartButton.addEventListener('click', () => {
+  location.reload(); // Reload the page when the Restart button is clicked
+});
 
 function stopQuiz() {
   clearInterval(timerInterval);
@@ -94,165 +101,13 @@ function stopQuiz() {
   const stopMessage = document.querySelector('.stop-message');
   stopMessage.style.display = 'block';
   searchInput.disabled = true;
+
+  // Hide the Stop button and show the Restart button
+  stopButton.style.display = 'none';
+  restartButton.style.display = 'block';
 }
 
+// Initially hide the Restart button
+restartButton.style.display = 'none';
+
 // Call the startCountdown function to begin the timer when typing starts
-
-
-
-
-
-
-
-
-
-
-
-/*
-const answers = [
-  {word: "Corpus vertebrae" abbreviations: [""]}
-  {word: "Lamina arcus vertebrae" abbreviations: [""]}
-  {word: "Pediculus arcus vertebrae" abbreviations: [""]}
-  {word: "Processus spinosus" abbreviations: ["Proc spinosus"]}              
-  {word: "Processus transversus" abbreviations: ["Proc transversus" , "Proc. transversus"]}
-  {word: "Fovea costalis" abbreviations: [""]} 
-  {word: "Fovea costalis processus transversi" abbreviations: ["Fovea costali proc transversi" , "Fovea costalis proc. transversi"]}
-  {word: "Foramen vertebrale" abbreviations: [""]}
-  {word: "Processus articularis superior" abbreviations: ["Proc articularis superior" , "Proc. articularis superior"]} 
-  {word: "Processus articularis inferior" abbreviations: ["Proc articularis inferior" , "Proc. articularis inferior"]} 
-];          
-
-*/
-
-/* Alte Wortsammlung
-const answers = ['Corpus vertebrae', 'Lamina arcus vertebrae', 'Pediculus arcus vertebrae','Proc. spinosus', 
-                 'Proc. transversus','Fovea costalis', 'Fovea costalis proc. transversi', 'Foramen vertebrale', 
-                 'Proc. articularis superior', 'Proc. articularis inferior'];  
-*/
-
-
-/*
-function checkAnswer(input) {
-    const lowerCaseInput = input.toLowerCase(); // Um Groß- und Kleinschreibung zu ignorieren
-    for (const entry of wordDatabase) {
-        if (entry.word.toLowerCase() === lowerCaseInput) {
-            return true; // Die Antwort ist korrekt
-        }
-        for (const abbreviation of entry.abbreviations) {
-            if (abbreviation.toLowerCase() === lowerCaseInput) {
-                return true; // Die Abkürzung ist korrekt
-            }
-        }
-*/
-
-
-
-/* Alter Code
-
-const searchInput = document.getElementById('textInput');
-  
-  searchInput.addEventListener('input', () => {
-    const input = searchInput.value //.trim().toLowerCase();
-    
-
-    answers.forEach(item => {
-      const itemText = item //.trim().toLowerCase();
-      
-      if (itemText === input) {
-        
-        searchInput.value = '';
-
-        
-        const answerIndex = answers.indexOf(input);
-        document.getElementById(`${answerIndex + 1}`).innerHTML = `${answerIndex + 1}  ${input}`; // darstellen der richtigen Antwort
-        answers[`${answerIndex}`] = false;
-        console.log(answers);
-        if(answers.every(item => item === false)){  //Wenn alle Worte erraten sind, Gratulationsnachricht.
-          const gratulation =  document.querySelector('.gratulation')
-          gratulation.style.display = 'block';
-          console.log('Gratuliere');
-        }
-        
-
-
-        const answerLabel = `${answerIndex + 1}`; // Label wird nicht mehr fett gedruckt.
-        const divs = document.querySelectorAll('.label');
-
-        for (const div of divs) {  
-            if (div.textContent === answerLabel) {
-            div.style.fontWeight = '200'; 
-            break; // Sobald das gesuchte Div gefunden wurde, Schleife abbrechen
-            }
-      }
-
-      }
-    });
-  });
-
-*/
-/* CHATGPT funktionstüchtig
-const searchInput = document.getElementById('textInput');
-const answers = [
-  {word: "Corpus vertebrae" , abbreviations: [""]},
-  {word: "Lamina arcus vertebrae" , abbreviations: [""]},
-  {word: "Pediculus arcus vertebrae" , abbreviations: [""]},
-  {word: "Processus spinosus" , abbreviations: ["Proc spinosus ", "Proc. spinosus"]},              
-  {word: "Processus transversus" , abbreviations: ["Proc transversus" , "Proc. transversus"]},
-  {word: "Fovea costalis" , abbreviations: [""]}, 
-  {word: "Fovea costalis processus transversi" , abbreviations: ["Fovea costali proc transversi" , "Fovea costalis proc. transversi"]},
-  {word: "Foramen vertebrale", abbreviations: [""]},
-  {word: "Processus articularis superior" , abbreviations: ["Proc articularis superior" , "Proc. articularis superior"]}, 
-  {word: "Processus articularis inferior" , abbreviations: ["Proc articularis inferior" , "Proc. articularis inferior"]} 
-];   
-
-searchInput.addEventListener('input', () => {
-  const input = searchInput.value.trim().toLowerCase();
-
-  answers.forEach((answer, index) => {
-    const word = answer.word.toLowerCase();
-    const abbreviations = answer.abbreviations.map(abbr => abbr.toLowerCase());
-
-    if (word === input || abbreviations.includes(input)) {
-      // Hier wurde eine Übereinstimmung gefunden
-      searchInput.value = '';
-
-      // Deine weiteren Aktionen hier
-      document.getElementById(`${index + 1}`).innerHTML = `${index + 1}  ${word}`;
-      // ...
-
-      answers[index] = { ...answers[index], found: true };
-      console.log(answers);
-
-      if (answers.every(item => item.found)) {
-        const gratulation = document.querySelector('.gratulation');
-        gratulation.style.display = 'block';
-        console.log('Gratuliere');
-      }
-    }
-  });
-});
-*/
-
-/* Alter code -----
-function checkWord() {
-    const input = document.getElementById("textInput").value;
-    const resultElement = document.getElementById("result");    
-  
-    if (answers.includes(input)) {
-        const answerIndex = answers.indexOf(input);
-        document.getElementById(`${answerIndex + 1}`).innerHTML = `${answerIndex + 1}  ${input}`; // darstellen der richtigen Antwort
-
-
-
-        const answerLabel = `${answerIndex + 1}`; // Label wird nicht mehr fett gedruckt.
-        const divs = document.querySelectorAll('.label');
-
-        for (const div of divs) {  
-            if (div.textContent === answerLabel) {
-            div.style.fontWeight = '200'; 
-            break; // Sobald das gesuchte Div gefunden wurde, Schleife abbrechen
-            }
-      }
-          
-    } 
-  }*/
