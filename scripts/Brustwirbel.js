@@ -15,7 +15,7 @@ const answers = [
   { word: "Processus articularis inferior", abbreviations: ["Proc articularis inferior", "Proc. articularis inferior", "Proc. articularis inf", "Proc articularis inf"] }
   // Add more answers
 ];
-let timeRemaining = 60; // Change this to your desired time
+let timeRemaining = 600; // Change this to your desired time
 let timerInterval = null;
 let timerStarted = false;
 
