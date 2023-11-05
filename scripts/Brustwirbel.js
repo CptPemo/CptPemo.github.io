@@ -32,7 +32,7 @@ function updateTimer() {
     timerElement.style.color = 'black';
   }
 
-  timerElement.textContent = `Time Left: ${timeRemaining} seconds`;
+  timerElement.textContent = `verbleibende Zeit: ${timeRemaining} Sekunden`;
 
   if (timeRemaining <= 0) {
     stopQuiz();
