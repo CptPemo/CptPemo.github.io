@@ -1,13 +1,13 @@
-/*
+
 .quizFrame{
   display: grid;
   grid-template-columns: 1fr 1fr;
-}*/
+}
 
 
 .pictureFrame{
   display: inline-block;
-  width: 650px;
+  width: 800px;
   position: relative;
   margin-left: 1%;
 }
