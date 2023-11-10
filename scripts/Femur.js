@@ -15,7 +15,7 @@ const answers = [
   { word: "Epicondylus lateralis", abbreviations: [""] },
   { word: "Sulcus popliteus", abbreviations: [""] },
   { word: "Fossa trochanterica", abbreviations: [""] },
-  { word: "Trochanter minor", abbreviations: [""] },
+  { word: "Trochanter tertius", abbreviations: [""] },
   { word: "Tuberositas glutea", abbreviations: [""] },
   { word: "Linea pectinea", abbreviations: [""] },
   { word: "Linea aspera", abbreviations: [""] },
