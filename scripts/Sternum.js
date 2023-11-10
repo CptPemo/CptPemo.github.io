@@ -2,16 +2,13 @@ const searchInput = document.getElementById('textInput');
 const stopButton = document.getElementById('stopButton');
 const restartButton = document.getElementById('restartButton'); // Add a Restart button
 const answers = [
-  { word: "Corpus vertebrae", abbreviations: [""] },
-  { word: "Lamina arcus vertebrae", abbreviations: [""] },
-  { word: "Pediculus arcus vertebrae", abbreviations: [""] },
-  { word: "Processus spinosus", abbreviations: ["Proc spinosus", "Proc. spinosus"] },
-  { word: "Processus transversus", abbreviations: ["Proc transversus", "Proc. transversus"] },
-  { word: "Fovea costalis", abbreviations: [""] },
-  { word: "Fovea costalis processus transversi", abbreviations: ["Fovea costalis proc transversi", "Fovea costalis proc. transversi"] },
-  { word: "Foramen vertebrale", abbreviations: [""] },
-  { word: "Processus articularis superior", abbreviations: ["Proc articularis superior", "Proc. articularis superior", "Proc. articularis sup", "Proc articularis sup"] },
-  { word: "Processus articularis inferior", abbreviations: ["Proc articularis inferior", "Proc. articularis inferior", "Proc. articularis inf", "Proc articularis inf"] }
+  { word: "Manubrium sterni", abbreviations: [""] },
+  { word: "Corpus sterni", abbreviations: [""] },
+  { word: "Processus xiphoideus", abbreviations: ["Proc xiphoideus", "Proc. xiphoideus"] },
+  { word: "Angulus sterni", abbreviations: [""] },
+  { word: "Incisura jugularis", abbreviations: [""] },
+  { word: "Incisura clavicularis", abbreviations: [""] },
+  { word: "Incisurae costales", abbreviations: ["Incisura costalis"] }
   // Add more answers
 ];
 let timeRemaining = 180; // Ändere dies auf deine gewünschte Zeit
