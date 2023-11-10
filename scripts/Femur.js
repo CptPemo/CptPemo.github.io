@@ -13,7 +13,25 @@ const answers = [
   { word: "Trochanter minor", abbreviations: [""] },
   { word: "Collum femoris", abbreviations: [""] },
   { word: "Epicondylus lateralis", abbreviations: [""] },
-  { word: "Sulcus popliteus", abbreviations: [""] }
+  { word: "Sulcus popliteus", abbreviations: [""] },
+  { word: "Fossa trochanterica", abbreviations: [""] },
+  { word: "Trochanter tertius", abbreviations: [""] },
+  { word: "Tuberositas glutea", abbreviations: [""] },
+  { word: "Linea pectinea", abbreviations: [""] },
+  { word: "Linea aspera", abbreviations: [""] },
+  { word: "Labium laterale", abbreviations: [""] },
+  { word: "Labium mediale", abbreviations: [""] },
+  { word: "Condylus medialis", abbreviations: [""] },
+  { word: "Facies lateralis", abbreviations: [""] },
+  { word: "Facies medialis", abbreviations: [""] },
+  { word: "Facies poplitea", abbreviations: [""] },
+  { word: "Linea intercondylaris", abbreviations: [""] },
+  { word: "Condylus lateralis", abbreviations: [""] },
+  { word: "Fossa intercondylaris", abbreviations: [""] },
+  { word: "Fovea capitis", abbreviations: [""] },
+  { word: "Tuberculum quadratum", abbreviations: [""] },
+  { word: "Christa intertrochanterica", abbreviations: [""] },
+  { word: "Labium mediale", abbreviations: [""] }
   // Add more answers
 ];
 let timeRemaining = 200; // Ändere dies auf deine gewünschte Zeit
