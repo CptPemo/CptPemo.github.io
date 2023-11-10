@@ -16,7 +16,7 @@ const answers = [
   { word: "Sulcus popliteus", abbreviations: [""] }
   // Add more answers
 ];
-let timeRemaining = 180; // Ändere dies auf deine gewünschte Zeit
+let timeRemaining = 200; // Ändere dies auf deine gewünschte Zeit
 let timerInterval = null;
 let timerStarted = false;
 let allWordsFound = false; // Hinzugefügte Variable, um den Status aller Wörter zu speichern
