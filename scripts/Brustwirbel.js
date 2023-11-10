@@ -14,7 +14,7 @@ const answers = [
   { word: "Processus articularis inferior", abbreviations: ["Proc articularis inferior", "Proc. articularis inferior", "Proc. articularis inf", "Proc articularis inf"] }
   // Add more answers
 ];
-let timeRemaining = 600; // Ändere dies auf deine gewünschte Zeit
+let timeRemaining = 180; // Ändere dies auf deine gewünschte Zeit
 let timerInterval = null;
 let timerStarted = false;
 let allWordsFound = false; // Hinzugefügte Variable, um den Status aller Wörter zu speichern
