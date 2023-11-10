@@ -1,8 +1,9 @@
 
+/*
 .quizFrame{
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
+}*/
 
 
 .pictureFrame{
@@ -10,6 +11,7 @@
   width: 800px;
   position: relative;
   margin-left: 1%;
+  /*padding-top: 5%;*/
 }
 
 
