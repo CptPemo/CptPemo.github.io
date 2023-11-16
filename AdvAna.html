@@ -26,7 +26,7 @@
                 <button class="menu-button">
                     Menü
                 </button>
-                <input class="search-bar" type="text" placeholder="Suche">
+                <input class="search-bar" type="text" placeholder="Suche" oninput="filterQuizzes(this.value)">
             </div>
 
             <div class="right-section">
@@ -41,8 +41,8 @@
             <section class="quiz-grid">
                 <button class="quiz-preview">
                     <a href="quizzes/Halswirbel.html">
-                        <div class="quiz-picture">
-                            <img class="thumbnail" src="bilder/Atlas.png">     
+                        <div class="quiz-picture" data-keywords="Wirbel, Wirbelsäule, Knochen">
+                            <img class="thumbnail" src="bilder/Atlas.png" >     
                         </div>
                         <div class="quiz-info">Atlas</div>
                     </a>
@@ -50,8 +50,8 @@
 
                 <button class="quiz-preview">
                     <a href="quizzes/Halswirbel.html">
-                        <div class="quiz-picture">
-                            <img class="thumbnail" src="bilder/Halswirbel.png">     
+                        <div class="quiz-picture" data-keywords="Wirbel, Wirbelsäule, Knochen">
+                            <img class="thumbnail" src="bilder/Halswirbel.png" >     
                         </div>
                         <div class="quiz-info">Halswirbel</div>
                     </a>
@@ -59,7 +59,7 @@
 
                 <button class="quiz-preview">
                     <a href="quizzes/Brustwirbel.html">
-                        <div class="quiz-picture">
+                        <div class="quiz-picture" data-keywords="Wirbel, Wirbelsäule, Knochen">
                             <img class="thumbnail" src="bilder/Brustwirbel.png">     
                         </div>
                         <div class="quiz-info">Brustwirbel</div>
@@ -68,7 +68,7 @@
 
                 <button class="quiz-preview">
                     <a href="quizzes/Lendenwirbel.html">
-                        <div class="quiz-picture">
+                        <div class="quiz-picture" data-keywords="Wirbel, Wirbelsäule, Knochen">
                             <img class="thumbnail" src="bilder/Lendenwirbel.png">     
                         </div>
                         <div class="quiz-info">Lendenwirbel</div>
@@ -77,7 +77,7 @@
 
                 <button class="quiz-preview">
                     <a href="quizzes/Sternum.html">
-                        <div class="quiz-picture">
+                        <div class="quiz-picture" data-keywords="Brust, Thorax, Knochen">
                             <img class="thumbnail" src="bilder/Sternum 1.png">
                         </div>
                         <div class="quiz-info">Sternum</div>
@@ -86,7 +86,7 @@
 
                 <button class="quiz-preview">
                     <a href="quizzes/Brustwirbel.html">
-                        <div class="quiz-picture">
+                        <div class="quiz-picture" data-keywords="Schulter, Skelett, Knochen">
                             <img class="thumbnail" src="bilder/Scapula dorsal.png">
                         </div>
                         <div class="quiz-info">Scapula</div>
@@ -94,7 +94,7 @@
                 </button>
                 <button class="quiz-preview">
                     <a href="quizzes/Humerus.html">
-                        <div class="quiz-picture">
+                        <div class="quiz-picture" data-keywords="Knochen, obere Extremität, Arm">
                             <img class="thumbnail" src="bilder/Humerus anterior.png">     
                         </div>
                         <div class="quiz-info">Humerus</div>
@@ -103,7 +103,7 @@
 
                 <button class="quiz-preview">
                     <a href="quizzes/Oscoxae.html">
-                        <div class="quiz-picture">
+                        <div class="quiz-picture" data-keywords="Knochen, Bewegungsapparat, untere Extremität">
                             <img class="thumbnail" src="bilder/Os coxae lateral.png">
                         </div>
                         <div class="quiz-info">Os coxae</div>
@@ -112,7 +112,7 @@
 
                 <button class="quiz-preview">
                     <a href="quizzes/Femur.html">
-                        <div class="quiz-picture">
+                        <div class="quiz-picture" data-keywords="Knochen, Bewegungsapparat, untere Extremität, Bein">
                             <img class="thumbnail" src="bilder/Femur anterior.png">
                         </div>
                         <div class="quiz-info">Femur</div>
@@ -120,8 +120,8 @@
                 </button>
 
                 <button class="quiz-preview">
-                    <a href="quizzes/Femur.html">
-                        <div class="quiz-picture">
+                    <a href="quizzes/Femur.html" >
+                        <div class="quiz-picture" data-keywords="Knochen, untere Extremität, Bewegungsapparat, Bein">
                             <img class="thumbnail" src="bilder/Tibia anterior.png">
                         </div>
                         <div class="quiz-info">Tibia</div>
@@ -135,5 +135,6 @@
         <footer class="footer">
             <p>&copy; 2023 Advanced Anatomy. Alle Rechte vorbehalten.</p>
         </footer>
+        <script src="../scripts/Search.js"></script>
     </body>
 </html>
