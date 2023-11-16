@@ -11,3 +11,9 @@
     display: inline-block;
 
   }
+
+  .footer-content p {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left:20px; /* Oder ein anderes Abstandselement nach Bedarf */
+}
