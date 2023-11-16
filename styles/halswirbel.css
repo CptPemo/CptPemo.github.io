@@ -45,8 +45,23 @@
     vertical-align: top;
     margin-top: 100px;
     margin-left: 2px;
-    
   }
+
+
+.answerTop{
+  position: fixed;
+  background-color: white;
+  width: 512px;
+  margin-top: -30px;
+  padding-top: 50px;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+}
+
+.answerBlock{
+  padding-top: 38%;
+
+}
   
   .guess-bar{
     font-family: Raleway;
