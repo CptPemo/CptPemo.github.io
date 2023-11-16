@@ -108,6 +108,10 @@ a:visited {
   text-decoration: none; /* Entfernt den Unterstrich */
   color: black; /* Ändere die Farbe hier nach Bedarf */  
 } 
+a{
+  text-decoration: none; /* Entfernt den Unterstrich */
+  color: black; /* Ändere die Farbe hier nach Bedarf */ 
+}
 
 .stop-message{
   font-family: Raleway;

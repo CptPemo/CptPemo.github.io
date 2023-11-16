@@ -129,7 +129,10 @@
 .startbild{
     width: 400px;
 }
-
+a{
+    color:black;
+    text-decoration:none;
+}
 a:visited {
     text-decoration: none; /* Entfernt den Unterstrich */
     color: black; /* Ändere die Farbe hier nach Bedarf */  
