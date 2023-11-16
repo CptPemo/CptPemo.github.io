@@ -14,10 +14,16 @@ const answers = [
   { word: "Processus articularis inferior", abbreviations: ["Proc articularis inferior", "Proc. articularis inferior", "Proc. articularis inf", "Proc articularis inf"] }
   // Add more answers
 ];
-let timeRemaining = 180; // Ändere dies auf deine gewünschte Zeit
+
+let countEntries = answers.length; // Anzahl der Einträge im Array
+let multipliedCount = countEntries * 20; // Multipliziert die Anzahl der Einträge mit 20
+
+let timeRemaining = multipliedCount; // Ändere dies auf deine gewünschte Zeit
 let timerInterval = null;
 let timerStarted = false;
 let allWordsFound = false; // Hinzugefügte Variable, um den Status aller Wörter zu speichern
+
+document.getElementById('output').textContent = multipliedCount;
 
 function startCountdown() {
   timerStarted = true; // Setze timerStarted auf true, wenn der Timer gestartet wird
@@ -41,6 +47,8 @@ function updateTimer() {
     timeRemaining--;
   }
 }
+
+
 
 searchInput.addEventListener('input', () => {
   const input = searchInput.value.trim().toLowerCase();

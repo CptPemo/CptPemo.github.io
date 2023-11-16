@@ -34,10 +34,15 @@ const answers = [
   { word: "Labium mediale", abbreviations: [""] }
   // Add more answers
 ];
-let timeRemaining = 200; // Ändere dies auf deine gewünschte Zeit
+let countEntries = answers.length; // Anzahl der Einträge im Array
+let multipliedCount = countEntries * 20; // Multipliziert die Anzahl der Einträge mit 20
+
+let timeRemaining = multipliedCount; // Ändere dies auf deine gewünschte Zeit
 let timerInterval = null;
 let timerStarted = false;
 let allWordsFound = false; // Hinzugefügte Variable, um den Status aller Wörter zu speichern
+
+document.getElementById('output').textContent = multipliedCount;
 
 function startCountdown() {
   timerStarted = true; // Setze timerStarted auf true, wenn der Timer gestartet wird
