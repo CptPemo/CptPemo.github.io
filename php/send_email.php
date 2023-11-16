@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $empfaenger = "petermoritzhrenberg@gmail.com"; // Hier deine E-Mail-Adresse eintragen
+  $empfaenger = "petermoritzahrenberg@gmail.com"; // Hier deine E-Mail-Adresse eintragen
   $name = $_POST['name'];
   $email = $_POST['email'];
   $betreff = $_POST['betreff'];
