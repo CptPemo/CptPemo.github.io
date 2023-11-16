@@ -56,7 +56,7 @@
     display: flex; /* Damit das <a>-Element block-level wird */
     flex-direction: column;
     width: 100%; /* 100% Breite des übergeordneten .quiz-preview-Buttons */
-    height: 100%; /* 100% Höhe des übergeordneten .quiz-preview-Buttons */
+    height: 150%; /* 100% Höhe des übergeordneten .quiz-preview-Buttons */
     text-decoration: none; /* Entfernen Sie die Standard-Unterstreichung von Links */
     align-items: center;
     justify-content: center;
@@ -71,9 +71,12 @@
 
 .thumbnail{
     width: 100%;
-    position: relative;
+    
     height: auto;
-    object-fit: cover;
+
+    display: block;
+
+    position: relative;
 }
 
 .quiz-info{
