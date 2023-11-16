@@ -3,5 +3,11 @@
     padding: 10px;
     position: bottom;
     bottom: 0;
+ 
     width: 100%;
+  }
+
+  a, p .footer{
+    display: inline-block;
+
   }

@@ -26,7 +26,9 @@ a {
     color: black;
     text-decoration:none;
 }
-
+p {
+    font-family: Raleway; 
+}
 a:visited {
     text-decoration: none; /* Entfernt den Unterstrich */
     color: black; /* Ändere die Farbe hier nach Bedarf */  
@@ -36,3 +38,8 @@ img {
     max-width: 100%; /* Begrenzt die Bildbreite auf 100% der Containerbreite */
     height: auto; /* Behält das Seitenverhältnis des Bildes bei */
 }
+
+a, p .footer{
+    display: inline-block;
+
+  }
