@@ -15,11 +15,11 @@ const answers = [
   { word: "Facies articularis", abbreviations: [""] },
   { word: "Angulus acromii", abbreviations: [""] },
   { word: "Incisura scapulae", abbreviations: [""] },
+  { word: "Processus coracoideus", abbreviations: ["Proc coracoideus", "Proc. coracoideus"] },
+  { word: "Collum scapulae", abbreviations: [""] },
   { word: "Cavitas glenoidalis", abbreviations: [""] },
   { word: "Tuberculum supraglenoidale", abbreviations: [""] },
-  { word: "Tuberculum infraglenoidale", abbreviations: [""] },
-  { word: "Collum scapulae", abbreviations: [""] },
-  { word: "Processus coracoideus", abbreviations: [""] }
+  { word: "Tuberculum infraglenoidale", abbreviations: [""] }
   // Add more answers
 ];
 let timeRemaining = 200; // Ändere dies auf deine gewünschte Zeit
