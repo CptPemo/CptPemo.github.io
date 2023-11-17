@@ -51,7 +51,7 @@
                         <div class="label" style="left: 190px; top: 350px;">8</div>
 
                         <div class="line" style="top: 150px; transform: translateX(185px) rotate(60deg); width: 60px;"></div>
-                        <div class="label" style="left: 170px; top: 90px;">9</div>
+                        <div class="label" style="left: 180px; top: 90px;">9</div>
 
                         <div class="line" style="top: 700px; transform: translateX(100px) rotate(5deg); width: 120px;"></div>
                         <div class="label" style="left: 70px; top: 675px;">11</div>
