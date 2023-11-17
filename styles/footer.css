@@ -17,3 +17,7 @@
     margin-right: 20px;
     margin-left:20px; /* Oder ein anderes Abstandselement nach Bedarf */
 }
+a {
+  color: black;
+  text-decoration:none;
+}

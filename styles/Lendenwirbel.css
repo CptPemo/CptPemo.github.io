@@ -26,6 +26,11 @@
     margin-top:2%;
   
   }
+
+  a {
+    color: black;
+    text-decoration:none;
+}
   
   .button-stop{
     font-family: Raleway;

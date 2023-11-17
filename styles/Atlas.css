@@ -108,6 +108,11 @@
     color: black; /* Ändere die Farbe hier nach Bedarf */  
   } 
   
+  a {
+    color: black;
+    text-decoration:none;
+}
+
   .stop-message{
     font-family: Raleway;
     font-size: 20px;
