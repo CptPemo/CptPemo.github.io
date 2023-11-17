@@ -113,7 +113,7 @@
                     </a>
                 </button>
             </section>
-
+<?php include 'php/counter.php';?>
         </main>   
 
 
