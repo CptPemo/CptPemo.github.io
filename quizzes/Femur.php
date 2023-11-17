@@ -51,7 +51,7 @@
                         <div class="label" style="left: 190px; top: 350px;">8</div>
 
                         <div class="line" style="top: 150px; transform: translateX(185px) rotate(60deg); width: 60px;"></div>
-                        <div class="label" style="left: 170px; top: 90px;">10</div>
+                        <div class="label" style="left: 170px; top: 90px;">9</div>
 
                         <div class="line" style="top: 700px; transform: translateX(100px) rotate(5deg); width: 120px;"></div>
                         <div class="label" style="left: 70px; top: 675px;">11</div>
@@ -65,7 +65,7 @@
                         <div class="label" style="left: 280px; top: 825px;">13</div>
 
                         <div class="line" style="top: 1015px; transform: translateX(250px) rotate(-30deg); width: 60px;"></div>
-                        <div class="label" style="left: 220px; top: 1015px;">9</div>
+                        <div class="label" style="left: 220px; top: 1015px;">10</div>
 
                         <div class="line" style="top: 1122px; transform: translateX(320px); width: 60px;"></div>
                         <div class="label" style="left: 380px; top: 1100px;">14</div>
