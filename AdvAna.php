@@ -26,7 +26,7 @@
             <section class="quiz-grid">
                 <button class="quiz-preview">
                     <a href="quizzes/Atlas.php">
-                        <div class="quiz-picture" data-keywords="Wirbel, Wirbelsäule, Knochen">
+                        <div class="quiz-picture" data-keywords="Wirbel, Wirbelsäule, Knochen, Halswirbel, Hals">
                             <img class="thumbnail" src="thumbnails/AtlasThumbnail.png" >     
                         </div>
                         <div class="quiz-info">Atlas</div>
@@ -62,7 +62,7 @@
 
                 <button class="quiz-preview">
                     <a href="quizzes/Sternum.php">
-                        <div class="quiz-picture" data-keywords="Brust, Thorax, Knochen">
+                        <div class="quiz-picture" data-keywords="Brust, Thorax, Knochen, Brustbein">
                             <img class="thumbnail" src="thumbnails/SternumThumbnail.png">
                         </div>
                         <div class="quiz-info">Sternum</div>
@@ -71,7 +71,7 @@
 
                 <button class="quiz-preview">
                     <a href="quizzes/Scapula.php">
-                        <div class="quiz-picture" data-keywords="Schulter, Skelett, Knochen">
+                        <div class="quiz-picture" data-keywords="Schulter, Skelett, Knochen, Arm, Schulterblatt">
                             <img class="thumbnail" src="thumbnails/ScapulaThumbnail.png">
                         </div>
                         <div class="quiz-info">Scapula</div>
@@ -79,7 +79,7 @@
                 </button>
                 <button class="quiz-preview">
                     <a href="quizzes/Humerus.php">
-                        <div class="quiz-picture" data-keywords="Knochen, obere Extremität, Arm">
+                        <div class="quiz-picture" data-keywords="Knochen, obere Extremität, Arm, Oberarm, Oberarmknochen">
                             <img class="thumbnail" src="thumbnails/HumerusThumbnail.png">     
                         </div>
                         <div class="quiz-info">Humerus</div>
@@ -88,7 +88,7 @@
 
                 <button class="quiz-preview">
                     <a href="quizzes/Oscoxae.php">
-                        <div class="quiz-picture" data-keywords="Knochen, Bewegungsapparat, untere Extremität">
+                        <div class="quiz-picture" data-keywords="Knochen, Bewegungsapparat, untere Extremität, Hüfte">
                             <img class="thumbnail" src="thumbnails/OscoxaeThumbnail.png">
                         </div>
                         <div class="quiz-info">Os coxae</div>
@@ -97,7 +97,7 @@
 
                 <button class="quiz-preview">
                     <a href="quizzes/Femur.php">
-                        <div class="quiz-picture" data-keywords="Knochen, Bewegungsapparat, untere Extremität, Bein">
+                        <div class="quiz-picture" data-keywords="Knochen, Bewegungsapparat, untere Extremität, Bein, Oberschenkel">
                             <img class="thumbnail" src="thumbnails/FemurThumbnail.png">
                         </div>
                         <div class="quiz-info">Femur</div>
@@ -106,7 +106,7 @@
 
                 <button class="quiz-preview">
                     <a href="quizzes/Tibia.php" >
-                        <div class="quiz-picture" data-keywords="Knochen, untere Extremität, Bewegungsapparat, Bein">
+                        <div class="quiz-picture" data-keywords="Knochen, untere Extremität, Bewegungsapparat, Bein, Schienbein">
                             <img class="thumbnail" src="thumbnails/TibiaThumbnail.png">
                         </div>
                         <div class="quiz-info">Tibia</div>
