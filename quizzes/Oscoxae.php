@@ -19,7 +19,7 @@
     </head>
     <body>
         <header class="header">
-            <?php include 'header.html';?>           
+            <?php include '../header.html';?>           
         </header>
 
         <main>
@@ -229,7 +229,7 @@
         </main>
 
         <footer class="footer">
-            <?php include 'footer.html'; ?>
+            <?php include '../footer.html'; ?>
         </footer>   
     
     <script src="../scripts/Oscoxae.js"></script>
