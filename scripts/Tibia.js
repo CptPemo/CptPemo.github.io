@@ -15,12 +15,12 @@ const answers = [
   { word: "Tuberositas tibiae", abbreviations: [""] },
   { word: "Facies medialis", abbreviations: ["Facies med"] },
   { word: "Facies lateralis", abbreviations: ["Facies lat"] },
+  { word: "Malleolus medialis", abbreviations: ["Malleolus med"] },
   { word: "Margo interosseus", abbreviations: [""] },
   { word: "Facies posterior", abbreviations: ["Facies post"] },
   { word: "Margo medialis", abbreviations: ["Margo med"] },
   { word: "Linea musculi solei", abbreviations: ["Linea m solei", "Linea m. solei"] },
   { word: "Foramen nutricium", abbreviations: [""] },
-  { word: "Malleolus medialis", abbreviations: ["Malleolus med"] },
   { word: "Sulcus malleolaris", abbreviations: [""] },
   { word: "Incisura fibularis", abbreviations: [""] }
   // Add more answers
