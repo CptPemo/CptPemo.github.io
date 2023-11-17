@@ -22,7 +22,7 @@
         </header>
          
         <main>
-
+        <div class="kontakt">
           <h2>Kontaktformular</h2>
 
           <form action="php/send_email.php" method="post">
@@ -36,7 +36,7 @@
             <textarea id="inhalt" name="inhalt"></textarea><br><br>
             <input type="submit" value="Absenden">
           </form>
-        
+        </div>
         
         
         </main>

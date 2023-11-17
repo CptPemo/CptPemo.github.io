@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="styles/footer.css">
         <link rel="stylesheet" href="styles/quizGrid.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="styles/Impressum.css">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;600&display=swap" rel="stylesheet">
         <link rel="icon" type="image/png" href="bilder/favicon.png">
@@ -22,6 +23,8 @@
         </header>
          
         <main>
+
+        <div class="Impressum">
         <h1>Impressum</h1>
 
         <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
@@ -35,7 +38,7 @@
 
         
         
-        
+        </div>
         </main>
 
         <footer class="footer">
