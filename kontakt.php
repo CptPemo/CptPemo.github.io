@@ -24,7 +24,7 @@
          
         <main>
         <div class="kontakt">
-          <h2>Kontaktformular</h2>
+          <h1>Kontaktformular</h1>
 
           <form action="php/send_email.php" method="post">
             <label for="name">Name:</label><br>
