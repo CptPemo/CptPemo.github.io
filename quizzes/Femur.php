@@ -50,9 +50,6 @@
 
                         <div class="label" style="left: 190px; top: 350px;">8</div>
 
-                        <div class="line" style="top: 250px; transform: translateX(230px) rotate(0deg); width: 70px;"></div>
-                        <div class="label" style="left: 300px; top: 225px;">9</div> 
-
                         <div class="line" style="top: 150px; transform: translateX(185px) rotate(60deg); width: 60px;"></div>
                         <div class="label" style="left: 170px; top: 90px;">10</div>
 
@@ -68,56 +65,56 @@
                         <div class="label" style="left: 280px; top: 825px;">13</div>
 
                         <div class="line" style="top: 1015px; transform: translateX(250px) rotate(-30deg); width: 60px;"></div>
-                        <div class="label" style="left: 220px; top: 1015px;">14</div>
+                        <div class="label" style="left: 220px; top: 1015px;">9</div>
 
                         <div class="line" style="top: 1122px; transform: translateX(320px); width: 60px;"></div>
-                        <div class="label" style="left: 380px; top: 1100px;">15</div>
+                        <div class="label" style="left: 380px; top: 1100px;">14</div>
 
                         <div class="line" style="top: 1060px; transform: translateX(255px) rotate(-15deg); width: 70px;"></div>
-                        <div class="label" style="left: 220px; top: 1050px;">16</div>
+                        <div class="label" style="left: 220px; top: 1050px;">15</div>
 
                         <div class="line" style="top: 1160px; transform: translateX(230px) rotate(30deg); width: 86px;"></div>
-                        <div class="label" style="left: 205px; top: 1110px;">17</div>
+                        <div class="label" style="left: 205px; top: 1110px;">16</div>
 
                         <div class="line" style="top: 1200px; transform: translateX(310px) rotate(0deg); width: 70px;"></div>
-                        <div class="label" style="left: 380px; top: 1175px;">18</div>
+                        <div class="label" style="left: 380px; top: 1175px;">17</div>
 
                         <div class="line" style="top: 1190px; transform: translateX(237px) rotate(0deg); width: 70px;"></div>
-                        <div class="label" style="left: 199px; top: 1165px;">19</div>
+                        <div class="label" style="left: 199px; top: 1165px;">18</div>
 
                         <div class="line" style="top: 1500px; transform: translateX(160px) rotate(0deg); width: 50px;"></div>
-                        <div class="label" style="left: 120px; top: 1480px;">20</div>
+                        <div class="label" style="left: 120px; top: 1480px;">19</div>
 
                         <div class="line" style="top: 1235px; transform: translateX(315px) rotate(10deg); width: 60px;"></div>
                         <div class="line" style="top: 1245px; transform: translateX(315px) rotate(-10deg); width: 60px;"></div>
-                        <div class="label" style="left: 375px; top: 1220px;">21</div>
+                        <div class="label" style="left: 375px; top: 1220px;">20</div>
 
                         <div class="line" style="top: 1245px; transform: translateX(230px) rotate(10deg); width: 60px;"></div>
                         <div class="line" style="top: 1235px; transform: translateX(230px) rotate(-10deg); width: 60px;"></div>
-                        <div class="label" style="left: 190px; top: 1220px;">22</div>
+                        <div class="label" style="left: 190px; top: 1220px;">21</div>
 
-                        <div class="label" style="left: 240px; top: 1370px;">23</div>
+                        <div class="label" style="left: 240px; top: 1370px;">22</div>
 
                         <div class="line" style="top: 1460px; transform: translateX(260px) rotate(-10deg); width: 100px;"></div>
-                        <div class="label" style="left: 358px; top: 1430px;">24</div>
+                        <div class="label" style="left: 358px; top: 1430px;">23</div>
 
                         <div class="line" style="top: 1500px; transform: translateX(300px) rotate(0deg); width: 50px;"></div>
-                        <div class="label" style="left: 350px; top: 1480px;">25</div>
+                        <div class="label" style="left: 350px; top: 1480px;">24</div>
 
                         <div class="line" style="top: 1515px; transform: translateX(230px) rotate(90deg); width: 60px;"></div>
-                        <div class="label" style="left: 240px; top: 1540px;">26</div>
+                        <div class="label" style="left: 240px; top: 1540px;">25</div>
 
                         <div class="line" style="top: 900px; transform: translateX(160px) rotate(0deg); width: 50px;"></div>
-                        <div class="label" style="left: 120px; top: 880px;">27</div>
+                        <div class="label" style="left: 120px; top: 880px;">26</div>
 
                         <div class="line" style="top: 970px; transform: translateX(350px) rotate(45deg); width: 60px;"></div>
-                        <div class="label" style="left: 393px; top: 983px;">28</div>
+                        <div class="label" style="left: 393px; top: 983px;">27</div>
 
                         <div class="line" style="top: 1000px; transform: translateX(325px) rotate(45deg); width: 80px;"></div>
-                        <div class="label" style="left: 390px; top: 1015px;">29</div>
+                        <div class="label" style="left: 390px; top: 1015px;">28</div>
 
                         <div class="line" style="top: 1090px; transform: translateX(315px) rotate(-15deg); width: 60px;"></div>
-                        <div class="label" style="left: 370px; top: 1060px;">30</div>
+                        <div class="label" style="left: 370px; top: 1060px;">29</div>
                     </div>
                 
 
