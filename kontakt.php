@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/footer.css">
+        <link rel="stylesheet" href="styles/kontakt.css">
         <link rel="stylesheet" href="styles/quizGrid.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
