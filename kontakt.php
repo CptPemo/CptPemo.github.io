@@ -25,7 +25,7 @@
         <main>
         <div class="kontakt">
           <h1>Kontaktformular</h1>
-
+          <h2>Hast du ein Problem an der Webseite festgestellt? Schreibe uns!</h2>
           <form action="php/send_email.php" method="post">
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name"><br>
