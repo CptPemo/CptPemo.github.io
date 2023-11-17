@@ -48,10 +48,10 @@ a {
 
 .answerFrame{
   display: inline-block;
-  width: 500px;
+  width: 100%;
   vertical-align: top;
   margin-top: 100px;
-  margin-left: 2px;
+  margin-left: 10px;
   
   
 }
@@ -67,7 +67,8 @@ a {
 }
 
 .answerBlock{
-  padding-top: 38%;
+  padding-top: 190px;
+  
 }
 
 .guess-bar{
@@ -89,7 +90,7 @@ a {
   margin-bottom: 4px;
   border: 1px solid black;
   border-radius: 3px;
-  width:100%;
+  width:75%;
 }
 
 .line {
