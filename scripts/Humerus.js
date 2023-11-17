@@ -2,7 +2,7 @@ const searchInput = document.getElementById('textInput');
 const stopButton = document.getElementById('stopButton');
 const restartButton = document.getElementById('restartButton'); // Add a Restart button
 const answers = [
-  { word: "Caput humeri", abbreviations: [""] },
+  { word: "Tuberositas deltoideae", abbreviations: [""] },
   { word: "Tuberculum majus", abbreviations: [""] },
   { word: "Crista tuberculi majoris", abbreviations: [""] },
   { word: "Tuberculum minus", abbreviations: [""] },
