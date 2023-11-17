@@ -2,7 +2,6 @@
 
 <html>
     <head>
-
         <title>Advanced Anatomy</title>
         <link rel="stylesheet" href="styles/AdvAna.css">
         <link rel="stylesheet" href="styles/header.css">
@@ -15,31 +14,11 @@
         <link rel="icon" type="image/png" href="bilder/favicon.png">
         <link rel="icon" type="image/png" href="bilder/favicon1.png">
         <meta charset="UTF-8">
+    </head>
     <body>
         <header class="header">
 
-            <div class="left-section">
-                <button class="home-button">
-                    Advanced Anatomy
-                </button>
-            </div>
-
-            <div class="middle-section">
-                <button class="menu-button">
-                    Menü
-                </button>
-                <input class="search-bar" type="text" placeholder="Suche" oninput="filterQuizzes(this.value)">
-            </div>
-
-            <div class="right-section">
-                <button class="login-button" >
-                    <a href="test.html">
-
-                    Sprache ändern
-
-                    </a>
-                </button>
-            </div>            
+            <?php include 'header.html';?>           
 
         </header>
    
@@ -139,18 +118,7 @@
 
 
         <footer class="footer">
-           
-           <div class="footer-content">
-            <a  href="impressum.html">Impressum</a>
-            <p> | </p>
-            <p >&copy; 2023 Advanced Anatomy. Alle Rechte vorbehalten.</p>
-            <p> | </p>
-            <a href="kontakt.html">Kontakt</a>
-           </div>
-           
-            
-        
-        
+        <?php include 'footer.html'; ?>
         </footer>
         <script src="../scripts/Search.js"></script>
     </body>
