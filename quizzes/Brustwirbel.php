@@ -10,8 +10,7 @@
         <link rel="stylesheet" href="../styles/quizGrid.css">
         <link rel="stylesheet" href="../styles/quiz.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;600&display=swap" rel="stylesheet">
         <link rel="icon" type="image/png" href="bilder/favicon.png">
         <link rel="icon" type="image/png" href="bilder/favicon1.png">

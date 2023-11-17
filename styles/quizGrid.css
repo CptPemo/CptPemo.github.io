@@ -76,7 +76,8 @@
 
     display: block;
 
-    position: relative;
+    position:flex;
+    overflow:hidden;
 }
 
 .quiz-info{
