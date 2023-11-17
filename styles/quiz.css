@@ -1,5 +1,8 @@
 
+body{
+width:100%;
 
+}
 .quizFrame{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -50,6 +53,7 @@ a {
   margin-top: 100px;
   margin-left: 2px;
   
+  
 }
 
 .answerTop{
@@ -64,10 +68,10 @@ a {
 
 .answerBlock{
   padding-top: 38%;
-
 }
 
 .guess-bar{
+  
   font-family: Raleway;
   width: 100%;
   font-size: 30px;
@@ -76,6 +80,7 @@ a {
   border: 1px solid black;
   border-radius: 3px;
   background-color: white;
+  margin-left:0px;
 }
 
 .answer{

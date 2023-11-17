@@ -1,6 +1,10 @@
+body{
+margin-right:0px;
+margin-left:0px;
 
-
+}
 .quizFrame{
+    margin-left:0px;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -66,6 +70,8 @@
   
   .answerBlock{
     padding-top: 38%;
+    margin-left:0px;
+    
   
   }
   
