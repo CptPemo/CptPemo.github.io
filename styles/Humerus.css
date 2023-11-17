@@ -1,4 +1,7 @@
-
+.element {
+  -webkit-transform: translateX(50px); /* Safari und ältere Chrome/Opera */
+  transform: translateX(50px); /* Standard - wird von den meisten modernen Browsern unterstützt */
+}
 
 .quizFrame{
   display: grid;
