@@ -20,28 +20,7 @@
     </head>
     <body>
         <header class="header">
-
-            <div class="left-section">
-                <button class="home-button">
-                    <a style="text-decoration: none;" href="../AdvAna.html">
-                        <div>Advanced Anatomy</div>
-                    </a>
-                </button>
-            </div>
-
-            <div class="middle-section">
-                <button class="menu-button">
-                    Menü
-                </button>
-                <input class="search-bar" type="text" placeholder="Search">
-            </div>
-
-            <div class="right-section">
-                <button class="login-button">
-                    Login
-                </button>
-            </div>            
-
+            <?php include 'header.html';?>           
         </header>
 
         <main>
@@ -197,7 +176,7 @@
         </main>
 
         <footer class="footer">
-            <p>&copy; 2023 Advanced Anatomy. Alle Rechte vorbehalten.</p> 
+            <?php include 'footer.html'; ?>
         </footer>   
     
     <script src="../scripts/Humerus.js"></script>

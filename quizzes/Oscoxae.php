@@ -8,8 +8,7 @@
         <link rel="stylesheet" href="../styles/main.css">
         <link rel="stylesheet" href="../styles/footer.css">
         <link rel="stylesheet" href="../styles/quizGrid.css">
-        <link rel="stylesheet" href="../styles/Femur.css">
-        <!--<link rel="stylesheet" href="../styles/quiz.css">-->
+        <link rel="stylesheet" href="../styles/Oscoxae.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;600&display=swap" rel="stylesheet">
@@ -20,35 +19,14 @@
     </head>
     <body>
         <header class="header">
-
-            <div class="left-section">
-                <button class="home-button">
-                    <a style="text-decoration: none;" href="../AdvAna.html">
-                        <div>Advanced Anatomy</div>
-                    </a>
-                </button>
-            </div>
-
-            <div class="middle-section">
-                <button class="menu-button">
-                    Menü
-                </button>
-                <input class="search-bar" type="text" placeholder="Search">
-            </div>
-
-            <div class="right-section">
-                <button class="login-button">
-                    Login
-                </button>
-            </div>            
-
+            <?php include 'header.html';?>           
         </header>
 
         <main>
             <div class="quizFrame">
                 
                     <div class="pictureFrame">
-                        <img class="quizPicture" src="../bilder/Femur anterior.png">
+                        <img class="quizPicture" src="../bilder/Os coxae lateral.png">
                         <div class="line" style="top: 680px; transform: translateX(340px) rotate(-5deg); width: 120px;"></div>
                         <div class="label" style="left: 460px; top: 650px;">1</div>
 
@@ -83,7 +61,7 @@
                         <div class="line" style="top: 733px; transform: translateX(105px) rotate(-10deg); width: 120px;"></div>
                         <div class="label" style="left: 70px; top: 725px;">12</div>
 
-                        <img class="quizPicture" src="../bilder/Femur posterior.png">
+                        <img class="quizPicture" src="../bilder/Os coxae medial.png">
 
                         <div class="line" style="top: 900px; transform: translateX(285px) rotate(70deg); width: 70px;"></div>
                         <div class="label" style="left: 280px; top: 825px;">13</div>
@@ -144,123 +122,116 @@
 
 
                 <div class="answerFrame">
-
-                    <div class="answerTop">
-                        <div style="font-size: 40px">Femur</div>
-                        <div class="timerTime" id="timer">Verbleibende Zeit: <span id="output"></span> Sekunden</div>
-                        <div>
-                            <input class="guess-bar" id="textInput" type="text" placeholder="Los geht's!">
-                            <!-- <button onclick="checkWord()">Überprüfen</button> -->
-                            <p id="result"></p>
-                        </div>
+                    <div style="font-size: 40px">Os Coxae</div>
+                    <div class="timerTime" id="timer">Verbleibende Zeit: <span id="output"></span> Sekunden</div>
+                    <div>
+                        <input class="guess-bar" id="textInput" type="text" placeholder="Los geht's!">
+                        <!-- <button onclick="checkWord()">Überprüfen</button> -->
+                        <p id="result"></p>
                     </div>
-
-
-                    <div class="answerBlock">
-                        <div class="answer" id="1">
-                            1.
-                        </div>
-                        <div class="answer" id="2">
-                            2.
-                        </div>
-                        <div class="answer" id="3">
-                            3.
-                        </div>
-                        <div class="answer" id="4">
-                            4.
-                        </div>
-                        <div class="answer" id="5">
-                            5.
-                        </div>
-                        <div class="answer" id="6">
-                            6.
-                        </div>
-                        <div class="answer" id="7">
-                            7.
-                        </div>
-                        <div class="answer" id="8">
-                            8.
-                        </div>
-                        <div class="answer" id="9">
-                            9.
-                        </div>
-                        <div class="answer" id="10">
-                            10.
-                        </div>
-                        <div class="answer" id="11">
-                            11.
-                        </div>
-                        <div class="answer" id="12">
-                            12.
-                        </div>
-                        <div class="answer" id="13">
-                            13.
-                        </div>
-                        <div class="answer" id="14">
-                            14.
-                        </div>
-                        <div class="answer" id="15">
-                            15.
-                        </div>
-                        <div class="answer" id="16">
-                            16.
-                        </div>
-                        <div class="answer" id="17">
-                            17.
-                        </div>
-                        <div class="answer" id="18">
-                            18.
-                        </div>
-                        <div class="answer" id="19">
-                            19.
-                        </div>
-                        <div class="answer" id="20">
-                            20.
-                        </div>
-                        <div class="answer" id="21">
-                            21.
-                        </div>
-                        <div class="answer" id="22">
-                            22.
-                        </div>
-                        <div class="answer" id="23">
-                            23.
-                        </div>
-                        <div class="answer" id="24">
-                            24.
-                        </div>
-                        <div class="answer" id="25">
-                            25.
-                        </div>
-                        <div class="answer" id="26">
-                            26.
-                        </div>
-                        <div class="answer" id="27">
-                            27.
-                        </div>
-                        <div class="answer" id="28">
-                            28.
-                        </div>
-                        <div class="answer" id="29">
-                            29.
-                        </div>
-                        <div class="answer" id="30">
-                            30.
-                        </div>
-                        <div class="stop-message" style="display: none;">Das Spiel ist beendet.</div>
-                        <button class="button-stop" id="stopButton">Quiz beenden</button>
-                        <button class="button-stop" id="restartButton"> Quiz neustarten</button>
-                        
-                        <div class="gratulation"> Gratuliere </div>
+                    <div class="answer" id="1">
+                        1.
                     </div>
+                    <div class="answer" id="2">
+                        2.
+                    </div>
+                    <div class="answer" id="3">
+                        3.
+                    </div>
+                    <div class="answer" id="4">
+                        4.
+                    </div>
+                    <div class="answer" id="5">
+                        5.
+                    </div>
+                    <div class="answer" id="6">
+                        6.
+                    </div>
+                    <div class="answer" id="7">
+                        7.
+                    </div>
+                    <div class="answer" id="8">
+                        8.
+                    </div>
+                    <div class="answer" id="9">
+                        9.
+                    </div>
+                    <div class="answer" id="10">
+                        10.
+                    </div>
+                    <div class="answer" id="11">
+                        11.
+                    </div>
+                    <div class="answer" id="12">
+                        12.
+                    </div>
+                    <div class="answer" id="13">
+                        13.
+                    </div>
+                    <div class="answer" id="14">
+                        14.
+                    </div>
+                    <div class="answer" id="15">
+                        15.
+                    </div>
+                    <div class="answer" id="16">
+                        16.
+                    </div>
+                    <div class="answer" id="17">
+                        17.
+                    </div>
+                    <div class="answer" id="18">
+                        18.
+                    </div>
+                    <div class="answer" id="19">
+                        19.
+                    </div>
+                    <div class="answer" id="20">
+                        20.
+                    </div>
+                    <div class="answer" id="21">
+                        21.
+                    </div>
+                    <div class="answer" id="22">
+                        22.
+                    </div>
+                    <div class="answer" id="23">
+                        23.
+                    </div>
+                    <div class="answer" id="24">
+                        24.
+                    </div>
+                    <div class="answer" id="25">
+                        25.
+                    </div>
+                    <div class="answer" id="26">
+                        26.
+                    </div>
+                    <div class="answer" id="27">
+                        27.
+                    </div>
+                    <div class="answer" id="28">
+                        28.
+                    </div>
+                    <div class="answer" id="29">
+                        29.
+                    </div>
+                    <div class="answer" id="30">
+                        30.
+                    </div>
+                    <div class="stop-message" style="display: none;">Das Spiel ist beendet.</div>
+                    <button class="button-stop" id="stopButton">Quiz beenden</button>
+                    <button class="button-stop" id="restartButton"> Quiz neustarten</button>
+                    
+                    <div class="gratulation"> Gratuliere </div>
                 </div>
             </div>
         </main>
 
         <footer class="footer">
-            <p>&copy; 2023 Advanced Anatomy. Alle Rechte vorbehalten.</p> 
+            <?php include 'footer.html'; ?>
         </footer>   
     
-    <script src="../scripts/Femur.js"></script>
+    <script src="../scripts/Oscoxae.js"></script>
     </body>
 </html>

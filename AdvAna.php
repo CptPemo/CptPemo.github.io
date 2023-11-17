@@ -25,7 +25,7 @@
         <main>
             <section class="quiz-grid">
                 <button class="quiz-preview">
-                    <a href="quizzes/Atlas.html">
+                    <a href="quizzes/Atlas.php">
                         <div class="quiz-picture" data-keywords="Wirbel, Wirbelsäule, Knochen">
                             <img class="thumbnail" src="thumbnails/AtlasThumbnail.png" >     
                         </div>
@@ -34,7 +34,7 @@
                 </button>
 
                 <button class="quiz-preview">
-                    <a href="quizzes/Halswirbel.html">
+                    <a href="quizzes/Halswirbel.php">
                         <div class="quiz-picture" data-keywords="Wirbel, Wirbelsäule, Knochen">
                             <img class="thumbnail" src="thumbnails/HalswirbelThumbnail.png" >     
                         </div>
@@ -43,7 +43,7 @@
                 </button>
 
                 <button class="quiz-preview">
-                    <a href="quizzes/Brustwirbel.html">
+                    <a href="quizzes/Brustwirbel.php">
                         <div class="quiz-picture" data-keywords="Wirbel, Wirbelsäule, Knochen">
                             <img class="thumbnail" src="bilder/Brustwirbel.png">     
                         </div>
@@ -52,7 +52,7 @@
                 </button>
 
                 <button class="quiz-preview">
-                    <a href="quizzes/Lendenwirbel.html">
+                    <a href="quizzes/Lendenwirbel.php">
                         <div class="quiz-picture" data-keywords="Wirbel, Wirbelsäule, Knochen">
                             <img class="thumbnail" src="thumbnails/LendenwirbelThumbnail.png">     
                         </div>
@@ -61,7 +61,7 @@
                 </button>
 
                 <button class="quiz-preview">
-                    <a href="quizzes/Sternum.html">
+                    <a href="quizzes/Sternum.php">
                         <div class="quiz-picture" data-keywords="Brust, Thorax, Knochen">
                             <img class="thumbnail" src="thumbnails/SternumThumbnail.png">
                         </div>
@@ -70,7 +70,7 @@
                 </button> 
 
                 <button class="quiz-preview">
-                    <a href="quizzes/Scapula.html">
+                    <a href="quizzes/Scapula.php">
                         <div class="quiz-picture" data-keywords="Schulter, Skelett, Knochen">
                             <img class="thumbnail" src="thumbnails/ScapulaThumbnail.png">
                         </div>
@@ -78,7 +78,7 @@
                     </a>
                 </button>
                 <button class="quiz-preview">
-                    <a href="quizzes/Humerus.html">
+                    <a href="quizzes/Humerus.php">
                         <div class="quiz-picture" data-keywords="Knochen, obere Extremität, Arm">
                             <img class="thumbnail" src="thumbnails/HumerusThumbnail.png">     
                         </div>
@@ -87,7 +87,7 @@
                 </button>
 
                 <button class="quiz-preview">
-                    <a href="quizzes/Oscoxae.html">
+                    <a href="quizzes/Oscoxae.php">
                         <div class="quiz-picture" data-keywords="Knochen, Bewegungsapparat, untere Extremität">
                             <img class="thumbnail" src="thumbnails/OscoxaeThumbnail.png">
                         </div>
@@ -96,7 +96,7 @@
                 </button> 
 
                 <button class="quiz-preview">
-                    <a href="quizzes/Femur.html">
+                    <a href="quizzes/Femur.php">
                         <div class="quiz-picture" data-keywords="Knochen, Bewegungsapparat, untere Extremität, Bein">
                             <img class="thumbnail" src="thumbnails/FemurThumbnail.png">
                         </div>
@@ -105,7 +105,7 @@
                 </button>
 
                 <button class="quiz-preview">
-                    <a href="quizzes/Tibia.html" >
+                    <a href="quizzes/Tibia.php" >
                         <div class="quiz-picture" data-keywords="Knochen, untere Extremität, Bewegungsapparat, Bein">
                             <img class="thumbnail" src="thumbnails/TibiaThumbnail.png">
                         </div>
