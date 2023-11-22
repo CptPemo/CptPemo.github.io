@@ -34,7 +34,7 @@
             <div class="quizFrame">
                 
                     <div class="pictureFrame">
-                        <img class="quizPicture" src="../bilder/Lendenwirbel.png">
+                        <img class="quizPicture" src="../bilder/Lendenwirbel.png" oncontextmenu="return false;">
                         <div class="label" style="left: 315px; top: 500px;">1</div>
                         <div class="line" style="top: 290px; transform: translateX(249px) rotate(90deg); width: 100px;"></div>
                         <div class="label" style="left: 360px; top: 200px;">2</div>

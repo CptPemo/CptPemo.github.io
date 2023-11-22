@@ -36,7 +36,7 @@
             <div class="quizFrame">
                 
                     <div class="pictureFrame">
-                        <img class="quizPicture" src="../bilder/Scapula dorsal.png">
+                        <img class="quizPicture" src="../bilder/Scapula dorsal.png" oncontextmenu="return false;">
                         
                         <div class="label" style="left: 100px; top: 400px;">1</div>
 

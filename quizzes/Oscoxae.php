@@ -36,7 +36,7 @@
             <div class="quizFrame">
                 
                     <div class="pictureFrame">
-                        <img class="quizPicture" src="../bilder/Os coxae lateral.png">
+                        <img class="quizPicture" src="../bilder/Os coxae lateral.png" oncontextmenu="return false;">
 
                         <div class="line" style="top: 437px; transform: translateX(340px) rotate(0deg); width: 50px;"></div>
                         <div class="line" style="top: 465px; transform: translateX(320px) rotate(70deg); width: 35px;"></div>

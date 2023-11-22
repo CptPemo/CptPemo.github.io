@@ -36,7 +36,7 @@
             <div class="quizFrame">
                 
                     <div class="pictureFrame">
-                        <img class="quizPicture" src="../bilder/Tibia anterior.png">
+                        <img class="quizPicture" src="../bilder/Tibia anterior.png" alt="Tibia, Schienbein, Bein, Unterschenkel" oncontextmenu="return false;">
 
                         <div class="label" style="left: 400px; top: 450px;">1</div>
 

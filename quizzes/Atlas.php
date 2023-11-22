@@ -34,7 +34,7 @@
             <div class="quizFrame">
                 
                     <div class="pictureFrame">
-                        <img class="quizPicture" src="../bilder/Atlas.png">
+                        <img class="quizPicture" src="../bilder/Atlas.png" oncontextmenu="return false;">
                         <div class="label" style="left: 370px; top: 450px;">1</div>
                         <div class="label" style="left: 410px; top: 255px;">2</div>
                         <div class="line" style="top: 550px; transform: translateX(305px)rotate(90deg); width: 45px;"></div>

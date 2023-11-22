@@ -34,7 +34,7 @@
             <div class="quizFrame">
                 
                     <div class="pictureFrame">
-                        <img class="quizPicture" src="../bilder/Sternum 1.png">
+                        <img class="quizPicture" src="../bilder/Sternum 1.png" alt="Sternum, Brustbein, Brustkorb, Brust" oncontextmenu="return false;">
                         <div class="label" style="left: 315px; top: 160px;">1</div>
                         <div class="label" style="left: 318px; top: 420px;">2</div>
                         <div class="line" style="top: 668px; transform: translateX(275px) rotate(0deg); width: 60px;"></div>

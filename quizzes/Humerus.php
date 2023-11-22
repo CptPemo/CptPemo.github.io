@@ -36,7 +36,7 @@
             <div class="quizFrame">
                 
                     <div class="pictureFrame">
-                        <img class="quizPicture" src="../bilder/Humerus anterior.png">
+                        <img class="quizPicture" src="../bilder/Humerus anterior.png" oncontextmenu="return false;">
                         <div class="line" style="top: 460px; transform: translateX(180px) rotate(-5deg); width: 60px;"></div>
                         <div class="label" style="left: 160px; top: 445px;">1</div>
 
