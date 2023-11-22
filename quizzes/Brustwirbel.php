@@ -15,6 +15,15 @@
         <link rel="icon" type="image/png" href="bilder/favicon.png">
         <link rel="icon" type="image/png" href="bilder/favicon1.png">
         <meta charset="UTF-8">
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MD769R1DSS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MD769R1DSS');
+</script>
 
     </head>
 

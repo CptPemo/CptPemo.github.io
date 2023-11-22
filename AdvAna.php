@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <?php include 'head.html';?> 
+        <?php include '../head.html';?> 
     </head>
     <body>
         <header class="header">
