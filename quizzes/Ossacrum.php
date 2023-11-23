@@ -164,6 +164,6 @@
             <?php include '../footer.html'; ?>
         </footer> 
     <script src="../scripts/checkpopup.js"></script>
-    <script src="../scripts/Lendenwirbel.js"></script>
+    <script src="../scripts/Ossacrum.js"></script>
     </body>
 </html>
