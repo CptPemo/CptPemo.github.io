@@ -13,6 +13,7 @@
 </script>
     <title>Anatomie Quiz für Fortgeschrittene | Advanced Anatomy</title>
     <link rel="stylesheet" href="styles/AdvAna.css">
+    <link rel="stylesheet" href="styles/popup.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/footer.css">
@@ -160,11 +161,22 @@ if (file_exists($counterFile)) {
 }
 ?>
         </main>   
+        <div class="cookie-popup" id="cookiePopup">
+  <div class="popup-content">
+    <h2>Cookie-Richtlinie</h2>
+    <p>Diese Website verwendet Cookies, um die Nutzererfahrung zu verbessern.</p>
+    <div class="buttons">
+      <button onclick="acceptCookies()">Notwendige Cookies Akzeptieren</button>
+      <button onclick="rejectCookies()">Alle Cookies Akzeptieren</button>
+    </div>
+  </div>
+</div>
 
 
         <footer class="footer">
         <?php include 'footer.html'; ?>
         </footer>
+        <script src="../scripts/popup.js"></script>
         <script src="../scripts/Search.js"></script>
     </body>
 </html> 
