@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="../styles/AdvAna.css">
         <link rel="stylesheet" href="../styles/header.css">
         <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/popup.css">
         <link rel="stylesheet" href="../styles/footer.css">
         <link rel="stylesheet" href="../styles/quizGrid.css">
         <link rel="stylesheet" href="../styles/Axis.css">
@@ -25,7 +26,7 @@
             <div class="quizFrame">
                 
                     <div class="pictureFrame">
-                        <img class="quizPicture" src="../bilder/Axis kranial.png">
+                        <img class="quizPicture" src="../bilder/Axis kranial.png" oncontextmenu="return false;">
                         <div class="label" style="left: 390px; top: 220px;">1</div>
                         <div class="line" style="top: 240px; transform: translateX(335px)rotate(0deg); width: 50px;"></div>
                         <div class="label" style="left: 415px; top: 250px;">2</div>
@@ -116,11 +117,12 @@
                 </div>
             </div>
         </main>
+        <?php include '../popup.html'; ?>
 
         <footer class="footer">
             <?php include '../footer.html'; ?>
         </footer>  
-    
+    <script src="../scripts/checkpopup.js"></script>
     <script src="../scripts/Axis.js"></script>
     </body>
 </html>

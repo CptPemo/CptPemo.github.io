@@ -14,15 +14,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;600&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MD769R1DSS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-MD769R1DSS');
-</script>
 
     </head>
 
@@ -113,19 +104,8 @@
                 </div>
             </div>
         </main>
-        <div class="cookie-popup" id="cookiePopup">
-            <div class="popup-content">
-                <h2>Cookie-Richtlinie</h2>
-                <p>Durch die Nutzung dieser Webseite stimmen Sie der Verwendung von Cookies zu. 
-                Diese Cookies dienen dazu, Ihre Erfahrung zu verbessern und die Nutzung der Webseite zu analysieren. 
-                Wir verwenden keine Cookies, um persönliche Daten zu sammeln. 
-                Ihre Auswahl bezüglich der Cookies kann unten getroffen werden.</p>
-                <div class="buttons">
-                    <button onclick="acceptCookies()">Einverstanden und Fortfahren</button>
-                    <button onclick="rejectCookies()">Nur notwendige Cookies akzeptieren</button>
-                </div>
-            </div>
-        </div>
+        <?php include '../popup.html'; ?>
+
         <footer class="footer">
             <?php include '../footer.html'; ?>
         </footer>  

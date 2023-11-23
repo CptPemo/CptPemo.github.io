@@ -2,17 +2,19 @@ const searchInput = document.getElementById('textInput');
 const stopButton = document.getElementById('stopButton');
 const restartButton = document.getElementById('restartButton'); // Add a Restart button
 const answers = [
-  { word: "Arcus anterior", abbreviations: ["Arcus ant"] },
-  { word: "Arcus posterior", abbreviations: ["Arcus post"] },
-  { word: "Tuberculum anterius", abbreviations: [""] },
-  { word: "Tuberculum posterius", abbreviations: [""] },
+  { word: "Processus spinosus", abbreviations: ["Proc spinosus", "Proc. spinosus"] },
+  { word: "Arcus vertebrae", abbreviations: [""] },
+  { word: "Processus articularis inferior", abbreviations: ["Processus articularis inf", "Proc articularis inferior", "Proc. articularis inferior", "Proc. articularis inf"] },
+  { word: "Pediculus arcus vertebrae", abbreviations: [""] },
+  { word: "Facies articularis superior", abbreviations: ["Facies articularis sup", "Facies articularis sup."] },
+  { word: "Dens axis", abbreviations: [""] },
+  { word: "Foramen vertebrale", abbreviations: [""] },
+  { word: "Apex dentis", abbreviations: [""] },
+  { word: "Facies articularis anterior", abbreviations: ["Facies articularis ant", "Facies articularis ant."] },
+  { word: "Facies articularis posterior", abbreviations: ["Facies articularis post", "Facies articularis post."] },
+  { word: "Corpus vertebrae", abbreviations: [""] },
   { word: "Processus transversus", abbreviations: ["Proc transversus", "Proc. transversus"] },
   { word: "Foramen transversarium", abbreviations: [""] },
-  { word: "Fior", abbreviations: ["Facies articularis sup"] },
-  { word: "Foramen vertebrale", abbreviations: [""] },
-  { word: "Massae laterales", abbreviations: [""] },
-  { word: "Fovea dentis", abbreviations: [""] },
-  { word: "Sulcus arteriae vertebralis", abbreviations: ["Sulcus a vertebralis", "Sulcus a. vertebralis"] },
   // Add more answers
 ];
 let countEntries = answers.length; // Anzahl der Einträge im Array
