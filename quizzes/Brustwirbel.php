@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="../styles/popup.css">
         <link rel="stylesheet" href="../styles/footer.css">
         <link rel="stylesheet" href="../styles/quizGrid.css">
-        <link rel="stylesheet" href="../styles/quiz.css">
+        <link rel="stylesheet" href="../styles/brustwirbel.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;600&display=swap" rel="stylesheet">
