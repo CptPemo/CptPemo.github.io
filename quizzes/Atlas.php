@@ -95,7 +95,7 @@
                         <div class="answer" id="11">
                             11.
                         </div>
-                        <div class="stop-message" style="display: none;">Das Spiel ist beendet.</div>
+                        <div class="stop-message" style="display: none;">Das Spiel ist beendet, du hast <span id="green-count-value">0</span> von 11 Punkten erreicht.</div>
                         <button class="button-stop" id="stopButton">Quiz beenden</button>
                         <button class="button-stop" id="restartButton"> Quiz neustarten</button>
                         
