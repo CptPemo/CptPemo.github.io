@@ -34,11 +34,7 @@
             <div class="quizFrame">
                 
                     <div class="pictureFrame">
-                    <svg width="200" height="200">
-                    <!-- Hier wird der SVG-Code aus Illustrator eingefügt -->
-                    <!-- Beispielcode: -->
-                    <rect x="50" y="50" width="100" height="100" fill="blue" />
-                    </svg>
+                    <img class="quizPicture" src="../bilder/vektors/InnervationArm.svg" alt="SVG-Grafik" />
                         <div class="label" style="left: 370px; top: 450px;">1</div>
                         <div class="label" style="left: 410px; top: 255px;">2</div>
                         <div class="line" style="top: 550px; transform: translateX(305px)rotate(90deg); width: 45px;"></div>
