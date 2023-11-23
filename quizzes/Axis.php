@@ -100,6 +100,12 @@
                         <div class="answer" id="11">
                             11.
                         </div>
+                        <div class="answer" id="12">
+                            12.
+                        </div>
+                        <div class="answer" id="13">
+                            13.
+                        </div>
                         <div class="stop-message" style="display: none;">Das Spiel ist beendet.</div>
                         <button class="button-stop" id="stopButton">Quiz beenden</button>
                         <button class="button-stop" id="restartButton"> Quiz neustarten</button>
