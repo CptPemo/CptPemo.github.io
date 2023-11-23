@@ -45,6 +45,8 @@
 
                         <div class="line" style="top: 735px; transform: translateX(270px) rotate(10deg); width: 170px;"></div>
                         <div class="label" style="left: 440px; top: 730px;">6</div>
+                        <div class="label" style="left: 420px; top: 870px;">2</div>
+                        <div class="line" style="top: 900px; transform: translateX(380px) rotate(-25deg); width: 40px;"></div>
 
                         <div class="line" style="top: 705px; transform: translateX(345px) rotate(5deg); width: 120px;"></div>
                         <div class="label" style="left: 460px; top: 685px;">7</div>
