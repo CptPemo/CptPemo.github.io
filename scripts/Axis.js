@@ -3,7 +3,7 @@ const stopButton = document.getElementById('stopButton');
 const restartButton = document.getElementById('restartButton'); // Add a Restart button
 const answers = [
   { word: "Processus spinosus", abbreviations: ["Proc spinosus", "Proc. spinosus"] },
-  { word: "Arcus vertebrae", abbreviations: [""] },
+  { word: "Lamina arcus vertebrae", abbreviations: [""] },
   { word: "Processus articularis inferior", abbreviations: ["Processus articularis inf", "Proc articularis inferior", "Proc. articularis inferior", "Proc. articularis inf"] },
   { word: "Pediculus arcus vertebrae", abbreviations: [""] },
   { word: "Facies articularis superior", abbreviations: ["Facies articularis sup", "Facies articularis sup."] },
