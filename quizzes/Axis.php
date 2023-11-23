@@ -38,6 +38,7 @@
                         <div class="line" style="top: 473px; transform: translateX(423px)rotate(0deg); width: 75px;"></div>
                         <div class="label" style="left: 310px; top: 485px;">6</div>
                         <div class="label" style="left: 310px; top: 340px;">7</div>
+                        <img class="quizPicture" src="../bilder/Axis lateral.png">
                         <div class="label" style="left: 280px; top: 681px;">8</div>
                         <div class="line" style="top: 700px; transform: translateX(232px)rotate(0deg); width: 45px;"></div>
                         <div class="label" style="left: 140px; top: 735px;">9</div>
@@ -50,7 +51,7 @@
                         <div class="line" style="top: 985px; transform: translateX(243px)rotate(90deg); width: 40px;"></div>
                         <div class="label" style="left: 300px; top: 985px;">13</div>
                         <div class="line" style="top: 950px; transform: translateX(260px)rotate(70deg); width: 80px;"></div>
-                        <img class="quizPicture" src="../bilder/Axis lateral.png">
+                        
                     </div>
                 
                 <div class="answerFrame">

@@ -11,12 +11,13 @@
     width: 650px;
     position: relative;
     margin-left: 1%;
-    padding-top: 20%;
+    padding-top: 140px;
   }
   
   
   .quizPicture{
     width: 100%;
+     
   }
   
   .timerTime{
@@ -45,23 +46,24 @@
     vertical-align: top;
     margin-top: 100px;
     margin-left: 2px;
+    
   }
-
-
-.answerTop{
-  position: fixed;
-  background-color: white;
-  width: 512px;
-  margin-top: -30px;
-  padding-top: 50px;
-  padding-bottom: 0px;
-  margin-bottom: 10px;
-}
-
-.answerBlock{
-  padding-top: 38%;
-
-}
+  
+  .answerTop{
+    position: fixed;
+    background-color: white;
+    width: 512px;
+    margin-top: -30px;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+  }
+  
+  .answerBlock{
+    padding-top: 38%;
+  
+  }
+  
   
   .guess-bar{
     font-family: Raleway;
@@ -102,17 +104,16 @@
     font-size: 50px;
     display: none;
   }
+  a {
+    color: black;
+    text-decoration:none;
+  }
   
   a:visited {
     text-decoration: none; /* Entfernt den Unterstrich */
     color: black; /* Ändere die Farbe hier nach Bedarf */  
   } 
   
-  a {
-    color: black;
-    text-decoration:none;
-}
-
   .stop-message{
     font-family: Raleway;
     font-size: 20px;
