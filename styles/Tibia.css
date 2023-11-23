@@ -1,13 +1,9 @@
-
 /* Gemeinsame Eigenschaften */
 .quizFrame {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.answerBlock{
-  padding-top: 190px;
-  
-}
+
 .timerTime {
   font-size: 20px;
   margin-bottom: 2%;
@@ -27,7 +23,7 @@
 
 .answerFrame {
   display: inline-block;
-  width: 500px; 
+  width: 500px; /* Ursprünglich 500px in einem Abschnitt, 100% macht es flexibler */
   vertical-align: top;
   margin-top: 100px;
   margin-left: 2px;
