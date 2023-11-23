@@ -28,12 +28,18 @@
         <h1>Impressum</h1>
 
         <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
-        <p>Peter Moritz Ahrenberg und Jonas Hollemann<br />
+        <p>Peter Moritz Ahrenberg<br />
+            Jonas Hollemann <br />
+            Bastian Holinski<br />
+            <br/>
+            Adresse:<br/>
             Lange Reihe 6<br />
-            17489 Greifswald</p>
+            17489 Greifswald<br/>
+            GERMANY</p>
+
 
         <h2>Kontakt</h2>
-        <p>Telefon: &#91;Telefonnummer&#93;<br />
+        <p>Telefon: +49 163 1557579<br />
             E-Mail: info@advancedanatomy.org</p>
 
         
