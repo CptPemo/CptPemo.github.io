@@ -48,7 +48,10 @@
   border: 1px solid black;
   border-radius: 3px;
 }
-
+.answerBlock{
+  padding-top: 190px;
+  
+}
 .answer {
   font-size: 20px;
   padding: 5px;
