@@ -14,6 +14,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;600&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MD769R1DSS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MD769R1DSS');
+</script>
 
     </head>
 
@@ -27,7 +36,7 @@
             <div class="quizFrame">
                 
                     <div class="pictureFrame">
-                        <img class="quizPicture" src="../bilder/Humerus anterior.png">
+                        <img class="quizPicture" src="../bilder/Humerus anterior.png" oncontextmenu="return false;">
                         <div class="line" style="top: 460px; transform: translateX(180px) rotate(-5deg); width: 60px;"></div>
                         <div class="label" style="left: 160px; top: 445px;">1</div>
 

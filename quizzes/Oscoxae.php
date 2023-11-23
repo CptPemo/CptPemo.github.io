@@ -14,6 +14,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;600&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MD769R1DSS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MD769R1DSS');
+</script>
 
     </head>
 
@@ -27,7 +36,7 @@
             <div class="quizFrame">
                 
                     <div class="pictureFrame">
-                        <img class="quizPicture" src="../bilder/Os coxae lateral.png">
+                        <img class="quizPicture" src="../bilder/Os coxae lateral.png" oncontextmenu="return false;">
 
                         <div class="line" style="top: 437px; transform: translateX(340px) rotate(0deg); width: 50px;"></div>
                         <div class="line" style="top: 465px; transform: translateX(320px) rotate(70deg); width: 35px;"></div>

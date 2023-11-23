@@ -15,6 +15,15 @@
         <link rel="icon" type="image/png" href="bilder/favicon.png">
         <link rel="icon" type="image/png" href="bilder/favicon1.png">
         <meta charset="UTF-8">
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MD769R1DSS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MD769R1DSS');
+</script>
 
     </head>
 
@@ -26,7 +35,7 @@
         <main>
             <div class="quizFrame">
                     <div class="pictureFrame">
-                        <img class="quizPicture" src="../bilder/Brustwirbel.png">
+                        <img class="quizPicture" src="../bilder/Brustwirbel.png" oncontextmenu="return false;">
                         <div class="line" style="top: 540px; transform: translateX(296px) rotate(-90deg); width: 70px;"></div>
                         <div class="label" style="left: 320px; top: 570px;">1</div>
                         <div class="line" style="top: 250px; transform: translateX(360px) rotate(-55deg); width: 60px;"></div>

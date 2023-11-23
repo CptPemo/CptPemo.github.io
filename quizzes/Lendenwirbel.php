@@ -13,6 +13,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;600&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MD769R1DSS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MD769R1DSS');
+</script>
 
     </head>
 
@@ -25,7 +34,7 @@
             <div class="quizFrame">
                 
                     <div class="pictureFrame">
-                        <img class="quizPicture" src="../bilder/Lendenwirbel.png">
+                        <img class="quizPicture" src="../bilder/Lendenwirbel.png" oncontextmenu="return false;">
                         <div class="label" style="left: 315px; top: 500px;">1</div>
                         <div class="line" style="top: 290px; transform: translateX(249px) rotate(90deg); width: 100px;"></div>
                         <div class="label" style="left: 360px; top: 200px;">2</div>
