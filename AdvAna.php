@@ -43,7 +43,7 @@
                 </button>
 
                 <button class="quiz-preview">
-                    <a href="quizzes/Axis.html">
+                    <a href="quizzes/Axis.php">
                         <div class="quiz-picture" data-keywords="Wirbel, Wirbelsäule, Knochen, Halswirbel, Hals">
                             <img class="thumbnail" src="thumbnails/AxisThumbnail.png" >     
                         </div>
