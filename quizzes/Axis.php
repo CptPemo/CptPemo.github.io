@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="../styles/main.css">
         <link rel="stylesheet" href="../styles/footer.css">
         <link rel="stylesheet" href="../styles/quizGrid.css">
-        <link rel="stylesheet" href="../styles/Atlas.css">
+        <link rel="stylesheet" href="../styles/Axis.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;600&display=swap" rel="stylesheet">
@@ -120,6 +120,6 @@
             <?php include '../footer.html'; ?>
         </footer>  
     
-    <script src="../scripts/Atlas.js"></script>
+    <script src="../scripts/Axis.js"></script>
     </body>
 </html>
