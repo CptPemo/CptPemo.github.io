@@ -28,6 +28,7 @@
                     <div class="pictureFrame">
                         <img class="quizPicture" src="../bilder/Axis kranial.png" oncontextmenu="return false;">
                         <div class="label" style="left: 390px; top: 220px;">1</div>
+                        <div class="label" style="left: 510px; top: 885px;">1</div>
                         <div class="line" style="top: 240px; transform: translateX(335px)rotate(0deg); width: 50px;"></div>
                         <div class="label" style="left: 415px; top: 250px;">2</div>
                         <div class="line" style="top: 290px; transform: translateX(370px)rotate(-35deg); width: 50px;"></div>

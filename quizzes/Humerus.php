@@ -50,6 +50,7 @@
                         <div class="label" style="left: 425px; top: 650px;">7</div>
 
                         <div class="label" style="left: 280px; top: 125px;">8</div>
+                        <div class="label" style="left: 235px; top: 870px;">8</div>
 
                         <div class="line" style="top: 250px; transform: translateX(175px) rotate(0deg); width: 70px;"></div>
                         <div class="label" style="left: 150px; top: 230px;">9</div> 
