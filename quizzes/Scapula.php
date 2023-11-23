@@ -59,7 +59,7 @@
                         <div class="line" style="top: 259px; transform: translateX(430px) rotate(0deg); width: 40px;"></div>
                         <div class="label" style="left: 470px; top: 240px;">12</div>
 
-                        <img class="quizPicture" src="../bilder/Scapula lateral.png">
+                        <img class="quizPicture2" src="../bilder/Scapula lateral.png">
 
                         <div class="label" style="left: 303px; top: 205px;">13</div>
 
