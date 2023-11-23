@@ -10,6 +10,12 @@ const answers = [
   { word: "Ala sacralis", abbreviations: [""] },
   { word: "Apex ossis sacri", abbreviations: [""] },
   { word: "Lineae transversae", abbreviations: [""] },
+  { word: "Hiatus sacralis", abbreviations: [""] },
+  { word: "Cornua sacralia", abbreviations: [""] },
+  { word: "Crista sacralis lateralis", abbreviations: [""] },
+  { word: "Crista sacralis mediana", abbreviations: [""] },
+  { word: "Foramina sacralia posteriora", abbreviations: [""] },
+  { word: "Crista sacralis intermedia", abbreviations: [""] },
   
   // Add more answers
 ];
