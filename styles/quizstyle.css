@@ -1,6 +1,6 @@
 
 /* Tibia spezifisch */
-.pictureFrame {
+.pictureFrameTibia {
     display: inline-block;
     width: 650px;
     position: relative;
@@ -8,7 +8,7 @@
     padding-top: 90px; /* Ursprünglich 5% in einem Abschnitt, geändert auf 90px */
   }
   
-  .quizPicture {
+  .quizPictureTibia {
     width: 40%;
     padding-left: 30%;
     padding-top: 5%;
@@ -16,12 +16,12 @@
     margin-bottom: 5%;
   }
   
-  .quizPicturePost {
+  .quizPicturePostTibia {
     width: 35%;
     padding-left: 30%;
   }
   
-  .line {
+  .lineTibia {
     position: absolute;
     border-top: 1px solid black;
     /*  width: 65px;

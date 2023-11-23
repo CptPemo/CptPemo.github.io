@@ -77,7 +77,14 @@
                         <div class="quiz-info">Lendenwirbel</div>
                     </a>
                 </button>
-
+                <button class="quiz-preview">
+                    <a href="quizzes/Ossacrum.php" >
+                        <div class="quiz-picture" data-keywords="Knochen, untere Extremität, Bewegungsapparat, Becken, Wirbelsäule">
+                            <img class="thumbnail" src="thumbnails/OssacrumThumbnail.png">
+                        </div>
+                        <div class="quiz-info">Os sacrum</div>
+                    </a>
+                </button>
                 <button class="quiz-preview">
                     <a href="quizzes/Sternum.php">
                         <div class="quiz-picture" data-keywords="Brust, Thorax, Knochen, Brustbein">
@@ -133,7 +140,7 @@
             </section>
             
         </main>  
-         
+
         <?php include 'popup.html'; ?>
 
         <footer class="footer">
