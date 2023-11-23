@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="../styles/AdvAna.css">
         <link rel="stylesheet" href="../styles/header.css">
         <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/popup.css">
         <link rel="stylesheet" href="../styles/footer.css">
         <link rel="stylesheet" href="../styles/quizGrid.css">
         <link rel="stylesheet" href="../styles/Axis.css">
@@ -115,11 +116,12 @@
                 </div>
             </div>
         </main>
+        <?php include '../popup.html'; ?>
 
         <footer class="footer">
             <?php include '../footer.html'; ?>
         </footer>  
-    
+    <script src="../scripts/checkpopup.js"></script>
     <script src="../scripts/Axis.js"></script>
     </body>
 </html>
