@@ -147,6 +147,3 @@ function stopQuiz() {
 restartButton.style.display = 'none';
 
 // Rufe die startCountdown-Funktion auf, um den Timer zu starten, wenn die Eingabe beginnt
-
-
-
