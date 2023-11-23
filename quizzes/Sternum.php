@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="../styles/header.css">
         <link rel="stylesheet" href="../styles/main.css">
         <link rel="stylesheet" href="../styles/footer.css">
+        <link rel="stylesheet" href="../styles/popup.css">
         <link rel="stylesheet" href="../styles/quizGrid.css">
         <link rel="stylesheet" href="../styles/Sternum.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
