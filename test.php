@@ -29,9 +29,8 @@
 
         <h2>We are putting our efford in getting the german version up and running at the moment</h2>
         <p>We will launch an english version very soon!<br />
-            If you want, you can register your email here to get notified once we launch!</p>
+           Meet you Soon!</p>
 
-            <input name="e-mail"> e-mail</input>
 
         
         
