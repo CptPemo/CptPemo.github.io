@@ -113,6 +113,24 @@ function stopQuiz() {
   // Verberge die Stop-Schaltfläche und zeige die Neustart-Schaltfläche
   stopButton.style.display = 'none';
   restartButton.style.display = 'block';
+
+  // Funktion um richtige und falsche Antwort zu zählen
+
+  let greenCount = 0;
+  let redCount = 0;
+
+  answers.forEach(answer => {
+    if (answer.found) {
+      greenCount++;
+    } else {
+      redCount++;
+    }
+  });
+
+  // Aktualisiere den Wert im HTML-Element
+  document.getElementById('green-count-value').textContent = greenCount;
+
+  return { green: greenCount, red: redCount };
 }
 
 // Anfangs die Neustart-Schaltfläche ausblenden
