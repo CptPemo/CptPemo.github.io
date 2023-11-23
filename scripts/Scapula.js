@@ -54,7 +54,7 @@ searchInput.addEventListener('input', () => {
   const input = searchInput.value.trim().toLowerCase();
 
   if (!timerStarted) {
-    startCountdown(); // Starte den Timer, wenn die erste Eingabe erkannt wird
+    startCountdown();
   }
 
   if (input === '') {
@@ -72,11 +72,10 @@ searchInput.addEventListener('input', () => {
       answers[index] = { ...answers[index], found: true };
 
       if (answers.every(item => item.found)) {
-        allWordsFound = true; // Setze den Status auf "true", wenn alle Wörter gefunden sind
+        allWordsFound = true;
         const gratulation = document.querySelector('.gratulation');
         gratulation.style.display = 'block';
         console.log('Congratulations');
-        // Verberge die Stop-Schaltfläche und zeige die Neustart-Schaltfläche
         stopButton.style.display = 'none';
         restartButton.style.display = 'block';
       }
@@ -84,15 +83,16 @@ searchInput.addEventListener('input', () => {
       const answerLabel = `${index + 1}`;
       const divs = document.querySelectorAll('.label');
 
-      for (const div of divs) {
+      // Iteriere durch alle Labels und entferne das Fettdruck-Styling
+      divs.forEach(div => {
         if (div.textContent === answerLabel) {
-          div.style.fontWeight = '200';
-          break;
+          div.style.fontWeight = 'normal'; // Setze auf 'normal', um das Fettdruck-Styling zu entfernen
         }
-      }
+      });
     }
   });
 });
+
 
 stopButton.addEventListener('click', stopQuiz);
 restartButton.addEventListener('click', () => {
