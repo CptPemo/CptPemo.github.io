@@ -2,15 +2,7 @@
 
 <html>
     <head>
-            <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MD769R1DSS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-MD769R1DSS');
-</script>
+          
     <title>Anatomie Quiz für Fortgeschrittene | Advanced Anatomy</title>
     <link rel="stylesheet" href="styles/AdvAna.css">
     <link rel="stylesheet" href="styles/popup.css">
@@ -139,44 +131,27 @@
                     </a>
                 </button>
             </section>
-            <?php
-$counterFile = 'besucherzahl.txt'; // Datei, um die Besucherzahl zu speichern
-
-// Überprüfen, ob die Datei existiert
-if (file_exists($counterFile)) {
-    // Datei lesen und aktuellen Zählerstand erhalten
-    $count = file_get_contents($counterFile);
-    $count = intval($count);
-    $count++;
-
-    // Zählerstand erhöhen und in die Datei schreiben
-    file_put_contents($counterFile, $count);
-
-} else {
-    // Wenn die Datei nicht existiert, Zähler auf 1 setzen und Datei erstellen
-    $count = 1;
-    file_put_contents($counterFile, $count);
-
-
-}
-?>
+            
         </main>   
-        <div class="cookie-popup" id="cookiePopup">
-  <div class="popup-content">
-    <h2>Cookie-Richtlinie</h2>
-    <p>Diese Website verwendet Cookies, um die Nutzererfahrung zu verbessern.</p>
-    <div class="buttons">
-      <button onclick="acceptCookies()">Notwendige Cookies Akzeptieren</button>
-      <button onclick="rejectCookies()">Alle Cookies Akzeptieren</button>
+    <div class="cookie-popup" id="cookiePopup">
+        <div class="popup-content">
+            <h2>Cookie-Richtlinie</h2>
+            <p>Durch die Nutzung dieser Webseite stimmen Sie der Verwendung von Cookies zu. 
+            Diese Cookies dienen dazu, Ihre Erfahrung zu verbessern und die Nutzung der Webseite zu analysieren. 
+            Wir verwenden keine Cookies, um persönliche Daten zu sammeln. 
+            Ihre Auswahl bezüglich der Cookies kann unten getroffen werden.</p>
+            <div class="buttons">
+                <button onclick="acceptCookies()">Einverstanden und Fortfahren</button>
+                <button onclick="rejectCookies()">Nur notwendige Cookies akzeptieren</button>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
 
         <footer class="footer">
         <?php include 'footer.html'; ?>
         </footer>
-        <script src="../scripts/popup.js"></script>
+        <script src="../scripts/checkpopup.js"></script>
         <script src="../scripts/Search.js"></script>
     </body>
 </html> 

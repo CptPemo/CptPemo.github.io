@@ -1,34 +1,28 @@
-// Funktionen für Zustimmung und Ablehnung von Cookies
 function acceptCookies() {
     document.getElementById('cookiePopup').style.display = 'none';
-    // Hier kannst du den Code einfügen, der die Zustimmung speichert (z.B., Setzen eines Cookies)
+    setCookie('cookieAccepted', 'true', 365); // Setze das Cookie für die Zustimmung
+    loadGoogleAnalytics();
   }
   
   function rejectCookies() {
     document.getElementById('cookiePopup').style.display = 'none';
-    // Hier kannst du den Code einfügen, um bestimmte Cookies zu blockieren oder die Verwendung zu beschränken
+    setCookie('cookieRejected', 'true', 365); // Setze das Cookie für die Ablehnung
   }
   
-  // Prüfen, ob das Popup bereits angezeigt wurde
-  document.addEventListener('DOMContentLoaded', function() {
-    var cookiePopup = document.getElementById('cookiePopup');
-    if (!getCookie('cookieAccepted')) {
-      cookiePopup.style.display = 'block';
-    }
-  });
+  function loadGoogleAnalytics() {
+    if (getCookie('cookieAccepted')) {
+      var gaScript = document.createElement('script');
+      gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-MD769R1DSS'; // Ersetze DEINE_ANALYTICS_ID durch deine eigene Tracking-ID
+      gaScript.async = true;
+      document.head.appendChild(gaScript);
   
-  // Funktion zum Setzen von Cookies (vereinfacht)
-  function setCookie(name, value, days) {
-    var expires = '';
-    if (days) {
-      var date = new Date();
-      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-      expires = '; expires=' + date.toUTCString();
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-MD769R1DSS'); // Ersetze DEINE_ANALYTICS_ID durch deine eigene Tracking-ID
     }
-    document.cookie = name + '=' + value + expires + '; path=/';
   }
   
-  // Funktion zum Abrufen von Cookies (vereinfacht)
   function getCookie(name) {
     var nameEQ = name + '=';
     var cookies = document.cookie.split(';');
@@ -44,3 +38,19 @@ function acceptCookies() {
     return null;
   }
   
+  function setCookie(name, value, days) {
+    var expires = '';
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      expires = '; expires=' + date.toUTCString();
+    }
+    document.cookie = name + '=' + value + expires + '; path=/';
+  }
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var cookiePopup = document.getElementById('cookiePopup');
+    if (!getCookie('cookieAccepted') && !getCookie('cookieRejected')) {
+      cookiePopup.style.display = 'block';
+    }
+  });
