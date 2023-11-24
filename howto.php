@@ -44,9 +44,9 @@
             </br>
             Außerdem wird die zugehörige Zahl auf der linken Seite kleiner, sodass du weißt, dass du diesen bereits richtig erraten hast. 
             </br>
-            Für jede markierte Stelle stehen dir 20 Sekunden zur Verfügung.
+            Für jeden Begriff stehen dir 20 Sekunden zur Verfügung.
             </br>
-            Ist die Zeit vorbei, bevor du alle Begriffe erraten hast, werden die fehlenden Begriffe rot markiert. 
+            Ist die Zeit vorbei, bevor du alle Begriffe erraten hast, werden die fehlenden Begriffe in rot eingeblendet. 
             </br>
             Du kannst das Quiz unten neu starten oder auf der <a style="font-weight:600;" href="../AdvAna.php">Hauptseite</a> eine neue Herausforderung suchen! 
             </p>
