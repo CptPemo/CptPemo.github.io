@@ -2,7 +2,13 @@
 
 <html>
     <head>
-        <title>Advanced Anatomy</title>
+    <title>Anatomie Quiz für Fortgeschrittene | Advanced Anatomy</title>
+<meta name="description" content="
+    Lerne die menschliche Anatomie anhand von ästhetischen Zeichnungen und systematischen Skizzen. 
+    Advanced Anatomy ist eine Plattform für Alle, die Expertenwissen in Anatomie erlangen wollen.">
+
+    <meta name="keywords" content="Anatomie, Quiz, Bildung, lernen, Medizin, Studium, Universität, Lernplattform, Amboss, Kenhub, 3DAnatomy, Fortgeschritten, Testat, Hilfe, Klausur, ">
+
         <link rel="stylesheet" href="../styles/AdvAna.css">
         <link rel="stylesheet" href="../styles/header.css">
         <link rel="stylesheet" href="../styles/main.css">
@@ -14,6 +20,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;600&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="bilder/favicon.png">
+    <link rel="icon" type="image/png" href="bilder/favicon1.png">
         <meta charset="UTF-8">
 
     </head>
