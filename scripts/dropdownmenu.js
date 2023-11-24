@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const menuBtns = document.querySelectorAll('.menu-button');
-    const dropdownMenus = document.querySelectorAll('.dropdown-menu-1','.dropdown-menu-2');
+    const dropdownMenus = document.querySelectorAll('.dropdown-menu1','.dropdown-menu2');
 
     menuBtns.forEach(function(menuBtn) {
         menuBtn.addEventListener('click', function() {

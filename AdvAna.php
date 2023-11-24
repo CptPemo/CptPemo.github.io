@@ -137,6 +137,16 @@
                         <div class="quiz-info">Tibia</div>
                     </a>
                 </button>
+
+                <button class="quiz-preview">
+                    <a href="quizzes/Fussdorsal.php" >
+                        <div class="quiz-picture" data-keywords="Knochen, untere Extremität, Bewegungsapparat, Bein, Schienbein">
+                            <img class="thumbnail" src="thumbnails/FussThumbnail.png">
+                        </div>
+                        <div class="quiz-info">Fuß dorsal</div>
+                    </a>
+                </button>
+
             </section>
             
         </main>  
