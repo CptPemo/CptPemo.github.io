@@ -56,7 +56,7 @@
                 <div class="answerFrame">
 
                     <div class="answerTop">
-                        <div style="font-size: 40px">Brustwirbel</div>
+                    <div><h1 style="font-size: 40px; font-weight:400;">Brustwirbel<h1></div>
                         <div class="timerTime" id="timer">Verbleibende Zeit: <span id="output"></span> Sekunden</div>
 
                         <div>

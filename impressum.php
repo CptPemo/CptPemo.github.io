@@ -50,6 +50,8 @@
         <footer class="footer">
             <?php include 'footer.html'; ?>
             </footer>
+            <script src="../scripts/checkpopup.js"></script>
+        <script src="../scripts/Search.js"></script>
     </body>
 </html>
 

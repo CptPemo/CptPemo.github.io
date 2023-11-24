@@ -49,7 +49,7 @@
     flex: 1;
     margin-left: 70px;
     margin-right: 30px;
-    max-width: 600px;
+    max-width: 900px;
     align-items: center;
 }
 
@@ -82,11 +82,10 @@
     text-decoration: none;
 }
 
-
 .menu-button{
     font-family: Raleway;
     font-size: 20px;
-    margin-right: 100px;
+    margin-right:100px;
     background-color: white;
     border: none ;
     cursor: pointer;
@@ -137,3 +136,67 @@ a:visited {
     text-decoration: none; /* Entfernt den Unterstrich */
     color: black; /* Ändere die Farbe hier nach Bedarf */  
   }
+
+
+  .dropdown-menu1 {
+    display: none;
+    position: absolute;
+    margin-top:204px;
+    background-color: white;
+    border-left:1px solid black;
+    border-right:1px solid black;
+    border-top:1px solid black;
+    
+    
+    
+}
+
+.dropdown-menu1 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0px;
+    
+    
+   
+}
+
+.dropdown-menu1 li {
+    padding: 8px 12px;
+    font-size:20px;
+    border-bottom: 1px solid black;
+    
+    
+}
+
+/* Anpassungen am Menüknopf */
+
+.dropdown-menu2 {
+    display: none;
+    position: absolute;
+    margin-top:122px;
+    background-color: white;
+    border-left:1px solid black;
+    border-right:1px solid black;
+    border-top:1px solid black;
+    margin-left:185px;
+}
+
+.dropdown-menu2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0px;  
+}
+
+.dropdown-menu2 li {
+    padding: 8px 12px;
+    font-size:20px;
+    border-bottom: 1px solid black;  
+}
+.menu-button {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.show-menu {
+    display: block;
+}

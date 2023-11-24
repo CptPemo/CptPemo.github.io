@@ -8,12 +8,24 @@
 </div>
 
 <div class="middle-section">
-    <button class="menu-button">
-        <a href="../AdvAna.php">
-            Menü
-        </a>
-        
-    </button>
+    <div class="menu-button"data-target="dropdown-menu-1">
+        Menü
+    </div>    
+        <nav class="dropdown-menu1" id="dropdown-menu-1">
+            <ul>
+                <li><a href="howto.php">Wie spielt man?</a></li>
+                <li><a href="#">Wie lernt man für Anatomie?</a></li>
+                <li><a href="#">Über uns</a></li>
+            </ul>
+        </nav>
+    <div class="menu-button" data-target="dropdown-menu-2">
+            Spielmodus ändern
+    </div> 
+        <nav class="dropdown-menu2" id="dropdown-menu-2">
+            <ul>
+                <li><a href="#">Kommt bald!</a></li>
+            </ul>
+        </nav>
     <input class="search-bar" type="text" placeholder="Suche" id="searchInput" >
 </div>
 
@@ -25,3 +37,5 @@
         </a>
     </button>
 </div>
+
+<script src="../scripts/dropdownmenu.js"></script>

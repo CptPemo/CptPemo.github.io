@@ -25,7 +25,7 @@
   display: inline-block;
   width: 500px; /* Ursprünglich 500px in einem Abschnitt, 100% macht es flexibler */
   vertical-align: top;
-  margin-top: 100px;
+  margin-top: 80px;
   margin-left: 2px;
 }
 
@@ -49,7 +49,7 @@
   border-radius: 3px;
 }
 .answerBlock{
-  padding-top: 190px;
+  padding-top: 230px;
   
 }
 .answer {

@@ -54,7 +54,7 @@
                 <div class="answerFrame">
 
                     <div class="answerTop">
-                        <div style="font-size: 40px">Sternum</div>
+                    <div><h1 style="font-size: 40px; font-weight:400;">Sternum<h1></div>
                         <div class="timerTime" id="timer">Verbleibende Zeit: <span id="output"></span> Sekunden</div>
                         <div>
                             <input class="guess-bar" id="textInput" type="text" placeholder="Los geht's!">

@@ -91,7 +91,7 @@
                 <div class="answerFrame">
 
                     <div class="answerTop">
-                        <div style="font-size: 40px">Scapula</div>
+                    <div><h1 style="font-size: 40px; font-weight:400;">Scapula<h1></div>
                         <div class="timerTime" id="timer">Verbleibende Zeit: 200 Sekunden</div>
                         <div>
                             <input class="guess-bar" id="textInput" type="text" placeholder="Los geht's!">
