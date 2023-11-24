@@ -143,7 +143,7 @@
                         <div class="quiz-picture" data-keywords="Knochen, untere Extremität, Bewegungsapparat, Bein, Schienbein">
                             <img class="thumbnail" src="thumbnails/FussThumbnail.png">
                         </div>
-                        <div class="quiz-info">Fuß dorsal</div>
+                        <div class="quiz-info">Fuß</div>
                     </a>
                 </button>
 
