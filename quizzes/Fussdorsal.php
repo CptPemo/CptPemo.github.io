@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="../styles/footer.css">
         <link rel="stylesheet" href="../styles/popup.css">
         <link rel="stylesheet" href="../styles/quizGrid.css">
-        <link rel="stylesheet" href="../styles/Femur.css">
+        <link rel="stylesheet" href="../styles/fussdorsal.css">
         <!--<link rel="stylesheet" href="../styles/quiz.css">-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -89,7 +89,7 @@
                         
                         <div class="label" style="left: 150px; top: 450px;">11</div>
 
-                        <div class="label" style="left: 210px; top: 460px;">12</div>
+                        <div class="label" style="left: 205px; top: 460px;">12</div>
 
                         <div class="label" style="left: 250px; top: 460px;">13</div>
 
@@ -97,7 +97,7 @@
 
                         <div class="label" style="left: 200px; top: 505px;">15</div>
 
-                        <div class="line" style="top: 723px; transform: translateX(90px) rotate(60deg); width: 130px;"></div>
+                        <div class="line" style="top: 683px; transform: translateX(120px) rotate(20deg); width: 100px;"></div>
                         <div class="line" style="top: 620px; transform: translateX(90px) rotate(-70deg); width: 100px;"></div>
                         <div class="label" style="left: 85px; top: 645px;">16</div>
 
@@ -128,7 +128,7 @@
                 <div class="answerFrame">
 
                     <div class="answerTop">
-                    <div><h1 style="font-size: 40px; font-weight:400;">Fuß dorsal<h1></div>
+                    <div><h1 style="font-size: 40px; font-weight:400;">Fuß<h1></div>
                         <div class="timerTime" id="timer">Verbleibende Zeit: <span id="output"></span> Sekunden</div>
                         <div>
                             <input class="guess-bar" id="textInput" type="text" placeholder="Los geht's!">
