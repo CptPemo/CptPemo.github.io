@@ -16,6 +16,7 @@ const answers = [
   { word: "Crista sacralis mediana", abbreviations: [""] },
   { word: "Foramina sacralia posteriora", abbreviations: [""] },
   { word: "Crista sacralis intermedia", abbreviations: [""] },
+  { word: "Facies auricularis", abbreviations: [""] }
   
   // Add more answers
 ];

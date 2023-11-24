@@ -99,6 +99,9 @@
                         <div class="line" style="top: 960px; transform: translateX(410px) rotate(0deg); width: 170px;"></div>
                         <div class="label" style="left: 580px; top: 940px;">14</div>
 
+                        <div class="line" style="top: 1020px; transform: translateX(490px) rotate(0deg); width: 90px;"></div>
+                        <div class="label" style="left: 580px; top: 1000px;">15</div>
+
                     </div>
                 
                 <div class="answerFrame">
@@ -156,6 +159,9 @@
                         </div>
                         <div class="answer" id="14">
                             14.
+                        </div>
+                        <div class="answer" id="15">
+                            15.
                         </div>
                         <div class="stop-message" style="display: none;">Das Spiel ist beendet.</div>
                         <button class="button-stop" id="stopButton">Quiz beenden</button>
