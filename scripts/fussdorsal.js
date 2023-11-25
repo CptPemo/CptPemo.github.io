@@ -9,7 +9,7 @@ const answers = [
 /*5*/ { word: "Ossa digitorum", abbreviations: [""] },
 /*6*/ { word: "Caput", abbreviations: [""] },
 /*7*/ { word: "Corpus", abbreviations: [""] },
-/*8*/ { word: "Ossa metatarsi", abbreviations: [""] },
+/*8*/ { word: "Ossa metatarsalia", abbreviations: [""] },
 /*9*/ { word: "Basis", abbreviations: [""] },
 /*10*/ { word: "Tuberositas ossis metatarsi V", abbreviations: ["Tuberositas ossis metatarsi"] },
 /*11*/ { word: "Os cuneiforme mediale", abbreviations: [""] },
