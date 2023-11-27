@@ -29,7 +29,7 @@ const answers = [
   { word: "Fossa intercondylaris", abbreviations: [""] },
   { word: "Fovea capitis", abbreviations: [""] },
   { word: "Tuberculum quadratum", abbreviations: [""] },
-  { word: "Christa intertrochanterica", abbreviations: [""] },
+  { word: "Crista intertrochanterica", abbreviations: [""] },
   { word: "Labium mediale", abbreviations: [""] }
   // Add more answers
 ];

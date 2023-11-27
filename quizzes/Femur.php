@@ -231,9 +231,6 @@
                         <div class="answer" id="29">
                             29.
                         </div>
-                        <div class="answer" id="30">
-                            30.
-                        </div>
                         <div class="stop-message" style="display: none;">Das Spiel ist beendet.</div>
                         <button class="button-stop" id="stopButton">Quiz beenden</button>
                         <button class="button-stop" id="restartButton"> Quiz neustarten</button>
