@@ -79,7 +79,7 @@
                 </button>
                 <button class="quiz-preview">
                     <a href="quizzes/Ossacrum.php" >
-                        <div class="quiz-picture" data-keywords="Knochen, untere Extremität, Bewegungsapparat, Becken, Wirbelsäule">
+                        <div class="quiz-picture" data-keywords="Wirbel, Knochen, untere Extremität, Bewegungsapparat, Becken, Wirbelsäule">
                             <img class="thumbnail" src="thumbnails/OssacrumThumbnail.png">
                         </div>
                         <div class="quiz-info">Os sacrum</div>
@@ -113,7 +113,7 @@
 
                 <button class="quiz-preview">
                     <a href="quizzes/Oscoxae.php">
-                        <div class="quiz-picture" data-keywords="Knochen, Bewegungsapparat, untere Extremität, Hüfte">
+                        <div class="quiz-picture" data-keywords="Knochen, Bewegungsapparat, Bein, untere Extremität, Hüfte">
                             <img class="thumbnail" src="thumbnails/OscoxaeThumbnail.png">
                         </div>
                         <div class="quiz-info">Os coxae</div>
