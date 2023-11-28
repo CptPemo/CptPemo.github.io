@@ -39,12 +39,12 @@
                     <div class="pictureFrame">
                         <img class="quizPicture" src="../bilder/Tibia anterior.png" alt="Tibia, Schienbein, Bein, Unterschenkel" oncontextmenu="return false;">
 
-                        <div class="label" style="left: 410px; top: 465px;">1</div>
                         <div class="line" style="top: 365px; transform: translateX(415px) rotate(0deg); width: 10px;"></div>
                         <div class="line" style="top: 415px; transform: translateX(370px) rotate(90deg); width: 100px;"></div>
                         <div class="line" style="top: 550px; transform: translateX(370px) rotate(90deg); width: 100px;"></div>
                         <div class="line" style="top: 600px; transform: translateX(415px) rotate(0deg); width: 10px;"></div>
-
+                        <div class="label" style="left: 410px; top: 465px;">1</div>
+                        
                         <div class="line" style="top: 175px; transform: translateX(360px) rotate(0deg); width: 40px;"></div>
                         <div class="label" style="left: 400px; top: 155px;">2</div>
 

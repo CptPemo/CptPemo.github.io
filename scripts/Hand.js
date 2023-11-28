@@ -21,7 +21,8 @@ const answers = [
 /*17*/ { word: "Os pisiforme", abbreviations: [""] },
 /*18*/ { word: "Os triquetrum", abbreviations: [""] },
 /*19*/ { word: "Os lunatum", abbreviations: [""] },
-/*20*/ { word: "Os scaphoideum", abbreviations: [""] }
+/*20*/ { word: "Os scaphoideum", abbreviations: [""] },
+/*21*/ { word: "Pollex", abbreviations: [""] }
 ];
 let countEntries = answers.length; // Anzahl der Einträge im Array
 let multipliedCount = countEntries * 20; // Multipliziert die Anzahl der Einträge mit 20
