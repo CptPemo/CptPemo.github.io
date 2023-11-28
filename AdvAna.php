@@ -1,3 +1,13 @@
+<?php session_start(); // Beginne die Session
+
+if (isset($_SESSION['username'])) {
+    // Der Benutzer ist angemeldet, $_SESSION['username'] enthält den Benutzernamen
+    $loggedInUser = $_SESSION['username'];
+} else {
+    // Der Benutzer ist nicht angemeldet
+    $loggedInUser = null;
+}
+?>
 <!DOCTYPE html>
 
 <html>
@@ -156,18 +166,9 @@
                     </a>
                 </button>
 
-            </section>
-           <?php session_start(); // Beginne die Session
 
-if (isset($_SESSION['username'])) {
-    // Der Benutzer ist angemeldet, $_SESSION['username'] enthält den Benutzernamen
-    $loggedInUser = $_SESSION['username'];
-    echo'User is logged in';
-} else {
-    // Der Benutzer ist nicht angemeldet
-    $loggedInUser = null;
-}
-?>
+            </section>
+            
         </main>  
 
         <?php include 'popup.html'; ?>
