@@ -157,7 +157,17 @@
                 </button>
 
             </section>
-            
+           <?php session_start(); // Beginne die Session
+
+if (isset($_SESSION['username'])) {
+    // Der Benutzer ist angemeldet, $_SESSION['username'] enthält den Benutzernamen
+    $loggedInUser = $_SESSION['username'];
+    echo'User is logged in';
+} else {
+    // Der Benutzer ist nicht angemeldet
+    $loggedInUser = null;
+}
+?>
         </main>  
 
         <?php include 'popup.html'; ?>

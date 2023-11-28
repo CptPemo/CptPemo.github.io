@@ -43,34 +43,23 @@
    
         <main>
         <div class="loginscreen">
-        <h2 class="uberschrift">Registrieren</h2>
-        <form action="../php/registerscript.php" method="post">
-    <div>
-      <label for="username">Benutzername:</label>
-      <input type="text" id="username" name="username" required>
-    </div>
-    <div>
-      <label for="email">E-Mail:</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-    <div>
-      <label for="password">Passwort:</label>
-      <input type="password" id="password" name="password" required>
-    </div>
-    <div>
-      <label for="university">Universität:</label>
-      <select id="university" name="university">
-        <option value="Universitätsmedizin Greifswald">Universitätsmedizin Greifswald</option>
-        <option value="Uniklinikum Schleswig-Holstein">Uniklinikum Schleswig-Holstein</option>
-        <option value="Universitätsklinikum Eppendorf">Universitätsklinikum Eppendorf</option>
-        <!-- Weitere Optionen können hier hinzugefügt werden -->
-      </select>
-    </div>
-    <div>
-      <input type="submit" value="Registrieren">
-    </div>
-  </form>  
-</div>
+
+        <h2>Login</h2>
+    <form action="../php/loginscript.php" method="post">
+        <label for="username">Benutzername:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="password">Passwort:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <input type="submit" value="Einloggen">
+    </form>
+
+
+
+
+        </div>
+
         </main> 
         <?php include 'popup.html'; ?>
 
