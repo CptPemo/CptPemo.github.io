@@ -1,6 +1,7 @@
 <?php
 // Verbindung zur Datenbank herstellen (PDO mit MySQL)
 $servername = "db5014834209.hosting-data.io";
+$database = 'dbs12324971';
 $username = "dbu790158";
 $password = "aDseiG3202#";
 $dbname = "Logindaten";
