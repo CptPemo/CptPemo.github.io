@@ -112,6 +112,15 @@
                 </button>
 
                 <button class="quiz-preview">
+                    <a href="quizzes/Hand.html">
+                        <div class="quiz-picture" data-keywords="Knochen, obere Extremität, Arm, Oberarm, Oberarmknochen">
+                            <img class="thumbnail" src="thumbnails/HandThumbnail.png">     
+                        </div>
+                        <div class="quiz-info">Hand</div>
+                    </a>
+                </button>
+
+                <button class="quiz-preview">
                     <a href="quizzes/Oscoxae.php">
                         <div class="quiz-picture" data-keywords="Knochen, Bewegungsapparat, Bein, untere Extremität, Hüfte">
                             <img class="thumbnail" src="thumbnails/OscoxaeThumbnail.png">
