@@ -14,8 +14,7 @@
         <link rel="stylesheet" href="../styles/footer.css">
         <link rel="stylesheet" href="../styles/popup.css">
         <link rel="stylesheet" href="../styles/quizGrid.css">
-        <link rel="stylesheet" href="../styles/Scapula.css">
-        <!--<link rel="stylesheet" href="../styles/quiz.css">-->
+        <link rel="stylesheet" href="../styles/quiz.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;600&display=swap" rel="stylesheet">
@@ -23,6 +22,38 @@
     <link rel="icon" type="image/png" href="../bilder/favicon1.png">
         <meta charset="UTF-8">
 
+        <style>
+        
+            .pictureFrame{
+                display: inline-block;
+                width: 650px;
+                position: relative;
+            }
+
+
+            .quizPicture{
+                width: 70%;
+                padding-left: 65px;
+                padding-top: 100px;
+            }
+
+            .quizPicture2{
+                width: 70%;
+                padding-left: 55px;
+                padding-top: 70px;
+            }
+
+            .label{
+                position: absolute;
+                font-size: 22px;
+                font-weight: 600;
+                padding: 5px;
+                text-align: center;
+            }
+
+    
+
+        </style>
 
     </head>
 
