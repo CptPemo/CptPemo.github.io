@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="../styles/footer.css">
         <link rel="stylesheet" href="../styles/popup.css">
         <link rel="stylesheet" href="../styles/quizGrid.css">
-        <link rel="stylesheet" href="../styles/Femur.css">
+        <link rel="stylesheet" href="../styles/quiz.css">
         <!--<link rel="stylesheet" href="../styles/quiz.css">-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,13 +25,27 @@
         <meta charset="UTF-8">
 
     <style>
-        .label{
-            font-size: 18px;
-        }
 
         .pictureFrame{
-            padding-left: 50px;
-        }
+                display: inline-block;
+                width: 650px;
+                position: relative;
+                padding-top: 90px;
+                padding-left: 50px;
+            }
+
+            .quizPicture{
+                width: 80%;
+            
+            }
+
+            .label{
+                position: absolute;
+                font-size: 18px;
+                font-weight: 600;
+                padding: 5px;
+                text-align: center;
+            }
     </style>
 
     </head>
