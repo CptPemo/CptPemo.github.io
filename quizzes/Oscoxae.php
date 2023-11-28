@@ -15,14 +15,40 @@
         <link rel="stylesheet" href="../styles/footer.css">
         <link rel="stylesheet" href="../styles/popup.css">
         <link rel="stylesheet" href="../styles/quizGrid.css">
-        <link rel="stylesheet" href="../styles/Oscoxae.css">
-        <!--<link rel="stylesheet" href="../styles/quiz.css">-->
+        <link rel="stylesheet" href="../styles/quiz.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;600&display=swap" rel="stylesheet">
         <link rel="icon" type="image/png" href="../bilder/favicon.png">
     <link rel="icon" type="image/png" href="../bilder/favicon1.png">
         <meta charset="UTF-8">
+
+
+        <style>
+            .pictureFrame{
+                display: inline-block;
+                width: 650px;
+                position: relative;
+                margin-left: 1%;
+                padding-top: 90px;
+             }
+
+
+            .quizPicture{
+                width: 80%;
+                padding-left: 10%;
+            }
+
+            .label{
+                position: absolute;
+                font-size: 20px;
+                font-weight: 600;
+                padding: 5px;
+                text-align: center;
+            }
+
+
+        </style>
 
     </head>
 

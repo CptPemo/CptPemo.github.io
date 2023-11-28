@@ -1,14 +1,36 @@
+
+body{
+width:100%;
+
+}
 .quizFrame{
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
 
+.pictureFrame{
+  display: inline-block;
+  width: 650px;
+  position: relative;
+  margin-left: 1%;
+  padding-top: 5%;
+}
+
+
+.quizPicture{
+  width: 100%;
+}
+
 .timerTime{
   font-size:20px;
   margin-bottom:2%;
   margin-top:2%;
 
+}
+a {
+  color: black;
+  text-decoration:none;
 }
 
 .button-stop{
@@ -26,10 +48,11 @@
 
 .answerFrame{
   display: inline-block;
-  width: 500px;
+  width: 100%;
   vertical-align: top;
   margin-top: 80px;
-  margin-left: 2px;
+  margin-left: 10px;
+  
   
 }
 
@@ -45,11 +68,11 @@
 
 .answerBlock{
   padding-top: 230px;
-
+  
 }
 
-
 .guess-bar{
+  
   font-family: Raleway;
   width: 100%;
   font-size: 30px;
@@ -57,6 +80,8 @@
   margin-bottom: 10px;
   border: 1px solid black;
   border-radius: 3px;
+  background-color: white;
+  margin-left:0px;
 }
 
 .answer{
@@ -65,7 +90,7 @@
   margin-bottom: 4px;
   border: 1px solid black;
   border-radius: 3px;
-  width:100%;
+  width:75%;
 }
 
 .line {
@@ -76,14 +101,17 @@
   transform: translateX(186px) rotate(45deg) ;*/
 }
 
+.label{
+  position: absolute;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 5px;
+  text-align: center;
+}
 
 .gratulation{
   font-size: 50px;
   display: none;
-}
-a {
-  color: black;
-  text-decoration:none;
 }
 
 a:visited {

@@ -15,17 +15,45 @@
         <link rel="stylesheet" href="../styles/footer.css">
         <link rel="stylesheet" href="../styles/popup.css">
         <link rel="stylesheet" href="../styles/quizGrid.css">
-        <link rel="stylesheet" href="../styles/Tibia.css">
-        <!--<link rel="stylesheet" href="../styles/quiz.css">-->
+        <link rel="stylesheet" href="../styles/quiz.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;600&display=swap" rel="stylesheet">
         <link rel="icon" type="image/png" href="../bilder/favicon.png">
     <link rel="icon" type="image/png" href="../bilder/favicon1.png">
         <meta charset="UTF-8">
-      
+     
+        
+    <style>
+        .pictureFrame {
+            display: inline-block;
+            width: 650px;
+            position: relative;
+            margin-left: 1%;
+            padding-top: 90px; /* Ursprünglich 5% in einem Abschnitt, geändert auf 90px */
+}
 
-    </head>
+        .quizPicture {
+            width: 40%;
+            padding-left: 30%;
+            padding-top: 5%;
+            margin-right: 20%;
+            margin-bottom: 5%;
+}
+
+        .quizPicturePost {
+            width: 35%;
+            padding-left: 30%;
+}
+
+.label {
+  position: absolute;
+  font-size: 21px; 
+  font-weight: 600;
+  padding: 5px;
+  text-align: center;
+}
+    </style>
 
     </head>
     <body>
@@ -37,7 +65,7 @@
             <div class="quizFrame">
                 
                     <div class="pictureFrame">
-                        <img class="quizPicture" src="../bilder/Tibia anterior.png" alt="Tibia, Schienbein, Bein, Unterschenkel" oncontextmenu="return false;">
+                        <img class="quizPicture"  src="../bilder/Tibia anterior.png" alt="Tibia, Schienbein, Bein, Unterschenkel" oncontextmenu="return false;">
 
                         <div class="line" style="top: 365px; transform: translateX(415px) rotate(0deg); width: 10px;"></div>
                         <div class="line" style="top: 415px; transform: translateX(370px) rotate(90deg); width: 100px;"></div>
@@ -76,7 +104,7 @@
                         <div class="line" style="top: 343px; transform: translateX(335px) rotate(0deg); width: 35px;"></div>
                         <div class="label" style="left: 370px; top: 325px;">12</div>
 
-                        <img class="quizPicturePost" src="../bilder/Tibia posterior.png">
+                        <img class="quizPicturePost" style="width: 35%; padding-left: 30%;" src="../bilder/Tibia posterior.png">
 
                         <div class="label" style="left: 288px; top: 325px;">13</div>
 
