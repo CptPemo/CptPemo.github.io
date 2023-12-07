@@ -85,7 +85,7 @@
 .menu-button{
     font-family: Raleway;
     font-size: 20px;
-    margin-right:250px;
+    margin-right:100px;
     background-color: white;
     border: none ;
     cursor: pointer;
@@ -150,6 +150,20 @@ a:visited {
     
     
 }
+
+.gameMode{
+    font-family: Raleway;
+    font-size: 20px;
+    margin-right:50px;
+    background-color: white;
+    border: none ;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 
 .dropdown-menu1 ul {
     list-style: none;

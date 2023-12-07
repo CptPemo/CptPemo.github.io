@@ -11,6 +11,7 @@
 
 }
 
+
 .button-stop{
   font-family: Raleway;
   font-size: 20px;
@@ -63,7 +64,7 @@
   font-size: 20px;
   padding: 5px;
   margin-bottom: 4px;
-  border: 1px solid black;
+  border: none;
   border-radius: 3px;
   width:100%;
 }
@@ -107,3 +108,5 @@ a:visited {
       grid-template-columns: 1fr 1fr;
   }
 }
+
+

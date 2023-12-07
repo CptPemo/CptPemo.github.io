@@ -31,8 +31,8 @@
 
         </header>
    
-        <main style="height:550px;" >
-            <h1 style="margin-top:150px; font-family:raleway; font-weight: 400; text-align: center;">Wie spielt man?</h1>
+        <main>
+            <h1 style="margin-top:120px; font-family:raleway; font-weight: 400; text-align: center;">Wie spielt man?</h1>
             <h2 style="font-family:raleway; font-weight: 400; text-align: center;">Rapid-Mode</h2>
             <p style="text-align: center; line-height:25px;">
 
@@ -47,6 +47,27 @@
             Für jeden Begriff stehen dir 20 Sekunden zur Verfügung.
             </br>
             Ist die Zeit vorbei, bevor du alle Begriffe erraten hast, werden die fehlenden Begriffe in rot eingeblendet. 
+            </br>
+            Du kannst das Quiz unten neu starten oder auf der <a style="font-weight:600;" href="../AdvAna.php">Hauptseite</a> eine neue Herausforderung suchen! 
+            </p>
+</br>
+
+            <h2 style="font-family:raleway; font-weight: 400; text-align: center;">Precision-Mode</h2>
+            <p style="text-align: center; line-height:25px;">
+
+            Im rechten oberen Bereich des Bildschirms befindet sich das Eingabefeld mit der Aufschrift 'Los geht's!'. 
+            </br>
+            Hier gibst du einfach den anatomischen Begriff ein, der auf der linken Seite dick markiert ist. 
+            </br>
+            Es geht bei eins los und springt dann automatisch weiter zur nächsten Zahl wenn du den Begriff richtig eingegeben hast.
+            </br>
+            Wenn du einen Begriff richtig errätst, erscheint er rechts in der Liste unter dem Eingabefeld. 
+            </br>
+            Wenn du einen Begriff nicht weißt oder gern zuerst einen anderen erraten möchtest dann klicke die zugehörige Zahl auf der linken Seite an. 
+            </br>
+            In diesem Modus gibt es kein Zeitlimit.
+            </br>
+             
             </br>
             Du kannst das Quiz unten neu starten oder auf der <a style="font-weight:600;" href="../AdvAna.php">Hauptseite</a> eine neue Herausforderung suchen! 
             </p>
