@@ -131,6 +131,15 @@ if (isset($_SESSION['username'])) {
                 </button>
 
                 <button class="quiz-preview">
+                    <a href="quizzes/Radius.php">
+                        <div class="quiz-picture" data-keywords="Knochen, obere Extremität, Arm, Oberarm, Oberarmknochen">
+                            <img class="thumbnail" src="thumbnails/RadiusThumbnail.png" oncontextmenu="return false;">     
+                        </div>
+                        <div class="quiz-info">Radius</div>
+                    </a>
+                </button>
+
+                <button class="quiz-preview">
                     <a href="quizzes/Hand.php">
                         <div class="quiz-picture" data-keywords="Knochen, obere Extremität, Arm, Oberarm, Oberarmknochen">
                             <img class="thumbnail" src="thumbnails/HandThumbnail.png" oncontextmenu="return false;">     
