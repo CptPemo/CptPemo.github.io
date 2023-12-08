@@ -75,6 +75,24 @@
                         <div class="label" style="left: 315px; top: 320px;">8</div>
                         <div class="line" style="top: 307px; transform: translateX(165px) rotate(0deg); width: 70px;"></div>
                         <div class="label" style="left: 140px; top: 285px;">9</div>
+
+                        <div class="line" style="top: 1020px; transform: translateX(382px) rotate(90deg); width: 40px;"></div>
+                        <div class="label" style="left: 387px; top: 1035px;">10</div>
+
+                        <div class="label" style="left: 356px; top: 799px;">11</div>
+
+                        <div class="line" style="top: 882px; transform: translateX(115px) rotate(0deg); width: 30px;"></div>
+                        <div class="label" style="left: 76px; top: 863px;">12</div>
+                        
+                        <div class="label" style="left: 356px; top: 930px;">13</div>
+                        <div class="label" style="left: 339px; top: 700px;">14</div>
+
+                        <div class="line" style="top: 802px; transform: translateX(406px) rotate(0deg); width: 10px;"></div>
+                        <div class="line" style="top: 872px; transform: translateX(406px) rotate(0deg); width: 10px;"></div>
+                        <div class="line" style="top: 837px; transform: translateX(380px) rotate(90deg); width: 70px;"></div>
+                        <div class="line" style="top: 842px; transform: translateX(415px) rotate(0deg); width: 120px;"></div>
+                        <div class="label" style="left: 539px; top: 820px;">15</div>
+                        <img class="quizPicture" src="../bilder/zweiBrustwirbel.png" oncontextmenu="return false;">
                     </div>
                 
                 <div class="answerFrame">
@@ -120,6 +138,21 @@
                         </div>
                         <div class="answer" id="10">
                             10.
+                        </div>
+                        <div class="answer" id="11">
+                            11.
+                        </div>
+                        <div class="answer" id="12">
+                            12.
+                        </div>
+                        <div class="answer" id="13">
+                            13.
+                        </div>
+                        <div class="answer" id="14">
+                            14.
+                        </div>
+                        <div class="answer" id="15">
+                            15.
                         </div>
                         <div class="stop-message" style="display: none;">Das Spiel ist beendet.</div>
                         <button class="button-stop" id="stopButton">Quiz beenden</button>

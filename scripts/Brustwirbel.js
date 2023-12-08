@@ -11,7 +11,12 @@ const answers = [
   { word: "Fovea costalis processus transversi", abbreviations: ["Fovea costalis proc transversi", "Fovea costalis proc. transversi"] },
   { word: "Foramen vertebrale", abbreviations: [""] },
   { word: "Processus articularis superior", abbreviations: ["Proc articularis superior", "Proc. articularis superior", "Proc. articularis sup", "Proc articularis sup"] },
-  { word: "Processus articularis inferior", abbreviations: ["Proc articularis inferior", "Proc. articularis inferior", "Proc. articularis inf", "Proc articularis inf"] }
+  { word: "Processus articularis inferior", abbreviations: ["Proc articularis inferior", "Proc. articularis inferior", "Proc. articularis inf", "Proc articularis inf"] },
+  { word: "Foramen intervertebrale", abbreviations: [""] },
+  { word: "Discus intervertebralis", abbreviations: [""] },
+  { word: "Incisura vertebralis inferior", abbreviations: [""] },
+  { word: "Incisura vertebralis superior", abbreviations: [""] },
+  { word: "Articulatio zygapophysialis", abbreviations: [""] }
   // Add more answers
 ];
 
