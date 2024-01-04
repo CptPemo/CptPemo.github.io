@@ -39,7 +39,7 @@
             }
             .label{
                 position: absolute;
-                font-size: 24px;
+                font-size: 22px;
                 font-weight: 600;
                 padding: 5px;
                 text-align: center;
