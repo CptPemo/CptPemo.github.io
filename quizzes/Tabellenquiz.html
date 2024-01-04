@@ -8,12 +8,12 @@
         font-family: Raleway;
         border-collapse: collapse;
         width: 100%;
-
     }
 
     table, th, td {
         border: 1px solid black;
     }
+
     
     .guess-bar{
         font-family: Raleway;
@@ -38,6 +38,7 @@
 
     td{
         visibility: visible;
+        cursor: pointer;
     }
 
     
@@ -45,9 +46,9 @@
 
         outline: 2px solid black; /* Fügt einen 2px-Rahmen hinzu, wenn über das Element gehovert wird 
 
-        border:2px solid black;/*
+        border:2px solid black;
 
-        /*visibility: hidden;*/
+        visibility: hidden;*/
     }
 
 
@@ -100,32 +101,32 @@
             <th>Funktion</th>
         </tr>
         <tr>
-            <td>M. supraspinatus</td>
-            <td>Fossa supraspinata</td>
-            <td>Tuberculum majus</td>
-            <td>N. suprascapularis</td>
-            <td>Abduktion</td>
+            <td id="11">M. supraspinatus</td>
+            <td id="12">Fossa supraspinata</td>
+            <td id="13">Tuberculum majus</td>
+            <td id="14">N. suprascapularis</td>
+            <td id="15">Abduktion</td>
         </tr>
         <tr>
-            <td>M. infraspinatus</td>
-            <td>Fossa infraspinata</td>
-            <td>Tuberculum majus</td>
-            <td>N. suprascapularis</td>
-            <td>Adduktion, Außenrotation</td>
+            <td id="21">M. infraspinatus</td>
+            <td id="22">Fossa infraspinata</td>
+            <td id="23">Tuberculum majus</td>
+            <td id="24">N. suprascapularis</td>
+            <td id="25">Adduktion, Außenrotation</td>
           </tr>
           <tr>
-            <td>M. teres minor</td>
-            <td>Scapula</td>
-            <td>Tuberculum majus</td>
-            <td>N. axillaris</td>
-            <td>Adduktion, Außenrotation</td>
+            <td id="31">M. teres minor</td>
+            <td id="32">Scapula</td>
+            <td id="33">Tuberculum majus</td>
+            <td id="34">N. axillaris</td>
+            <td id="35">Adduktion, Außenrotation</td>
           </tr>
           <tr>
-            <td>M. subscapularis</td>
-            <td>Facies costalis</td>
-            <td>Tuberculum minus</td>
-            <td>Nn. subscapulares</td>
-            <td>Innenrotation, Adduktion</td>
+            <td id="41">M. subscapularis</td>
+            <td id="42">Facies costalis</td>
+            <td id="43">Tuberculum minus</td>
+            <td id="44">Nn. subscapulares</td>
+            <td id="45">Innenrotation, Adduktion</td>
         </tr>
 
       </table>
@@ -133,6 +134,9 @@
 
 <script>
 
+    let selectedCell = null; // für rahmen um ausgewählte zelle
+
+    const table = document.getElementById('Rotatorenmanschette');
 
     const answerInput = document.getElementById('textInput');
     const checkButton = document.getElementById('checkButton');
@@ -149,18 +153,58 @@
 });
 
 
+ // Globale Variable zum Speichern des Zellenindex
+ let clickedCellIndex = null;
+
+// Event Listener für den Check-Button
+checkButton.addEventListener('click', () => {
+  const inputValue = answerInput.value;
+
+  // Überprüfe, ob eine Zelle geklickt wurde
+  if (clickedCellIndex !== null) {
+    // Extrahiere Zeilen- und Spaltenindizes
+    const rowIndex = clickedCellIndex.row;
+    const cellIndex = clickedCellIndex.cell;
+
+    // Hier solltest du den entsprechenden Index für die Zelle herausfinden und dann den Inhalt setzen.
+    table.rows[rowIndex].cells[cellIndex].textContent = inputValue;
+
+    // Zurücksetzen der globalen Variable
+    clickedCellIndex = null;
+  }
+});
+
+// Füge Event Listener zu den Zellen hinzu
+const cells = document.querySelectorAll('td');
+cells.forEach((cell, index) => {
+  cell.addEventListener('click', () => {
+    console.log("Row index: " + cell.closest('tr').rowIndex + " | Column index: " + cell.cellIndex);
+    // Speichere den Zellenindex in der globalen Variable
+    clickedCellIndex = { row: cell.closest('tr').rowIndex, cell: cell.cellIndex };
+     // Entferne den dicken Rahmen von der zuletzt ausgewählten Zelle, falls vorhanden
+     if (selectedCell) {
+        selectedCell.style.border = '1px solid black';
+      }
+
+      // Setze die zuletzt ausgewählte Zelle auf die aktuelle Zelle
+      selectedCell = cell;
+
+      // Füge einen dicken Rahmen zur aktuellen Zelle hinzu
+
+    cell.style.outline = '2px solid black';
+    console.log(clickedCellIndex.row);
+    if (table.rows[clickedCellIndex.row].cells[clickedCellIndex.cell].cellIndex === table.rows[2].cells[3].cellIndex){
+        console.log('noice');
+    };
+  });
+});
 
 
-    const cells = document.querySelectorAll('td');
-    cells.forEach(cell => {
-    cell.addEventListener('click', () =>
-        console.log("Row index: " + cell.closest('tr').rowIndex + " | Column index: " + cell.cellIndex));
-    });
-
-    const table = document.getElementById('Rotatorenmanschette');
+    
     const firstCellIndex = table.rows[2].cells[3].cellIndex;
 
     console.log('Index of the first cell:', firstCellIndex);
 
     
 </script> 
+ 

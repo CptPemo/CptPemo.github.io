@@ -1,115 +1,133 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotatorenmanschette</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;600&display=swap" rel="stylesheet">
+  <style>
+    table {
+      font-family: Raleway;
+      border-collapse: collapse;
+      width: 100%;
+    }
 
-<html>
-    <head>
-    <title>Anatomie Quiz für Fortgeschrittene | Advanced Anatomy</title>
-<meta name="description" content="
-    Lerne die menschliche Anatomie anhand von ästhetischen Zeichnungen und systematischen Skizzen. 
-    Advanced Anatomy ist eine Plattform für Alle, die Expertenwissen in Anatomie erlangen wollen.">
+    table, th, td {
+      border: 1px solid black;
+    }
 
-    <meta name="keywords" content="Anatomie, Quiz, Bildung, lernen, Medizin, Studium, Universität, Lernplattform, Amboss, Kenhub, 3DAnatomy, Fortgeschritten, Testat, Hilfe, Klausur, ">
+    caption,
+    th,
+    td {
+      padding: 1rem;
+    }
 
-        <link rel="stylesheet" href="../styles/AdvAna.css">
-        <link rel="stylesheet" href="../styles/header.css">
-        <link rel="stylesheet" href="../styles/main.css">
-        <link rel="stylesheet" href="../styles/popup.css">
-        <link rel="stylesheet" href="../styles/footer.css">
-        <link rel="stylesheet" href="../styles/quizGrid.css">
-        <link rel="stylesheet" href="../styles/quiz.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;600&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/png" href="../bilder/favicon.png">
-        <link rel="icon" type="image/png" href="../bilder/favicon1.png">
-        <meta charset="UTF-8">
+    caption,
+    th {
+      text-align: left;
+      width: 20%;
+    }
 
-        <style>
+    td {
+      visibility: visible;
+    }
 
-            .quizFrame{
-                padding-top: 50px;
-                padding-left: 50px;
-                width: 1000px;
-            }
+    td:hover {
+      outline: 2px solid black;
+    }
 
-            table {
-                border-collapse: collapse;
-                width: 100%;
-                
-            }
+    table:hover {
+      visibility: visible;
+    }
 
-            td {
-                border: 1px solid #dddddd;
-                text-align: left;
-                padding: 8px;
-                display: none; /* Verberge die Zellen zu Beginn */
-            }
+    caption {
+      display: none;
+    }
 
-            
-        </style>
+    .guess-bar {
+      font-family: Raleway;
+      width: 60%;
+      font-size: 30px;
+      padding: 5px;
+      margin-bottom: 10px;
+      border: 1px solid black;
+      border-radius: 3px;
+    }
 
-    </head>
+    .check-button {
+      font-family: Raleway;
+      width: 10%;
+      font-size: 30px;
+      padding: 5px;
+      margin-bottom: 10px;
+      border: 1px solid black;
+      border-radius: 3px;
+      background-color: white;
+    }
+  </style>
+</head>
 
-    <body>
-        <header class="header">
-            <?php include '../header.html';?>           
-        </header>
+<body>
+  <div>
+    <h1 style="font-size: 40px; font-weight: 400;">Rotatorenmanschette<h1>
+  </div>
+  <input class="guess-bar" id="textInput" type="text" placeholder="Los geht's!">
+  <button class="check-button" id="checkButton"> Check </button>
+  <table class="tabelle" id="Rotatorenmanschette">
+    <tr>
+      <th>Muskel</th>
+      <th>Ursprung</th>
+      <th>Ansatz</th>
+      <th>Innervation</th>
+      <th>Funktion</th>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Füge weitere leere Zeilen für andere Wörter hinzu -->
+  </table>
 
-        <main>
-            <div class="quizFrame">
-                
-                <div class="answerTop">
-                <div><h1 style="font-size: 40px; font-weight:400;">Rotatorenmanschette<h1></div>
-                  <!--  <div class="timerTime" id="timer">Verbleibende Zeit: <span id="output"></span> Sekunden</div>  -->
+  <script>
+    const answerInput = document.getElementById('textInput');
+    const checkButton = document.getElementById('checkButton');
+    const table = document.getElementById('Rotatorenmanschette');
 
-                    <div>
-                        <input class="guess-bar" id="textInput" type="text" placeholder="Los geht's!">
-                        <p id="result"></p>
-                    </div>
-                </div>
+    // Globale Variable zum Speichern des Zellenindex
+    let clickedCellIndex = null;
 
-                <div class="answerBlock">
+    // Event Listener für den Check-Button
+    checkButton.addEventListener('click', () => {
+      const inputValue = answerInput.value;
 
-                    <table>
-                        <tr>
-                          <th>Muskel</th>
-                          <th>Ursprung</th>
-                          <th>Ansatz</th>
-                          <th>Innervation</th>
-                          <th>Funktion</th>
-                        </tr>
-                        <tr>
-                          <td>M. supraspinatus</td>
-                          <td>Fossa supraspinata</td>
-                          <td>Tuberculum majus</td>
-                          <td>N. suprascapularis</td>
-                          <td>Abduktion</td>
-                        </tr>
-                        <tr>
-                            <td>M. infraspinatus</td>
-                            <td>Fossa infraspinata</td>
-                            <td>Tuberculum majus</td>
-                            <td>N. suprascapularis</td>
-                            <td>Adduktion, Außenrotation</td>
-                          </tr>
-                        <!-- Weitere Zeilen für andere Wörter -->
-                      </table>
-                      
+      // Überprüfe, ob eine Zelle geklickt wurde
+      if (clickedCellIndex !== null) {
+        // Extrahiere Zeilen- und Spaltenindizes
+        const rowIndex = clickedCellIndex.row;
+        const cellIndex = clickedCellIndex.cell;
 
-                    
-                    <div class="stop-message" style="display: none;">Das Spiel ist beendet.</div>
-                    <button class="button-stop" id="stopButton">Quiz beenden</button>
-                    <button class="button-stop" id="restartButton"> Quiz neustarten</button>
-                    
-                    <div class="gratulation"> Gratuliere </div>
-                </div>
-            </div>
-        </main>
-        <?php include '../popup.html'; ?>
+        // Hier solltest du den entsprechenden Index für die Zelle herausfinden und dann den Inhalt setzen.
+        table.rows[rowIndex].cells[cellIndex].textContent = inputValue;
 
-        <footer class="footer">
-            <?php include '../footer.html'; ?>
-        </footer> 
-    <script src="../scripts/checkpopup.js"></script>
-    <script src="../scripts/Rotatorenmanschette.js"></script>
-    </body>
+        // Zurücksetzen der globalen Variable
+        clickedCellIndex = null;
+      }
+    });
+
+    // Füge Event Listener zu den Zellen hinzu
+    const cells = document.querySelectorAll('td');
+    cells.forEach((cell, index) => {
+      cell.addEventListener('click', () => {
+        console.log("Row index: " + cell.closest('tr').rowIndex + " | Column index: " + cell.cellIndex);
+        // Speichere den Zellenindex in der globalen Variable
+        clickedCellIndex = { row: cell.closest('tr').rowIndex, cell: cell.cellIndex };
+        console.log(clickedCellIndex);
+      });
+    });
+  </script>
+</body>
+
 </html>
