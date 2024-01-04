@@ -147,8 +147,37 @@
         </footer>  
 
 <script src="../scripts/checkpopup.js"></script>
-    
-    <script src="../scripts/Atlas-precisiontest.js"></script>
+<script>
+        function loadScript(scriptName) {
+            var script = document.createElement('script');
+            script.src = scriptName;
+            document.head.appendChild(script);
+        }
+
+        function getCookie(name) {
+            // ... (deine getCookie-Funktion)
+        }
+
+        function executeScriptBasedOnCookie() {
+            var cookieExists = getCookie("spielmodus2");
+
+            if (cookieExists) {
+                loadScript('../scripts/Atlas.js');
+                // loadScript('../scripts/Atlas-precisiontest.js');
+                console.log("JavaScript-Code für Spielmodus 2 wird ausgeführt");
+            } else {
+                loadScript('../scripts/Atlas-precisiontest.js');
+                // loadScript('../scripts/Atlas.js');
+                console.log("JavaScript-Code für Spielmodus 1 wird ausgeführt");
+            }
+        }
+
+        window.onload = function() {
+            
+            executeScriptBasedOnCookie();
+        };
+    </script>
+
     
     </body>
 </html>
