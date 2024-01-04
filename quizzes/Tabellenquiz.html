@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;600&display=swap" rel="stylesheet">
+
+<style>
+    table{
+        font-family: Raleway;
+        border-collapse: collapse;
+        width: 100%;
+
+    }
+
+    table, th, td {
+        border: 1px solid black;
+    }
+    
+    .guess-bar{
+        font-family: Raleway;
+    }
+
+
+    div{
+        font-family: Raleway;
+    }
+
+    caption,
+    th,
+    td{
+        padding: 1rem;
+    }
+
+    caption,
+    th{
+        text-align: left;
+        width: 20%;
+    }
+
+    td{
+        visibility: visible;
+    }
+
+    
+    td:hover{
+
+        outline: 2px solid black; /* Fügt einen 2px-Rahmen hinzu, wenn über das Element gehovert wird 
+
+        border:2px solid black;/*
+
+        /*visibility: hidden;*/
+    }
+
+
+    table:hover{
+        
+        visibility:visible;
+    }
+
+    caption{
+        display: none;
+    }
+
+
+    .guess-bar{
+        font-family: Raleway;
+        width: 60%;
+        font-size: 30px;
+        padding: 5px;
+        margin-bottom: 10px;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+
+    .check-button{
+        font-family: Raleway;
+        width: 10%;
+        font-size: 30px;
+        padding: 5px;
+        margin-bottom: 10px;
+        border: 1px solid black;
+        border-radius: 3px;
+        background-color: white;
+    }
+
+</style>
+    
+</head>
+
+<body>
+    <div><h1 style="font-size: 40px; font-weight:400;">Rotatorenmanschette<h1></div>
+    <input class="guess-bar" id="textInput" type="text" placeholder="Los geht's!"> 
+    <button class="check-button" id="checkButton"> Check </button>
+    <table class="tabelle" id="Rotatorenmanschette">
+
+        <tr>
+            <th>Muskel</th>
+            <th>Ursprung</th>
+            <th>Ansatz</th>
+            <th>Innervation</th>
+            <th>Funktion</th>
+        </tr>
+        <tr>
+            <td>M. supraspinatus</td>
+            <td>Fossa supraspinata</td>
+            <td>Tuberculum majus</td>
+            <td>N. suprascapularis</td>
+            <td>Abduktion</td>
+        </tr>
+        <tr>
+            <td>M. infraspinatus</td>
+            <td>Fossa infraspinata</td>
+            <td>Tuberculum majus</td>
+            <td>N. suprascapularis</td>
+            <td>Adduktion, Außenrotation</td>
+          </tr>
+          <tr>
+            <td>M. teres minor</td>
+            <td>Scapula</td>
+            <td>Tuberculum majus</td>
+            <td>N. axillaris</td>
+            <td>Adduktion, Außenrotation</td>
+          </tr>
+          <tr>
+            <td>M. subscapularis</td>
+            <td>Facies costalis</td>
+            <td>Tuberculum minus</td>
+            <td>Nn. subscapulares</td>
+            <td>Innenrotation, Adduktion</td>
+        </tr>
+
+      </table>
+</body>
+
+<script>
+
+
+    const answerInput = document.getElementById('textInput');
+    const checkButton = document.getElementById('checkButton');
+
+    checkButton.addEventListener('click', () => {
+    const inputValue = answerInput.value;
+    console.log('Input value:', inputValue);
+
+    const Msupra = table.rows[2].cells[3].textContent;
+    console.log(Msupra);
+    if (inputValue === Msupra){
+        console.log("geilo");
+    }
+});
+
+
+
+
+    const cells = document.querySelectorAll('td');
+    cells.forEach(cell => {
+    cell.addEventListener('click', () =>
+        console.log("Row index: " + cell.closest('tr').rowIndex + " | Column index: " + cell.cellIndex));
+    });
+
+    const table = document.getElementById('Rotatorenmanschette');
+    const firstCellIndex = table.rows[2].cells[3].cellIndex;
+
+    console.log('Index of the first cell:', firstCellIndex);
+
+    
+</script> 
