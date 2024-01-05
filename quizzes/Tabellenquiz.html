@@ -64,6 +64,7 @@
 
     .tabelleLösungen{
         display: none;
+        width: 100%;
     }
 
 
@@ -77,7 +78,8 @@
         border-radius: 3px;
     }
 
-    .check-button{
+    .check-button,
+    .resign-button{
         font-family: Raleway;
         width: 10%;
         font-size: 30px;
@@ -96,6 +98,7 @@
     <div><h1 style="font-size: 40px; font-weight:400;">Rotatorenmanschette<h1></div>
     <input class="guess-bar" id="textInput" type="text" placeholder="Los geht's!"> 
     <button class="check-button" id="checkButton"> Check </button>
+    <button class="resign-button" id="resignButton"> Resign </button>
     <table class="tabelle" id="RotatorenmanschetteErgebnisse">
 
         <tr>
@@ -254,6 +257,15 @@ checkButton.addEventListener('click', () => {
     // Zurücksetzen der globalen Variable
     clickedCellIndex = null;
   }
+
+});
+
+
+resignButton.addEventListener('click', () => {
+  
+  console.log('resigned');
+  tableResults.style.display = 'none';
+  table.style.display = 'table';
 
 });
 
