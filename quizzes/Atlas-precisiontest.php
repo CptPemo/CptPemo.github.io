@@ -153,7 +153,14 @@
             script.src = scriptName;
             document.head.appendChild(script);
         }
+        function adjustFontSize() {
+    const labelElements = document.querySelectorAll('.label');
 
+    labelElements.forEach(label => {
+        label.style.cursor = 'pointer'; // Ändert den Mauszeiger, wenn über das Label geschwebt wird
+        label.style.fontWeight = 'normal'; // Setzt die Schriftgröße auf normal
+    });
+}
         function getCookie(name) {
             // ... (deine getCookie-Funktion)
         }
@@ -162,11 +169,11 @@
             var cookieExists = getCookie("spielmodus2");
 
             if (cookieExists) {
-                loadScript('../scripts/Atlas.js');
-                // loadScript('../scripts/Atlas-precisiontest.js');
+                loadScript('../scripts/Atlas.js',);
+                // loadScript('../scripts/Atlas-precisiontest.js',adjustFontSize);
                 console.log("JavaScript-Code für Spielmodus 2 wird ausgeführt");
             } else {
-                loadScript('../scripts/Atlas-precisiontest.js');
+                loadScript('../scripts/Atlas-precisiontest.js',adjustFontSize);
                 // loadScript('../scripts/Atlas.js');
                 console.log("JavaScript-Code für Spielmodus 1 wird ausgeführt");
             }

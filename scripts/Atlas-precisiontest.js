@@ -1,4 +1,14 @@
-/* 
+function adjustFontSizeImmediately() {
+  const labelElements = document.querySelectorAll('.label');
+
+  labelElements.forEach(label => {
+      label.style.cursor = 'pointer'; // Ändert den Mauszeiger, wenn über das Label geschwebt wird
+      label.style.fontWeight = 'normal'; // Setzt die Schriftgröße auf normal
+  });
+}
+
+// Aufruf der Funktion sofort nach dem Laden des Skripts
+adjustFontSizeImmediately();
 
 // Event-Listener für die Labels, um das Schriftgewicht zu ändern
 const labelElements = document.querySelectorAll('.label');
@@ -40,48 +50,10 @@ function resetLabelWeights() {
     answer.style.fontWeight = 'normal';
   });
 }  
-
-*/
-
-window.onload = function() {
-  const labelElements = document.querySelectorAll('.label');
-
-  labelElements.forEach(label => {
-    label.style.cursor = 'pointer'; // Ändert den Mauszeiger, wenn über das Label geschwebt wird
-  });
-
-  const answerDiv = document.getElementById('1'); // Hier muss das entsprechende Antwortdiv angegeben werden
-
-  labelElements.forEach(label => {
-    label.addEventListener('click', () => {
-      const number = parseInt(label.dataset.number);
-
-      if (!label.dataset.found && !answers[number - 1].found) {
-        resetLabelWeights(); // Zurücksetzen des Schriftgewichts vor der Hervorhebung des ausgewählten Labels
-        label.style.fontWeight = 'bold';
-        selectNumber(number);
-
-        if (answerDiv) {
-          answerDiv.style.fontWeight = 'bold';
-          label.style.fontWeight = 'bold'; // Setze auch das Label auf fett
-        }
-      }
-    });
-  });
-
-  // Schriftgröße ändern
-  labelElements.forEach(label => {
-    label.style.fontWeight = 'normal';
-  });
-
-  const selectedLabel = document.querySelector('.label[data-number="1"]'); // Hier muss das entsprechende Label angegeben werden
-  if (selectedLabel) {
-    selectedLabel.style.fontWeight = 'bold';
-  }
-
 const searchInput = document.getElementById('textInput');
 const stopButton = document.getElementById('stopButton');
 const restartButton = document.getElementById('restartButton');
+
 
 const answers = [
   { word: "Arcus anterior", abbreviations: ["Arcus ant"] },
