@@ -8,6 +8,7 @@
         font-family: Raleway;
         border-collapse: collapse;
         width: 100%;
+        border:1px solid black ;
     }
 
     table, th, td {
@@ -61,6 +62,10 @@
         display: none;
     }
 
+    .tabelleLösungen{
+        display: none;
+    }
+
 
     .guess-bar{
         font-family: Raleway;
@@ -92,6 +97,46 @@
     <input class="guess-bar" id="textInput" type="text" placeholder="Los geht's!"> 
     <button class="check-button" id="checkButton"> Check </button>
     <table class="tabelle" id="Rotatorenmanschette">
+
+        <tr>
+            <th>Muskel</th>
+            <th>Ursprung</th>
+            <th>Ansatz</th>
+            <th>Innervation</th>
+            <th>Funktion</th>
+        </tr>
+        <tr>
+            <td id="11"></td>
+            <td id="12"></td>
+            <td id="13"></td>
+            <td id="14"></td>
+            <td id="15"></td>
+        </tr>
+        <tr>
+            <td id="21"></td>
+            <td id="22"></td>
+            <td id="23"></td>
+            <td id="24"></td>
+            <td id="25"></td>
+          </tr>
+          <tr>
+            <td id="31"></td>
+            <td id="32"></td>
+            <td id="33"></td>
+            <td id="34"></td>
+            <td id="35"></td>
+          </tr>
+          <tr>
+            <td id="41"></td>
+            <td id="42"></td>
+            <td id="43"></td>
+            <td id="44"></td>
+            <td id="45"></td>
+        </tr>
+
+      </table>
+
+      <table class="tabelleLösungen" id="Rotatorenmanschette">
 
         <tr>
             <th>Muskel</th>
@@ -141,7 +186,8 @@
     const answerInput = document.getElementById('textInput');
     const checkButton = document.getElementById('checkButton');
 
-    checkButton.addEventListener('click', () => {
+/*
+checkButton.addEventListener('click', () => {
     const inputValue = answerInput.value;
     console.log('Input value:', inputValue);
 
@@ -150,29 +196,7 @@
     if (inputValue === Msupra){
         console.log("geilo");
     }
-});
-
-
- // Globale Variable zum Speichern des Zellenindex
- let clickedCellIndex = null;
-
-// Event Listener für den Check-Button
-checkButton.addEventListener('click', () => {
-  const inputValue = answerInput.value;
-
-  // Überprüfe, ob eine Zelle geklickt wurde
-  if (clickedCellIndex !== null) {
-    // Extrahiere Zeilen- und Spaltenindizes
-    const rowIndex = clickedCellIndex.row;
-    const cellIndex = clickedCellIndex.cell;
-
-    // Hier solltest du den entsprechenden Index für die Zelle herausfinden und dann den Inhalt setzen.
-    table.rows[rowIndex].cells[cellIndex].textContent = inputValue;
-
-    // Zurücksetzen der globalen Variable
-    clickedCellIndex = null;
-  }
-});
+});*/
 
 // Füge Event Listener zu den Zellen hinzu
 const cells = document.querySelectorAll('td');
@@ -181,29 +205,56 @@ cells.forEach((cell, index) => {
     console.log("Row index: " + cell.closest('tr').rowIndex + " | Column index: " + cell.cellIndex);
     // Speichere den Zellenindex in der globalen Variable
     clickedCellIndex = { row: cell.closest('tr').rowIndex, cell: cell.cellIndex };
+    
+    console.log(clickedCellIndex);
      // Entferne den dicken Rahmen von der zuletzt ausgewählten Zelle, falls vorhanden
-     if (selectedCell) {
-        selectedCell.style.border = '1px solid black';
+     if (selectedCell) {;
+        selectedCell.style.border = '1px solid black'; 
       }
 
       // Setze die zuletzt ausgewählte Zelle auf die aktuelle Zelle
       selectedCell = cell;
 
       // Füge einen dicken Rahmen zur aktuellen Zelle hinzu
+    cell.style.border = '3px solid black';
 
-    cell.style.outline = '2px solid black';
     console.log(clickedCellIndex.row);
-    if (table.rows[clickedCellIndex.row].cells[clickedCellIndex.cell].cellIndex === table.rows[2].cells[3].cellIndex){
-        console.log('noice');
-    };
   });
 });
 
 
-    
-    const firstCellIndex = table.rows[2].cells[3].cellIndex;
 
-    console.log('Index of the first cell:', firstCellIndex);
+
+ // Globale Variable zum Speichern des Zellenindex
+ let clickedCellIndex = null;
+
+// Event Listener für den Check-Button
+checkButton.addEventListener('click', () => {
+  const inputValue = answerInput.value;
+  console.log(inputValue);
+
+  // Überprüfe, ob eine Zelle geklickt wurde
+  if (clickedCellIndex !== null) {
+    // Extrahiere Zeilen- und Spaltenindizes
+    const rowIndex = clickedCellIndex.row;
+    const cellIndex = clickedCellIndex.cell;
+
+    // Hier solltest du den entsprechenden Index für die Zelle herausfinden und dann den Inhalt setzen.
+    //table.rows[rowIndex].cells[cellIndex].textContent = inputValue;
+
+    
+  console.log(inputValue);
+  console.log(table.rows[clickedCellIndex.row].cells[clickedCellIndex.cell].textContent);
+  if (inputValue === table.rows[clickedCellIndex.row].cells[clickedCellIndex.cell].textContent){
+        console.log('noicy');
+    };
+
+    // Zurücksetzen der globalen Variable
+    clickedCellIndex = null;
+  }
+
+});
+
 
     
 </script> 
