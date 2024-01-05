@@ -96,7 +96,7 @@
     <div><h1 style="font-size: 40px; font-weight:400;">Rotatorenmanschette<h1></div>
     <input class="guess-bar" id="textInput" type="text" placeholder="Los geht's!"> 
     <button class="check-button" id="checkButton"> Check </button>
-    <table class="tabelle" id="Rotatorenmanschette">
+    <table class="tabelle" id="RotatorenmanschetteErgebnisse">
 
         <tr>
             <th>Muskel</th>
@@ -182,6 +182,7 @@
     let selectedCell = null; // für rahmen um ausgewählte zelle
 
     const table = document.getElementById('Rotatorenmanschette');
+    const tableResults = document.getElementById('RotatorenmanschetteErgebnisse');
 
     const answerInput = document.getElementById('textInput');
     const checkButton = document.getElementById('checkButton');
@@ -247,6 +248,7 @@ checkButton.addEventListener('click', () => {
   console.log(table.rows[clickedCellIndex.row].cells[clickedCellIndex.cell].textContent);
   if (inputValue === table.rows[clickedCellIndex.row].cells[clickedCellIndex.cell].textContent){
         console.log('noicy');
+        tableResults.rows[rowIndex].cells[cellIndex].textContent = inputValue;
     };
 
     // Zurücksetzen der globalen Variable
