@@ -221,8 +221,8 @@
         </tr>
 
       </table>
-      <button class="check-button" id="checkButton"> Check </button>
-      <button class="check-button" id="checkButton"> Check </button>
+      <button class="check-button" id="checkButton"> Vorheriges Quiz </button>
+      <button class="check-button" id="checkButton"> Nächstes Quiz </button>
       <?php include '../popup.html'; ?>
 
 <footer class="footer">
