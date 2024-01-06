@@ -152,32 +152,32 @@
             <th>Funktion</th>
         </tr>
         <tr id="supraspinatus">
-            <td id="cell0"></td>
-            <td id="cell1"></td>
-            <td id="cell2"></td>
-            <td id="cell3"></td>
-            <td id="cell4"></td>
+            <td id="cell10"></td>
+            <td id="cell11"></td>
+            <td id="cell12"></td>
+            <td id="cell13"></td>
+            <td id="cell14"></td>
         </tr>
         <tr id="infraspinatus">
-            <td id="cell0"></td>
-            <td id="cell1"></td>
-            <td id="cell2"></td>
-            <td id="cell3"></td>
-            <td id="cell4"></td>
+            <td id="cell20"></td>
+            <td id="cell21"></td>
+            <td id="cell22"></td>
+            <td id="cell23"></td>
+            <td id="cell24"></td>
           </tr>
           <tr id="teresminor">
-            <td id="cell0"></td>
-            <td id="cell1"></td>
-            <td id="cell2"></td>
-            <td id="cell3"></td>
-            <td id="cell4"></td>
+            <td id="cell30"></td>
+            <td id="cell31"></td>
+            <td id="cell32"></td>
+            <td id="cell33"></td>
+            <td id="cell34"></td>
           </tr>
           <tr id="subscapulares">
-            <td id="cell0"></td>
-            <td id="cell1"></td>
-            <td id="cell2"></td>
-            <td id="cell3"></td>
-            <td id="cell4"></td>
+            <td id="cell40"></td>
+            <td id="cell41"></td>
+            <td id="cell42"></td>
+            <td id="cell43"></td>
+            <td id="cell44"></td>
         </tr>
 
       </table>
@@ -221,6 +221,8 @@
         </tr>
 
       </table>
+      <button class="check-button" id="checkButton"> Check </button>
+      <button class="check-button" id="checkButton"> Check </button>
       <?php include '../popup.html'; ?>
 
 <footer class="footer">
@@ -314,29 +316,59 @@ function checkAnswer() {
     // Überprüfe die Benutzerantwort und aktualisiere die Ergebnistabelle
     if (inputValue === table.rows[rowIndex].cells[cellIndex].textContent) {
       tableResults.rows[rowIndex].cells[cellIndex].textContent = inputValue;
-
+      answerInput.value = '';
       // Berechne den Index für die nächste Zelle in derselben Zeile
       const nextCellIndex = cellIndex + 1;
-
       // Überprüfe, ob die nächste Zelle existiert
       if (nextCellIndex < table.rows[rowIndex].cells.length) {
+        
         clickedCellIndex.cell = clickedCellIndex.cell + 1;
         simulateCellClick(rowIndex, nextCellIndex);
   
 
-}
+        }else{
 
+            const nextCellId = 'cell' + (rowIndex + 1) + (cellIndex - 4); // Annahme: Zellen haben IDs wie "cell0", "cell1", ...
+            const nextCell = document.getElementById(nextCellId);
+            clickedCellIndex.cell = clickedCellIndex.cell - 4;
+            clickedCellIndex.row = clickedCellIndex.row + 1;
+            
+            // wenn letzte Tabellenzelle in letzter Tabellenzeile erreicht ist
+            if(clickedCellIndex.row > 4){
+                alert("Super gemacht! Hier gehts weiter:");
+            }
+
+             if (nextCell) {
+            // Setze den Rahmeneffekt zurück, wenn eine Zelle zuvor ausgewählt wurde
+                if (selectedCell) {
+            selectedCell.style.border = '1px solid black';
+            }
+
+             // Setze die ausgewählte Zelle auf die nächste Zelle
+              selectedCell = nextCell;
+
+             // Hervorhebe die nächste Zelle mit einem dicken Rahmen
+             selectedCell.style.border = '3px solid black';
+
+            // Fokussiere das Texteingabefeld für die neue Zelle
+             answerInput.focus();
+
+             console.log(selectedCell);
+            console.log(clickedCellIndex);
+
+            }
+            
+        }
     }
-
-    // Zurücksetzen der globalen Variable
     
   }
 }
 
 function simulateCellClick(rowIndex, cellIndex) {
   // Setze den Rahmeneffekt zurück, wenn eine Zelle zuvor ausgewählt wurde
-  const nextCellId = 'cell' + (cellIndex); // Annahme: Zellen haben IDs wie "cell0", "cell1", ...
-  const nextCell = document.getElementById(nextCellId);
+  
+    const nextCellId = 'cell' + (rowIndex) + (cellIndex); // Annahme: Zellen haben IDs wie "cell0", "cell1", ...
+    const nextCell = document.getElementById(nextCellId);
 
   if (nextCell) {
     // Setze den Rahmeneffekt zurück, wenn eine Zelle zuvor ausgewählt wurde
@@ -355,7 +387,6 @@ function simulateCellClick(rowIndex, cellIndex) {
 
     console.log(selectedCell);
     console.log(clickedCellIndex);
-
   }
 }
 
