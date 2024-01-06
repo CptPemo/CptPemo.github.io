@@ -116,6 +116,16 @@
         border: 1px solid black;
         border-radius: 3px;
         background-color: white;
+        cursor:pointer;
+    }
+    .resign-button{
+        margin-left: 1%;
+    }
+
+    .check-button:hover,
+    .resign-button:hover{
+      background-color: black;
+      color: white;
     }
 
     footer{
@@ -125,6 +135,19 @@
     .correct-answer {
   visibility: visible !important;
   outline: 2px solid black;
+}
+
+#instructions{
+  margin-left: 1%;
+  font-size: 20px;
+}
+
+#previous, #next{
+  width: 11%;
+  font-size: 15px;
+  margin-left: 1%;
+  border: 0.5px solid black;
+  cursor:pointer;
 }
 
 
@@ -142,6 +165,7 @@
     <input class="guess-bar" id="textInput" type="text" placeholder="Los geht's!"> 
     <button class="check-button" id="checkButton"> Check </button>
     <button class="resign-button" id="resignButton"> Resign </button>
+    <p id="instructions">Beginne damit die vier Muskeln der Rotatorenmanschette zu benennen.</p>
     <table class="tabelle" id="RotatorenmanschetteErgebnisse">
 
         <tr>
@@ -221,8 +245,8 @@
         </tr>
 
       </table>
-      <button class="check-button" id="checkButton"> Vorheriges Quiz </button>
-      <button class="check-button" id="checkButton"> Nächstes Quiz </button>
+      <button class="check-button" id="previous"> << Vorheriges Quiz </button>
+      <button class="check-button" id="next"> Nächstes Quiz >></button>
       <?php include '../popup.html'; ?>
 
 <footer class="footer">
@@ -239,6 +263,9 @@
 
     const answerInput = document.getElementById('textInput');
     const checkButton = document.getElementById('checkButton');
+
+    var musclecounter = 0;
+    const instructions = document.getElementById('instructions');
 
 /*
 checkButton.addEventListener('click', () => {
@@ -281,7 +308,7 @@ cells.forEach((cell, index) => {
 
  
 
-
+// Event Listener für den Resign-Button
 resignButton.addEventListener('click', () => {
   
   console.log('resigned');
@@ -327,10 +354,10 @@ function checkAnswer() {
   
 
         }else{
-
-            const nextCellId = 'cell' + (rowIndex + 1) + (cellIndex - 4); // Annahme: Zellen haben IDs wie "cell0", "cell1", ...
+            // Sprung in die nächste Zeile
+            const nextCellId = 'cell' + (rowIndex + 1) + (cellIndex - 3); // Annahme: Zellen haben IDs wie "cell0", "cell1", ...
             const nextCell = document.getElementById(nextCellId);
-            clickedCellIndex.cell = clickedCellIndex.cell - 4;
+            clickedCellIndex.cell = clickedCellIndex.cell - 3;
             clickedCellIndex.row = clickedCellIndex.row + 1;
             
             // wenn letzte Tabellenzelle in letzter Tabellenzeile erreicht ist
@@ -361,7 +388,33 @@ function checkAnswer() {
         }
     }
     
-  }
+  }else{
+    // Wenn noch kein Feld angeklickt wurde
+    console.log(musclecounter);
+    if (inputValue == "M. supraspinatus") {
+      tableResults.rows[1].cells[0].textContent = "M. supraspinatus";
+      answerInput.value = '';
+      musclecounter = musclecounter + 1;
+    }
+    if (inputValue == "M. infraspinatus") {
+      tableResults.rows[2].cells[0].textContent = "M. infraspinatus";
+      answerInput.value = '';
+      musclecounter = musclecounter + 1;
+    }
+    if (inputValue == "M. teres minor") {
+      tableResults.rows[3].cells[0].textContent = "M. teres minor";
+      answerInput.value = '';
+      musclecounter = musclecounter + 1;
+    }
+    if (inputValue == "M. subscapularis") {
+      tableResults.rows[4].cells[0].textContent = "M. subscapularis";
+      answerInput.value = '';
+      musclecounter = musclecounter + 1;
+    }
+    if (musclecounter >= 4) {
+      document.getElementById("instructions").innerHTML = "Klicke nun auf die Felder und gib die richtige Antwort ein. Die Auswahl springt dann automatisch.";
+    }
+}
 }
 
 function simulateCellClick(rowIndex, cellIndex) {
