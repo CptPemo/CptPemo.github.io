@@ -152,32 +152,32 @@
             <th>Funktion</th>
         </tr>
         <tr id="supraspinatus">
-            <td id="supraspinatus1"></td>
-            <td id="supraspinatus2"></td>
-            <td id="supraspinatus3"></td>
-            <td id="supraspinatus4"></td>
-            <td id="supraspinatus5"></td>
+            <td id="cell0"></td>
+            <td id="cell1"></td>
+            <td id="cell2"></td>
+            <td id="cell3"></td>
+            <td id="cell4"></td>
         </tr>
         <tr id="infraspinatus">
-            <td id="infraspinatus1"></td>
-            <td id="infraspinatus2"></td>
-            <td id="infraspinatus3"></td>
-            <td id="infraspinatus4"></td>
-            <td id="infraspinatus5"></td>
+            <td id="cell0"></td>
+            <td id="cell1"></td>
+            <td id="cell2"></td>
+            <td id="cell3"></td>
+            <td id="cell4"></td>
           </tr>
           <tr id="teresminor">
-            <td id="teresminor1"></td>
-            <td id="teresminor2"></td>
-            <td id="teresminor3"></td>
-            <td id="teresminor4"></td>
-            <td id="teresminor5"></td>
+            <td id="cell0"></td>
+            <td id="cell1"></td>
+            <td id="cell2"></td>
+            <td id="cell3"></td>
+            <td id="cell4"></td>
           </tr>
           <tr id="subscapulares">
-            <td id="subscapulares1"></td>
-            <td id="subscapulares2"></td>
-            <td id="subscapulares3"></td>
-            <td id="subscapulares4"></td>
-            <td id="subscapulares5"></td>
+            <td id="cell0"></td>
+            <td id="cell1"></td>
+            <td id="cell2"></td>
+            <td id="cell3"></td>
+            <td id="cell4"></td>
         </tr>
 
       </table>
@@ -249,7 +249,8 @@ checkButton.addEventListener('click', () => {
         console.log("geilo");
     }
 });*/
-
+// Globale Variable zum Speichern des Zellenindex
+let clickedCellIndex = null;
 
 // Füge Event Listener zu den Zellen hinzu
 const cells = document.querySelectorAll('td');
@@ -257,7 +258,7 @@ cells.forEach((cell, index) => {
   cell.addEventListener('click', () => {
     console.log("Row index: " + cell.closest('tr').rowIndex + " | Column index: " + cell.cellIndex);
     // Speichere den Zellenindex in der globalen Variable
-    clickedCellIndex = { row: cell.closest('tr').rowIndex, cell: cell.cellIndex };
+    clickedCellIndex = { row: cell.closest('tr').rowIndex, cell: cell.cellIndex};
     
     console.log("Row ID: " + cell.parentElement.id + " | Cell ID: " + cell.id);
      // Entferne den dicken Rahmen von der zuletzt ausgewählten Zelle, falls vorhanden
@@ -276,8 +277,7 @@ cells.forEach((cell, index) => {
 });
 
 
- // Globale Variable zum Speichern des Zellenindex
- let clickedCellIndex = null;
+ 
 
 
 resignButton.addEventListener('click', () => {
@@ -302,10 +302,8 @@ checkButton.addEventListener('click', () => {
   checkAnswer();
 });
 
-    // Funktion zur Überprüfung der Eingabe
-    function checkAnswer() {
-        const inputValue = answerInput.value;
-  console.log(inputValue);
+function checkAnswer() {
+  const inputValue = answerInput.value;
 
   // Überprüfe, ob eine Zelle geklickt wurde
   if (clickedCellIndex !== null) {
@@ -313,23 +311,58 @@ checkButton.addEventListener('click', () => {
     const rowIndex = clickedCellIndex.row;
     const cellIndex = clickedCellIndex.cell;
 
-    // Hier solltest du den entsprechenden Index für die Zelle herausfinden und dann den Inhalt setzen.
-    //table.rows[rowIndex].cells[cellIndex].textContent = inputValue;
+    // Überprüfe die Benutzerantwort und aktualisiere die Ergebnistabelle
+    if (inputValue === table.rows[rowIndex].cells[cellIndex].textContent) {
+      tableResults.rows[rowIndex].cells[cellIndex].textContent = inputValue;
 
-    
-  console.log(inputValue);
-  console.log(table.rows[clickedCellIndex.row].cells[clickedCellIndex.cell].textContent);
-  if (inputValue === table.rows[clickedCellIndex.row].cells[clickedCellIndex.cell].textContent){
-        console.log('noicy');
-        tableResults.rows[rowIndex].cells[cellIndex].textContent = inputValue;
-    };
+      // Berechne den Index für die nächste Zelle in derselben Zeile
+      const nextCellIndex = cellIndex + 1;
 
+      // Überprüfe, ob die nächste Zelle existiert
+      if (nextCellIndex < table.rows[rowIndex].cells.length) {
+        clickedCellIndex.cell = clickedCellIndex.cell + 1;
+        simulateCellClick(rowIndex, nextCellIndex);
+  
 
+}
+
+    }
 
     // Zurücksetzen der globalen Variable
-    clickedCellIndex = null;
+    
   }
+}
+
+function simulateCellClick(rowIndex, cellIndex) {
+  // Setze den Rahmeneffekt zurück, wenn eine Zelle zuvor ausgewählt wurde
+  const nextCellId = 'cell' + (cellIndex); // Annahme: Zellen haben IDs wie "cell0", "cell1", ...
+  const nextCell = document.getElementById(nextCellId);
+
+  if (nextCell) {
+    // Setze den Rahmeneffekt zurück, wenn eine Zelle zuvor ausgewählt wurde
+    if (selectedCell) {
+      selectedCell.style.border = '1px solid black';
     }
+
+    // Setze die ausgewählte Zelle auf die nächste Zelle
+    selectedCell = nextCell;
+
+    // Hervorhebe die nächste Zelle mit einem dicken Rahmen
+    selectedCell.style.border = '3px solid black';
+
+    // Fokussiere das Texteingabefeld für die neue Zelle
+    answerInput.focus();
+
+    console.log(selectedCell);
+    console.log(clickedCellIndex);
+
+  }
+}
+
+
+
+
+
 
 
 
