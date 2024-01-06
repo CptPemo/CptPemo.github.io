@@ -169,12 +169,10 @@
             var cookieExists = getCookie("spielmodus2");
 
             if (cookieExists) {
-                loadScript('../scripts/Atlas.js',);
-                // loadScript('../scripts/Atlas-precisiontest.js',adjustFontSize);
+                loadScript('../scripts/Atlas-precisiontest.js',adjustFontSize);
                 console.log("JavaScript-Code für Spielmodus 2 wird ausgeführt");
             } else {
-                loadScript('../scripts/Atlas-precisiontest.js',adjustFontSize);
-                // loadScript('../scripts/Atlas.js');
+                loadScript('../scripts/Atlas.js');
                 console.log("JavaScript-Code für Spielmodus 1 wird ausgeführt");
             }
         }
