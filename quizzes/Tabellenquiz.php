@@ -110,32 +110,32 @@
             <th>Funktion</th>
         </tr>
         <tr>
+            <td id="0"></td>
+            <td id="1"></td>
+            <td id="2"></td>
+            <td id="3"></td>
+            <td id="4"></td>
+        </tr>
+        <tr>
+            <td id="5"></td>
+            <td id="6"></td>
+            <td id="7"></td>
+            <td id="8"></td>
+            <td id="9"></td>
+          </tr>
+          <tr>
+            <td id="10"></td>
             <td id="11"></td>
             <td id="12"></td>
             <td id="13"></td>
             <td id="14"></td>
+          </tr>
+          <tr>
             <td id="15"></td>
-        </tr>
-        <tr>
-            <td id="21"></td>
-            <td id="22"></td>
-            <td id="23"></td>
-            <td id="24"></td>
-            <td id="25"></td>
-          </tr>
-          <tr>
-            <td id="31"></td>
-            <td id="32"></td>
-            <td id="33"></td>
-            <td id="34"></td>
-            <td id="35"></td>
-          </tr>
-          <tr>
-            <td id="41"></td>
-            <td id="42"></td>
-            <td id="43"></td>
-            <td id="44"></td>
-            <td id="45"></td>
+            <td id="16"></td>
+            <td id="17"></td>
+            <td id="18"></td>
+            <td id="19"></td>
         </tr>
 
       </table>
@@ -150,32 +150,32 @@
             <th>Funktion</th>
         </tr>
         <tr>
-            <td id="11">M. supraspinatus</td>
-            <td id="12">Fossa supraspinata</td>
-            <td id="13">Tuberculum majus</td>
-            <td id="14">N. suprascapularis</td>
-            <td id="15">Abduktion</td>
+            <td id="0">M. supraspinatus</td>
+            <td id="1">Fossa supraspinata</td>
+            <td id="2">Tuberculum majus</td>
+            <td id="3">N. suprascapularis</td>
+            <td id="4">Abduktion</td>
         </tr>
         <tr>
-            <td id="21">M. infraspinatus</td>
-            <td id="22">Fossa infraspinata</td>
-            <td id="23">Tuberculum majus</td>
-            <td id="24">N. suprascapularis</td>
-            <td id="25">Adduktion, Außenrotation</td>
+            <td id="5">M. infraspinatus</td>
+            <td id="6">Fossa infraspinata</td>
+            <td id="7">Tuberculum majus</td>
+            <td id="8">N. suprascapularis</td>
+            <td id="9">Adduktion, Außenrotation</td>
           </tr>
           <tr>
-            <td id="31">M. teres minor</td>
-            <td id="32">Scapula</td>
-            <td id="33">Tuberculum majus</td>
-            <td id="34">N. axillaris</td>
-            <td id="35">Adduktion, Außenrotation</td>
+            <td id="10">M. teres minor</td>
+            <td id="11">Scapula</td>
+            <td id="12">Tuberculum majus</td>
+            <td id="13">N. axillaris</td>
+            <td id="14">Adduktion, Außenrotation</td>
           </tr>
           <tr>
-            <td id="41">M. subscapularis</td>
-            <td id="42">Facies costalis</td>
-            <td id="43">Tuberculum minus</td>
-            <td id="44">Nn. subscapulares</td>
-            <td id="45">Innenrotation, Adduktion</td>
+            <td id="15">M. subscapularis</td>
+            <td id="16">Facies costalis</td>
+            <td id="17">Tuberculum minus</td>
+            <td id="18">Nn. subscapulares</td>
+            <td id="19">Innenrotation, Adduktion</td>
         </tr>
 
       </table>
@@ -190,6 +190,31 @@
 
     const answerInput = document.getElementById('textInput');
     const checkButton = document.getElementById('checkButton');
+
+    const answers = [
+  { word: "M. supraspinatus", abbreviations: ["M supraspinatus", "m supraspinatus", "m. supraspinatus"] },
+  { word: "Fossa supraspinata", abbreviations: [""] },
+  { word: "Tuberculum majus", abbreviations: [""] },
+  { word: "N. suprascapularis", abbreviations: ["N suprascapularis", "n suprascapularis", "n. suprascapularis"] },
+  { word: "Abduktion", abbreviations: [""] },
+  { word: "M. infraspinatus", abbreviations: [""] },
+  { word: "Fossa infraspinata", abbreviations: [""] },
+  { word: "Tuberculum majus", abbreviations: [""] },
+  { word: "N. suprascapularis", abbreviations: ["N suprascapularis", "n suprascapularis", "n. suprascapularis"] },
+  { word: "Adduktion, Außenrotation", abbreviations: [""] },
+  { word: "M. teres minor", abbreviations: ["M teres minor"] },
+  { word: "Scapula", abbreviations: [""] },
+  { word: "Tuberculum majus", abbreviations: [""] },
+  { word: "N. axillaris", abbreviations: [""] },
+  { word: "Adduktion, Außenrotation", abbreviations: [""] },
+  { word: "M. subscapularis", abbreviations: [""] },
+  { word: "Facies costalis", abbreviations: [""] },
+  { word: "Tuberculum minus", abbreviations: [""] },
+  { word: "Nn. subscapulares", abbreviations: [""] },
+  { word: "Adduktion, Innenrotation", abbreviations: [""] }
+  
+  // Add more answers
+];
 
 /*
 checkButton.addEventListener('click', () => {
@@ -227,12 +252,11 @@ cells.forEach((cell, index) => {
   });
 });
 
-
-
-
  // Globale Variable zum Speichern des Zellenindex
  let clickedCellIndex = null;
 
+
+ 
 // Event Listener für den Check-Button
 checkButton.addEventListener('click', () => {
   const inputValue = answerInput.value;
@@ -269,6 +293,39 @@ resignButton.addEventListener('click', () => {
   table.style.display = 'table';
 
 });
+
+// ...
+
+function checkAnswer() {
+  const inputValue = answerInput.value.toLowerCase(); // Benutzereingabe in Kleinbuchstaben umwandeln
+
+  // Überprüfe, ob eine Zelle geklickt wurde
+  if (clickedCellIndex !== null) {
+    // Extrahiere Zeilen- und Spaltenindizes
+    const rowIndex = clickedCellIndex.row;
+    const cellIndex = clickedCellIndex.cell;
+
+    // Überprüfe die Benutzerantwort und aktualisiere die Ergebnistabelle
+    const correctAnswer = answers.find(answer => {
+      const cellContent = table.rows[rowIndex].cells[cellIndex].textContent.toLowerCase(); // Zelleninhalt in Kleinbuchstaben umwandeln
+      return answer.word.toLowerCase() === cellContent || answer.abbreviations.includes(cellContent);
+    });
+
+    if (correctAnswer) {
+      tableResults.rows[rowIndex].cells[cellIndex].textContent = inputValue;
+      answerInput.value = '';
+      console.log('noicy');
+
+      // ... Rest des Codes ...
+    }
+    
+  } else {
+    // ... Rest des Codes ...
+  }
+}
+
+// ...
+
 
 
     

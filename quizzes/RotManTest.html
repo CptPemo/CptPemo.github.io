@@ -245,8 +245,8 @@
         </tr>
 
       </table>
-      <button class="check-button" id="previous"> <<  Vorheriges Quiz </button>
-      <button class="check-button" id="next"> Nächstes  Quiz >></button>
+      <button class="check-button" id="previous"> << Vorheriges Quiz </button>
+      <button class="check-button" id="next"> Nächstes Quiz >></button>
       <?php include '../popup.html'; ?>
 
 <footer class="footer">
@@ -255,6 +255,31 @@
 </body>
 
 <script>
+
+const answers = [
+  { word: "M. supraspinatus", abbreviations: ["M supraspinatus", "m supraspinatus", "m. supraspinatus"] },
+  { word: "Fossa supraspinata", abbreviations: [""] },
+  { word: "Tuberculum majus", abbreviations: [""] },
+  { word: "N. suprascapularis", abbreviations: ["N suprascapularis", "n suprascapularis", "n. suprascapularis"] },
+  { word: "Abduktion", abbreviations: [""] },
+  { word: "M. infraspinatus", abbreviations: [""] },
+  { word: "Fossa infraspinata", abbreviations: [""] },
+  { word: "Tuberculum majus", abbreviations: [""] },
+  { word: "N. suprascapularis", abbreviations: ["N suprascapularis", "n suprascapularis", "n. suprascapularis"] },
+  { word: "Adduktion, Außenrotation", abbreviations: [""] },
+  { word: "M. teres minor", abbreviations: [""] },
+  { word: "Scapula", abbreviations: [""] },
+  { word: "Tuberculum majus", abbreviations: [""] },
+  { word: "N. axillaris", abbreviations: [""] },
+  { word: "Adduktion, Außenrotation", abbreviations: [""] },
+  { word: "M. subscapularis", abbreviations: [""] },
+  { word: "Facies costalis", abbreviations: [""] },
+  { word: "Tuberculum minus", abbreviations: [""] },
+  { word: "Nn. subscapulares", abbreviations: [""] },
+  { word: "Adduktion, Innenrotation", abbreviations: [""] }
+  
+  // Add more answers
+];
 
     let selectedCell = null; // für rahmen um ausgewählte zelle
 
