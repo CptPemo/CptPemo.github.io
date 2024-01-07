@@ -72,40 +72,59 @@
             Du kannst das Quiz unten neu starten oder auf der <a style="font-weight:600;" href="../AdvAna.php">Hauptseite</a> eine neue Herausforderung suchen! 
             </p>
             <div class="gameMode">
-            <button id="modusAButton">Rapid Mode wählen</button>
-            <button id="modusBButton">Precision Mode wählen</button>
+            <button id="spielmodusButton">Spielmodus wählen</button>
         </div>
             <h2 style="font-family:raleway; font-weight: 400; text-align: center;">Weitere Modi werden bald folgen!</h2>
             
         </main>  
         <script>
 
-// Funktion, um den Spielmodus zu speichern
-function speichereSpielmodus(modus) {
-    localStorage.setItem('ausgewaehlterSpielmodus', modus);
+function ladeUndSetzeGespeichertenSpielmodus() {
+    const gespeicherterModus = localStorage.getItem('ausgewaehlterSpielmodus');
+
+    // Überprüfen, ob ein gespeicherter Modus vorhanden ist
+    if (gespeicherterModus === 'ModusA') {
+        spielModusA(); // Lade Modus A
+    } else if (gespeicherterModus === 'ModusB') {
+        spielModusB(); // Lade Modus B
+    } else {
+        // Hier kannst du eine Standardaktion ausführen, falls kein Modus gespeichert ist
+        // Zum Beispiel: Lade einen Standardmodus oder frage den Benutzer nach seinem Modus
+    }
 }
 
-// Funktion, um den Spielmodus zu ändern
-function aendereSpielModus(modus) {
+function spielModusA() {
+    console.log('Spielmodus A geladen');
+}
+
+function spielModusB() {
+    console.log('Spielmodus B geladen');
+}
+
+function toggleSpielmodus() {
+    const aktuellerModus = localStorage.getItem('ausgewaehlterSpielmodus');
+    const neuerModus = aktuellerModus === 'ModusA' ? 'ModusB' : 'ModusA'; // Wechsel zwischen Modus A und B
+
     // Speichere den neuen Spielmodus
-    speichereSpielmodus(modus);
+    localStorage.setItem('ausgewaehlterSpielmodus', neuerModus);
+    console.log(`Spielmodus auf ${neuerModus} geändert`);
 
+    // Lade den neuen Spielmodus
+    ladeUndSetzeGespeichertenSpielmodus();
+
+    // Aktualisiere den Text des Buttons entsprechend dem neuen Spielmodus
+    document.getElementById('spielmodusButton').textContent = `Spielmodus: ${neuerModus}`;
 }
 
-// Event-Listener für den Button zum Wählen von Modus A
-document.getElementById('modusAButton').addEventListener('click', function() {
-    aendereSpielModus('ModusA'); // Ändere den Spielmodus zu Modus A
-    console.log("Spielmodus A gewählt");
-
+// Event-Listener für den Button zum Wechseln des Spielmodus
+document.getElementById('spielmodusButton').addEventListener('click', function() {
+    toggleSpielmodus(); // Ändere den Spielmodus und lade den neuen Modus
 });
 
-// Event-Listener für den Button zum Wählen von Modus B
-document.getElementById('modusBButton').addEventListener('click', function() {
-    aendereSpielModus('ModusB'); // Ändere den Spielmodus zu Modus B
-    console.log("Spielmodus B gewählt");
+// Initialisiere den gespeicherten Spielmodus, wenn die Seite geladen wird
+window.addEventListener('load', function() {
+    ladeUndSetzeGespeichertenSpielmodus();
 });
-
-
 
         </script>
         <?php include 'popup.html'; ?>
