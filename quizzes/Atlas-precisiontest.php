@@ -147,41 +147,8 @@
         </footer>  
 
 <script src="../scripts/checkpopup.js"></script>
-<script>
-        function loadScript(scriptName) {
-            var script = document.createElement('script');
-            script.src = scriptName;
-            document.head.appendChild(script);
-        }
-        function adjustFontSize() {
-    const labelElements = document.querySelectorAll('.label');
-
-    labelElements.forEach(label => {
-        label.style.cursor = 'pointer'; // Ändert den Mauszeiger, wenn über das Label geschwebt wird
-        label.style.fontWeight = 'normal'; // Setzt die Schriftgröße auf normal
-    });
-}
-        function getCookie(name) {
-            // ... (deine getCookie-Funktion)
-        }
-
-        function executeScriptBasedOnCookie() {
-            var cookieExists = getCookie("spielmodus2");
-
-            if (cookieExists) {
-                loadScript('../scripts/Atlas-precisiontest.js',adjustFontSize);
-                console.log("JavaScript-Code für Spielmodus 2 wird ausgeführt");
-            } else {
-                loadScript('../scripts/Atlas.js');
-                console.log("JavaScript-Code für Spielmodus 1 wird ausgeführt");
-            }
-        }
-
-        window.onload = function() {
-            
-            executeScriptBasedOnCookie();
-        };
-    </script>
+<script src="../scripts/Atlas-precisiontest.js"></script>
+        
 
     
     </body>

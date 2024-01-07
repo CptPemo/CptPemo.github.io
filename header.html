@@ -21,7 +21,7 @@
             </ul>
         </nav>
         <div class="gameMode">
-            <button id="cookieButton">Spielmodus wechseln</button>
+             <!-- <button id="cookieButton">Spielmodus wechseln</button> -->
         </div>
     <input class="search-bar" type="text" placeholder="Suche" id="searchInput" >
 </div>
@@ -37,42 +37,6 @@
         </a>
     </button>
 </div>
-<script>
-// Funktion, um das Cookie zu setzen
-function toggleCookie() {
-  var cookieExists = getCookie("spielmodus2");
-  if (cookieExists) {
-    // Cookie existiert, also lösche es
-    document.cookie = "spielmodus2=; expires=Thu, 01 Jan 1970 00:00:00 GMT";
-    console.log("Cookie gelöscht")
-  } else {
-    // Setze das Cookie mit dem Namen "spielmodus2" für einen Tag (1 Tag = 24 Stunden)
-    document.cookie = "spielmodus2=wert_des_cookies; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-    console.log("Cookie erstellt")
-  }
-}
-
-// Funktion, um den Wert eines Cookies zu bekommen
-function getCookie(name) {
-  var cookieName = name + "=";
-  var decodedCookie = decodeURIComponent(document.cookie);
-  var cookieArray = decodedCookie.split(';');
-  for(var i = 0; i < cookieArray.length; i++) {
-    var cookie = cookieArray[i];
-    while (cookie.charAt(0) == ' ') {
-      cookie = cookie.substring(1);
-    }
-    if (cookie.indexOf(cookieName) == 0) {
-      return cookie.substring(cookieName.length, cookie.length);
-    }
-  }
-  return null;
-}
-
-// Eventlistener für den Button
-document.getElementById("cookieButton").addEventListener("click", toggleCookie);
-
-</script>
 
 </body>
 </html>

@@ -71,10 +71,43 @@
             </br>
             Du kannst das Quiz unten neu starten oder auf der <a style="font-weight:600;" href="../AdvAna.php">Hauptseite</a> eine neue Herausforderung suchen! 
             </p>
+            <div class="gameMode">
+            <button id="modusAButton">Rapid Mode wählen</button>
+            <button id="modusBButton">Precision Mode wählen</button>
+        </div>
             <h2 style="font-family:raleway; font-weight: 400; text-align: center;">Weitere Modi werden bald folgen!</h2>
             
         </main>  
+        <script>
 
+// Funktion, um den Spielmodus zu speichern
+function speichereSpielmodus(modus) {
+    localStorage.setItem('ausgewaehlterSpielmodus', modus);
+}
+
+// Funktion, um den Spielmodus zu ändern
+function aendereSpielModus(modus) {
+    // Speichere den neuen Spielmodus
+    speichereSpielmodus(modus);
+
+}
+
+// Event-Listener für den Button zum Wählen von Modus A
+document.getElementById('modusAButton').addEventListener('click', function() {
+    aendereSpielModus('ModusA'); // Ändere den Spielmodus zu Modus A
+    console.log("Spielmodus A gewählt");
+
+});
+
+// Event-Listener für den Button zum Wählen von Modus B
+document.getElementById('modusBButton').addEventListener('click', function() {
+    aendereSpielModus('ModusB'); // Ändere den Spielmodus zu Modus B
+    console.log("Spielmodus B gewählt");
+});
+
+
+
+        </script>
         <?php include 'popup.html'; ?>
 
         <footer class="footer">
