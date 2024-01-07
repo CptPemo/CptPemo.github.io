@@ -47,31 +47,13 @@ if (isset($_SESSION['username'])) {
                 margin-top: 100px;
                 font-size: 50px;
                 margin-left: 2%"
-                >Advanced Anatomy</div>
-
+                >Muskeln</div>
             <section class="quiz-grid">
-
-
             <button class="quiz-preview">
-                    <a href="KnochenAuswahl.php">
-                        <div class="quiz-picture" data-keywords="Knochen">
-                            <img class="thumbnail" src="thumbnails/FemurThumbnail.png" oncontextmenu="return false;">     
-                        </div>
-                        <div class="quiz-info">Knochen</div>
+                    <a href="quizzes/Rotatorenmanschette Kopie.php">
+                        <div style="font-size: 30px;">Rotatorenmanschette</div>
                     </a>
                 </button>
-
-                <button class="quiz-preview">
-                    <a href="MuskelAuswahl.php">
-                    <div class="quiz-picture" data-keywords="Knochen">
-                            <img class="thumbnail" src="thumbnails/MuskelnThumbnail2.png" oncontextmenu="return false;">     
-                        </div>
-                        <div class="quiz-info">Muskeln</div>
-                    </a>
-                </button>
-
-
-               
 
 
             </section>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alternative Schreibweisen</title>
+</head>
+<body>
+
+  <table border="1">
+    <tr>
+      <th>Alternative Schreibweisen</th>
+    </tr>
+    <tr>
+      <td id="word1">Hallo</td>
+    </tr>
+    <tr>
+      <td id="word2">Hi</td>
+    </tr>
+    <tr>
+      <td id="word3">Guten Tag</td>
+    </tr>
+  </table>
+
+  <script>
+    const words = {
+      word1: ["Hallo"],
+      word2: ["Hi"],
+      word3: ["Guten Tag", "Gruß", "Hallo"]
+    };
+
+    const table = document.querySelector('table');
+
+    table.addEventListener('click', (event) => {
+      const clickedCell = event.target;
+
+      if (clickedCell.tagName === 'TD') {
+        const wordId = clickedCell.id;
+        const alternativeWords = words[wordId];
+
+        if (alternativeWords) {
+          const currentText = clickedCell.textContent;
+          const currentIndex = alternativeWords.indexOf(currentText);
+          const nextIndex = (currentIndex + 1) % alternativeWords.length;
+
+          clickedCell.textContent = alternativeWords[nextIndex];
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
