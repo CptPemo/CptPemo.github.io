@@ -206,6 +206,8 @@ labelElements.forEach(label => {
   });
 });
 
+
+
 function resetLabelWeights() {
   const labels = document.querySelectorAll('.label');
   labels.forEach(label => {
@@ -236,6 +238,7 @@ const answers = [
   { word: "Sulcus arteriae vertebralis", abbreviations: ["Sulcus a vertebralis", "Sulcus a. vertebralis"] },
   // Add more answers
 ];
+
 
 const timerElement = document.getElementById('timer');
 timerElement.style.display = 'none';
@@ -346,6 +349,8 @@ function stopQuiz() {
 };
 
 restartButton.style.display = 'none';
+
+
 
 console.log("Spielmodus B geladen");
 
