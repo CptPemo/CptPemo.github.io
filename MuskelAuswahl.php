@@ -49,9 +49,21 @@ if (isset($_SESSION['username'])) {
                 margin-left: 2%"
                 >Muskeln</div>
             <section class="quiz-grid">
-            <button class="quiz-preview">
+                <button class="quiz-preview">
                     <a href="quizzes/Rotatorenmanschette Kopie.php">
                         <div style="font-size: 30px;">Rotatorenmanschette</div>
+                    </a>
+                </button>
+
+                <button class="quiz-preview">
+                    <a href="quizzes/Glutealmuskeln.php">
+                        <div style="font-size: 30px;">Glutealmuskeln</div>
+                    </a>
+                </button>
+
+                <button class="quiz-preview">
+                    <a href="quizzes/PelvitrochantaereMuskulatur.php">
+                        <div style="font-size: 30px;">Pelvitrochantäre Muskulatur</div>
                     </a>
                 </button>
 

@@ -161,12 +161,12 @@
         <?php include '../header.html';?>           
     </header>
 
-    <div><h1 style="font-size: 40px; font-weight:400; margin: 1%;">Rotatorenmanschette<h1></div>
+    <div><h1 style="font-size: 40px; font-weight:400; margin: 1%;">Glutealmuskeln<h1></div>
     <input class="guess-bar" id="textInput" type="text" placeholder="Los geht's!"> 
     <button class="check-button" id="checkButton"> Check </button>
     <button class="resign-button" id="resignButton"> Resign </button>
-    <p id="instructions">Beginne damit, die vier Muskeln der Rotatorenmanschette zu benennen.</p>
-    <table class="tabelle" id="RotatorenmanschetteErgebnisse">
+    <p id="instructions">Beginne damit, die Glutealmuskeln zu benennen.</p>
+    <table class="tabelle" id="MuskelnErgebnisse">
 
         <tr>
             <th>Muskel</th>
@@ -175,28 +175,28 @@
             <th>Innervation</th>
             <th>Funktion</th>
         </tr>
-        <tr id="supraspinatus">
+        <tr id="maximus">
             <td id="cell10"></td>
             <td id="cell11"></td>
             <td id="cell12"></td>
             <td id="cell13"></td>
             <td id="cell14"></td>
         </tr>
-        <tr id="infraspinatus">
+        <tr id="medius">
             <td id="cell20"></td>
             <td id="cell21"></td>
             <td id="cell22"></td>
             <td id="cell23"></td>
             <td id="cell24"></td>
           </tr>
-          <tr id="teresminor">
+          <tr id="minimus">
             <td id="cell30"></td>
             <td id="cell31"></td>
             <td id="cell32"></td>
             <td id="cell33"></td>
             <td id="cell34"></td>
           </tr>
-          <tr id="subscapulares">
+          <tr id="tensor">
             <td id="cell40"></td>
             <td id="cell41"></td>
             <td id="cell42"></td>
@@ -206,7 +206,7 @@
 
       </table>
 
-      <table class="tabelleLösungen" id="Rotatorenmanschette">
+      <table class="tabelleLösungen" id="Muskeln">
 
         <tr>
             <th>Muskel</th>
@@ -216,32 +216,32 @@
             <th>Funktion</th>
         </tr>
         <tr id="supraspinatus">
-            <td id="supraspinatus1">M. supraspinatus</td>
-            <td id="supraspinatus2">Fossa supraspinata</td>
-            <td id="supraspinatus3">Tuberculum majus</td>
-            <td id="supraspinatus4">N. suprascapularis</td>
-            <td id="supraspinatus5">Abduktion</td>
+            <td id="supraspinatus1">M. gluteus maximus</td>
+            <td id="supraspinatus2">Os ilium</td>
+            <td id="supraspinatus3">Fascia lata</td>
+            <td id="supraspinatus4">N. gluteus inferior</td>
+            <td id="supraspinatus5">Extension, Außenrotation</td>
         </tr>
         <tr id="infraspinatus">
-            <td id="infraspinatus1">M. infraspinatus</td>
-            <td id="infraspinatus2">Fossa infraspinata</td>
-            <td id="infraspinatus3">Tuberculum majus</td>
-            <td id="infraspinatus4">N. suprascapularis</td>
-            <td id="infraspinatus5">Adduktion, Außenrotation</td>
+            <td id="infraspinatus1">M. gluteus medius</td>
+            <td id="infraspinatus2">Os ilium</td>
+            <td id="infraspinatus3">Trochanter major</td>
+            <td id="infraspinatus4">N. gluteus superior</td>
+            <td id="infraspinatus5">Abduktion</td>
           </tr>
           <tr id="teresminor">
-            <td id="teresminor1">M. teres minor</td>
-            <td id="teresminor2">Scapula</td>
-            <td id="teresminor3">Tuberculum majus</td>
-            <td id="teresminor4">N. axillaris</td>
-            <td id="teresminor5">Adduktion, Außenrotation</td>
+            <td id="teresminor1">M. gluteus minimus</td>
+            <td id="teresminor2">Os ilium</td>
+            <td id="teresminor3">Trochanter major</td>
+            <td id="teresminor4">N. gluteus major</td>
+            <td id="teresminor5">Abduktion</td>
           </tr>
           <tr id="subscapulares">
-            <td id="subscapulares1">M. subscapularis</td>
-            <td id="subscapulares2">Facies costalis</td>
-            <td id="subscapulares3">Tuberculum minus</td>
-            <td id="subscapulares4">Nn. subscapulares</td>
-            <td id="subscapulares5">Adduktion, Innenrotation</td>
+            <td id="subscapulares1">M. tensor fasciae latae</td>
+            <td id="subscapulares2">Spina iliaca anterior superior</td>
+            <td id="subscapulares3">Tractus iliotibialis</td>
+            <td id="subscapulares4">N. gluteus superior</td>
+            <td id="subscapulares5">Abduktion</td>
         </tr>
 
       </table>
@@ -258,8 +258,8 @@
 
     let selectedCell = null; // für rahmen um ausgewählte zelle
 
-    const table = document.getElementById('Rotatorenmanschette');
-    const tableResults = document.getElementById('RotatorenmanschetteErgebnisse');
+    const table = document.getElementById('Muskeln');
+    const tableResults = document.getElementById('MuskelnErgebnisse');
 
     const answerInput = document.getElementById('textInput');
     const checkButton = document.getElementById('checkButton');
@@ -391,23 +391,23 @@ function checkAnswer() {
   }else{
     // Wenn noch kein Feld angeklickt wurde
     console.log(musclecounter);
-    if (inputValue == "M. supraspinatus") {
-      tableResults.rows[1].cells[0].textContent = "M. supraspinatus";
+    if (inputValue == "M. gluteus maximus") {
+      tableResults.rows[1].cells[0].textContent = "M. gluteus maximus";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. infraspinatus") {
-      tableResults.rows[2].cells[0].textContent = "M. infraspinatus";
+    if (inputValue == "M. gluteus medius") {
+      tableResults.rows[2].cells[0].textContent = "M. gluteus medius";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. teres minor") {
-      tableResults.rows[3].cells[0].textContent = "M. teres minor";
+    if (inputValue == "M. gluteus minimus") {
+      tableResults.rows[3].cells[0].textContent = "M. gluteus minimus";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. subscapularis") {
-      tableResults.rows[4].cells[0].textContent = "M. subscapularis";
+    if (inputValue == "M. tensor fasciae latae") {
+      tableResults.rows[4].cells[0].textContent = "M. tensor fasciae latae";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }

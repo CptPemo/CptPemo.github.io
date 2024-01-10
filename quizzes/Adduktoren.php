@@ -161,12 +161,12 @@
         <?php include '../header.html';?>           
     </header>
 
-    <div><h1 style="font-size: 40px; font-weight:400; margin: 1%;">Rotatorenmanschette<h1></div>
+    <div><h1 style="font-size: 40px; font-weight:400; margin: 1%;">Pelvitrochantäre Muskulatur<h1></div>
     <input class="guess-bar" id="textInput" type="text" placeholder="Los geht's!"> 
     <button class="check-button" id="checkButton"> Check </button>
     <button class="resign-button" id="resignButton"> Resign </button>
-    <p id="instructions">Beginne damit, die vier Muskeln der Rotatorenmanschette zu benennen.</p>
-    <table class="tabelle" id="RotatorenmanschetteErgebnisse">
+    <p id="instructions">Beginne damit, die Adduktoren zu benennen.</p>
+    <table class="tabelle" id="MuskelnErgebnisse">
 
         <tr>
             <th>Muskel</th>
@@ -175,38 +175,45 @@
             <th>Innervation</th>
             <th>Funktion</th>
         </tr>
-        <tr id="supraspinatus">
+        <tr id="maximus">
             <td id="cell10"></td>
             <td id="cell11"></td>
             <td id="cell12"></td>
             <td id="cell13"></td>
             <td id="cell14"></td>
         </tr>
-        <tr id="infraspinatus">
+        <tr id="medius">
             <td id="cell20"></td>
             <td id="cell21"></td>
             <td id="cell22"></td>
             <td id="cell23"></td>
             <td id="cell24"></td>
           </tr>
-          <tr id="teresminor">
+          <tr id="minimus">
             <td id="cell30"></td>
             <td id="cell31"></td>
             <td id="cell32"></td>
             <td id="cell33"></td>
             <td id="cell34"></td>
           </tr>
-          <tr id="subscapulares">
+          <tr id="tensor">
             <td id="cell40"></td>
             <td id="cell41"></td>
             <td id="cell42"></td>
             <td id="cell43"></td>
             <td id="cell44"></td>
         </tr>
+        <tr id="externus">
+            <td id="cell50"></td>
+            <td id="cell51"></td>
+            <td id="cell52"></td>
+            <td id="cell53"></td>
+            <td id="cell54"></td>
+        </tr>
 
       </table>
 
-      <table class="tabelleLösungen" id="Rotatorenmanschette">
+      <table class="tabelleLösungen" id="Muskeln">
 
         <tr>
             <th>Muskel</th>
@@ -216,32 +223,39 @@
             <th>Funktion</th>
         </tr>
         <tr id="supraspinatus">
-            <td id="supraspinatus1">M. supraspinatus</td>
-            <td id="supraspinatus2">Fossa supraspinata</td>
-            <td id="supraspinatus3">Tuberculum majus</td>
-            <td id="supraspinatus4">N. suprascapularis</td>
-            <td id="supraspinatus5">Abduktion</td>
+            <td id="supraspinatus1">M. piriformis</td>
+            <td id="supraspinatus2">Os sacrum</td>
+            <td id="supraspinatus3">Trochanter major</td>
+            <td id="supraspinatus4">Plexus sacralis</td>
+            <td id="supraspinatus5">Abduktion, Außenrotation</td>
         </tr>
         <tr id="infraspinatus">
-            <td id="infraspinatus1">M. infraspinatus</td>
-            <td id="infraspinatus2">Fossa infraspinata</td>
-            <td id="infraspinatus3">Tuberculum majus</td>
-            <td id="infraspinatus4">N. suprascapularis</td>
-            <td id="infraspinatus5">Adduktion, Außenrotation</td>
+            <td id="infraspinatus1">M. gemellus superior</td>
+            <td id="infraspinatus2">Spina ischiadica</td>
+            <td id="infraspinatus3">Fossa trochanterica</td>
+            <td id="infraspinatus4">Plexus sacralis</td>
+            <td id="infraspinatus5">Außenrotation</td>
           </tr>
           <tr id="teresminor">
-            <td id="teresminor1">M. teres minor</td>
-            <td id="teresminor2">Scapula</td>
-            <td id="teresminor3">Tuberculum majus</td>
-            <td id="teresminor4">N. axillaris</td>
-            <td id="teresminor5">Adduktion, Außenrotation</td>
+            <td id="teresminor1">M. gemellus inferior</td>
+            <td id="teresminor2">Tuber ischiadicum</td>
+            <td id="teresminor3">Fossa trochanterica</td>
+            <td id="teresminor4">Plexus sacralis</td>
+            <td id="teresminor5">Außenrotation</td>
           </tr>
           <tr id="subscapulares">
-            <td id="subscapulares1">M. subscapularis</td>
-            <td id="subscapulares2">Facies costalis</td>
-            <td id="subscapulares3">Tuberculum minus</td>
-            <td id="subscapulares4">Nn. subscapulares</td>
-            <td id="subscapulares5">Adduktion, Innenrotation</td>
+            <td id="subscapulares1">M. obturatorius internus</td>
+            <td id="subscapulares2">Membrana obturatoria</td>
+            <td id="subscapulares3">Fossa trochanterica</td>
+            <td id="subscapulares4">Plexus sacralis</td>
+            <td id="subscapulares5">Außenrotation</td>
+        </tr>
+        <tr id="obturext">
+            <td id="obturext1">M. obturatorius externus</td>
+            <td id="obturext2">Membrana obturatoria</td>
+            <td id="obturext3">Fossa trochanterica</td>
+            <td id="obturext4">N. obturatorius</td>
+            <td id="obturext5">Außenrotation</td>
         </tr>
 
       </table>
@@ -258,8 +272,8 @@
 
     let selectedCell = null; // für rahmen um ausgewählte zelle
 
-    const table = document.getElementById('Rotatorenmanschette');
-    const tableResults = document.getElementById('RotatorenmanschetteErgebnisse');
+    const table = document.getElementById('Muskeln');
+    const tableResults = document.getElementById('MuskelnErgebnisse');
 
     const answerInput = document.getElementById('textInput');
     const checkButton = document.getElementById('checkButton');
@@ -391,27 +405,32 @@ function checkAnswer() {
   }else{
     // Wenn noch kein Feld angeklickt wurde
     console.log(musclecounter);
-    if (inputValue == "M. supraspinatus") {
-      tableResults.rows[1].cells[0].textContent = "M. supraspinatus";
+    if (inputValue == "M. piriformis") {
+      tableResults.rows[1].cells[0].textContent = "M. piriformis";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. infraspinatus") {
-      tableResults.rows[2].cells[0].textContent = "M. infraspinatus";
+    if (inputValue == "M. gemellus superior") {
+      tableResults.rows[2].cells[0].textContent = "M. gemellus superior";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. teres minor") {
-      tableResults.rows[3].cells[0].textContent = "M. teres minor";
+    if (inputValue == "M. gemellus inferior") {
+      tableResults.rows[3].cells[0].textContent = "M. gemellus inferior";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. subscapularis") {
-      tableResults.rows[4].cells[0].textContent = "M. subscapularis";
+    if (inputValue == "M. obturatorius internus") {
+      tableResults.rows[4].cells[0].textContent = "M. obturatorius internus";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (musclecounter >= 4) {
+    if (inputValue == "M. obturatorius externus") {
+      tableResults.rows[5].cells[0].textContent = "M. obturatorius externus";
+      answerInput.value = '';
+      musclecounter = musclecounter + 1;
+    }
+    if (musclecounter >= 5) {
       document.getElementById("instructions").innerHTML = "Klicke nun auf die Felder und gib die richtige Antwort ein. Die Auswahl springt dann automatisch.";
     }
 }
