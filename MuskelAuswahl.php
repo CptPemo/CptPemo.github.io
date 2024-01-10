@@ -57,7 +57,7 @@ if (isset($_SESSION['username'])) {
 
                 <button class="quiz-preview">
                     <a href="quizzes/SchulterweitereMuskeln.php">
-                        <div style="font-size: 30px;">Mukulatur der Schulter</div>
+                        <div style="font-size: 30px;">Muskulatur der Schulter</div>
                     </a>
                 </button>
 
@@ -66,6 +66,19 @@ if (isset($_SESSION['username'])) {
                         <div style="font-size: 30px;">Muskulatur des Ellenbogens</div>
                     </a>
                 </button>
+
+                <button class="quiz-preview">
+                    <a href="quizzes/FlexorenUnterarm.php">
+                        <div style="font-size: 30px;">Flexoren des Unterarms</div>
+                    </a>
+                </button>
+
+                <button class="quiz-preview">
+                    <a href="quizzes/ExtensorenUnterarm.php">
+                        <div style="font-size: 30px;">Extensoren des Unterarms</div>
+                    </a>
+                </button>
+
 
                 <button class="quiz-preview">
                     <a href="quizzes/Glutealmuskeln.php">
