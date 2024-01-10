@@ -411,7 +411,7 @@
             <td id="supraspinatus2">Ossa metatarsi 3-5</td>
             <td id="supraspinatus3">proximale Phalangen 3-5</td>
             <td id="supraspinatus4">N. plantaris lateralis</td>
-            <td id="supraspinatus5">Adduktion der Zehen 3–5 zur</td>
+            <td id="supraspinatus5">Adduktion der Zehen 3–5</td>
         </tr>
           
       </table>
