@@ -173,11 +173,11 @@
     </header>
 
     <div class="TopPart">
-        <div><h1 style="font-size: 40px; font-weight:400; margin: 1%;">Muskulatur der Sprunggelenke<h1></div>
+        <div><h1 style="font-size: 40px; font-weight:400; margin: 1%;">Muskulatur des Fußes<h1></div>
         <input class="guess-bar" id="textInput" type="text" placeholder="Los geht's!"> 
         <button class="check-button" id="checkButton"> Check </button>
         <button class="resign-button" id="resignButton"> Resign </button>
-        <p id="instructions">Beginne damit, die Muskeln der Sprunggelenke zu benennen.</p>
+        <p id="instructions">Beginne damit, die Muskeln des Fußes zu benennen.</p>
     </div>
 
     <div class="TableSection">
@@ -281,6 +281,20 @@
             <td id="cell123"></td>
             <td id="cell124"></td>
           </tr>
+          <tr id="">
+            <td id="cell120"></td>
+            <td id="cell121"></td>
+            <td id="cell122"></td>
+            <td id="cell123"></td>
+            <td id="cell124"></td>
+          </tr>
+          <tr id="">
+            <td id="cell120"></td>
+            <td id="cell121"></td>
+            <td id="cell122"></td>
+            <td id="cell123"></td>
+            <td id="cell124"></td>
+          </tr>
 
 
       </table>
@@ -310,80 +324,94 @@
         </tr>
         <tr id="supraspinatus">
             <td id="supraspinatus1">M. abductor hallucis</td>
-            <td id="supraspinatus2"></td>
-            <td id="supraspinatus3"></td>
-            <td id="supraspinatus4"></td>
-            <td id="supraspinatus5"></td>
+            <td id="supraspinatus2">Tuber calcanei, Os naviculare</td>
+            <td id="supraspinatus3">Phalanx proximalis 1</td>
+            <td id="supraspinatus4">N. plantaris medialis</td>
+            <td id="supraspinatus5">Flexion und Abduktion der Großzehe</td>
         </tr>
         <tr id="supraspinatus">
-            <td id="supraspinatus1">M. flexor hallucis brevis</td>
-            <td id="supraspinatus2"></td>
-            <td id="supraspinatus3"></td>
-            <td id="supraspinatus4"></td>
-            <td id="supraspinatus5"></td>
+            <td id="supraspinatus1">M. flexor hallucis brevis - Caput mediale</td>
+            <td id="supraspinatus2">Os cuneiforme mediale</td>
+            <td id="supraspinatus3">Phalanx proximalis 1</td>
+            <td id="supraspinatus4">N. plantaris medialis</td>
+            <td id="supraspinatus5">Flexion der Großzehe</td>
         </tr>
         <tr id="supraspinatus">
-            <td id="supraspinatus1">M. adductor hallucis</td>
-            <td id="supraspinatus2"></td>
-            <td id="supraspinatus3"></td>
-            <td id="supraspinatus4"></td>
-            <td id="supraspinatus5"></td>
+            <td id="supraspinatus1">M. flexor hallucis brevis - Caput laterale</td>
+            <td id="supraspinatus2">Os cuneiforme mediale</td>
+            <td id="supraspinatus3">Phalanx proximalis 1</td>
+            <td id="supraspinatus4">N. plantaris lateralis</td>
+            <td id="supraspinatus5">Flexion der Großzehe</td>
+        </tr>
+        <tr id="supraspinatus">
+            <td id="supraspinatus1">M. adductor hallucis - Caput obliquum</td>
+            <td id="supraspinatus2">Ossa cuboideum und cuneiforme laterale</td>
+            <td id="supraspinatus3">Phalanx proximalis 1</td>
+            <td id="supraspinatus4">N. plantaris lateralis</td>
+            <td id="supraspinatus5">Adduktion und Flexion der Großzehe</td>
+        </tr>
+        <tr id="supraspinatus">
+            <td id="supraspinatus1">M. adductor hallucis - Caput transversum</td>
+            <td id="supraspinatus2">Lig. metatarsale transversum profundum</td>
+            <td id="supraspinatus3">Phalanx proximalis 1</td>
+            <td id="supraspinatus4">N. plantaris lateralis</td>
+            <td id="supraspinatus5">Adduktion und Flexion der Großzehe</td>
         </tr>
         <tr id="supraspinatus">
             <td id="supraspinatus1">M. abductor digiti minimi</td>
-            <td id="supraspinatus2"></td>
-            <td id="supraspinatus3"></td>
-            <td id="supraspinatus4"></td>
-            <td id="supraspinatus5"></td>
+            <td id="supraspinatus2">Tuber calcanei</td>
+            <td id="supraspinatus3">Phalanx proximalis V</td>
+            <td id="supraspinatus4">N. plantaris lateralis</td>
+            <td id="supraspinatus5">Abspreizen und Plantarflexion der kleinen Zehe</td>
         </tr>
         <tr id="supraspinatus">
             <td id="supraspinatus1">M. flexor digiti minimi brevis</td>
-            <td id="supraspinatus2"></td>
-            <td id="supraspinatus3"></td>
-            <td id="supraspinatus4"></td>
-            <td id="supraspinatus5"></td>
+            <td id="supraspinatus2">Os metatarsi V, Lig. plantare longum</td>
+            <td id="supraspinatus3">Phalanx proximalis V, basal</td>
+            <td id="supraspinatus4">N. plantaris lateralis</td>
+            <td id="supraspinatus5">Abspreizen und Plantarflexion der kleinen Zehe</td>
         </tr>
         <tr id="supraspinatus">
             <td id="supraspinatus1">M. opponens digiti minimi</td>
-            <td id="supraspinatus2"></td>
-            <td id="supraspinatus3"></td>
-            <td id="supraspinatus4"></td>
-            <td id="supraspinatus5"></td>
+            <td id="supraspinatus2">Os metatarsi V, Lig. plantare longum</td>
+            <td id="supraspinatus3">Os metatarsi V, distal</td>
+            <td id="supraspinatus4">N. plantaris lateralis</td>
+            <td id="supraspinatus5">Abspreizen und Plantarflexion der kleinen Zehe</td>
         </tr>
         <tr id="supraspinatus">
             <td id="supraspinatus1">M. flexor digitorum brevis</td>
-            <td id="supraspinatus2"></td>
-            <td id="supraspinatus3"></td>
-            <td id="supraspinatus4"></td>
-            <td id="supraspinatus5"></td>
+            <td id="supraspinatus2">Tuber calcanei, Plantaraponeurose</td>
+            <td id="supraspinatus3">Mittelphalangen</td>
+            <td id="supraspinatus4">N. plantaris medialis</td>
+            <td id="supraspinatus5">Zehenbeugung</td>
         </tr>
         <tr id="supraspinatus">
             <td id="supraspinatus1">M. quadratus plantae</td>
-            <td id="supraspinatus2"></td>
-            <td id="supraspinatus3"></td>
-            <td id="supraspinatus4"></td>
-            <td id="supraspinatus5"></td>
+            <td id="supraspinatus2">Calcaneus</td>
+            <td id="supraspinatus3">Sehnen des M. flexor digitorum longus</td>
+            <td id="supraspinatus4">N. plantaris lateralis</td>
+            <td id="supraspinatus5">Flexion der Zehen</td>
         </tr>
         <tr id="supraspinatus">
             <td id="supraspinatus1">Mm. lumbricales</td>
-            <td id="supraspinatus2"></td>
-            <td id="supraspinatus3"></td>
-            <td id="supraspinatus4"></td>
-            <td id="supraspinatus5"></td>
+            <td id="supraspinatus2">Sehnen des M. flexor digitorum longus</td>
+            <td id="supraspinatus3">proximale Phalangen</td>
+            <td id="supraspinatus4">Nn. plantares</td>
+            <td id="supraspinatus5">Flexion der Zehen im Grundgelenk</td>
         </tr>
         <tr id="supraspinatus">
             <td id="supraspinatus1">Mm. interossei dorsales</td>
-            <td id="supraspinatus2"></td>
-            <td id="supraspinatus3"></td>
-            <td id="supraspinatus4"></td>
-            <td id="supraspinatus5"></td>
+            <td id="supraspinatus2">Ossa metatarsi</td>
+            <td id="supraspinatus3">proximale Phalangen</td>
+            <td id="supraspinatus4">N. plantaris lateralis</td>
+            <td id="supraspinatus5">Abspreizen der Zehen 2–4</td>
         </tr>
         <tr id="supraspinatus">
             <td id="supraspinatus1">Mm. interossei plantares</td>
-            <td id="supraspinatus2"></td>
-            <td id="supraspinatus3"></td>
-            <td id="supraspinatus4"></td>
-            <td id="supraspinatus5"></td>
+            <td id="supraspinatus2">Ossa metatarsi 3-5</td>
+            <td id="supraspinatus3">proximale Phalangen 3-5</td>
+            <td id="supraspinatus4">N. plantaris lateralis</td>
+            <td id="supraspinatus5">Adduktion der Zehen 3–5 zur</td>
         </tr>
           
       </table>
@@ -534,73 +562,83 @@ function checkAnswer() {
   }else{
     // Wenn noch kein Feld angeklickt wurde
     console.log(musclecounter);
-    if (inputValue == "M. gastrocnemius - Caput mediale") {
-      tableResults.rows[1].cells[0].textContent = "M. gastrocnemius - Caput mediale";
+    if (inputValue == "M. extensor hallucis brevis") {
+      tableResults.rows[1].cells[0].textContent = "M. extensor hallucis brevis";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. gastrocnemius - Caput laterale") {
-      tableResults.rows[2].cells[0].textContent = "M. gastrocnemius - Caput laterale";
+    if (inputValue == "M. extensor digitorum brevis") {
+      tableResults.rows[2].cells[0].textContent = "M. extensor digitorum brevis";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. soleus") {
-      tableResults.rows[3].cells[0].textContent = "M. soleus";
+    if (inputValue == "M. abductor hallucis") {
+      tableResults.rows[3].cells[0].textContent = "M. abductor hallucis";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. plantaris") {
-      tableResults.rows[4].cells[0].textContent = "M. plantaris";
+    if (inputValue == "M. flexor hallucis brevis - Caput mediale") {
+      tableResults.rows[4].cells[0].textContent = "M. flexor hallucis brevis - Caput mediale";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. tibialis posterior") {
-      tableResults.rows[5].cells[0].textContent = "M. tibialis posterior";
+    if (inputValue == "M. flexor hallucis brevis - Caput laterale") {
+      tableResults.rows[5].cells[0].textContent = "M. flexor hallucis brevis - Caput laterale";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. flexor hallucis longus") {
-      tableResults.rows[6].cells[0].textContent = "M. flexor hallucis longus";
+    if (inputValue == "M. adductor hallucis - Caput obliquum") {
+      tableResults.rows[6].cells[0].textContent = "M. adductor hallucis - Caput obliquum";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. flexor digitorum longus") {
-      tableResults.rows[7].cells[0].textContent = "M. flexor digitorum longus";
+    if (inputValue == "M. adductor hallucis - Caput transversum") {
+      tableResults.rows[7].cells[0].textContent = "M. adductor hallucis - Caput transversum";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. tibialis anterior") {
-      tableResults.rows[8].cells[0].textContent = "M. tibialis anterior";
+    if (inputValue == "M. abductor digiti minimi") {
+      tableResults.rows[8].cells[0].textContent = "M. abductor digiti minimi";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. extensor hallucis longus") {
-      tableResults.rows[9].cells[0].textContent = "M. extensor hallucis longus";
+    if (inputValue == "M. flexor digiti minimi brevis") {
+      tableResults.rows[9].cells[0].textContent = "M. flexor digiti minimi brevis";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. extensor digitorum longus") {
-      tableResults.rows[10].cells[0].textContent = "M. extensor digitorum longus";
+    if (inputValue == "M. opponens digiti minimi") {
+      tableResults.rows[10].cells[0].textContent = "M. opponens digiti minimi";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. fibularis longus") {
-      tableResults.rows[11].cells[0].textContent = "M. fibularis longus";
+    if (inputValue == "M. flexor digitorum brevis") {
+      tableResults.rows[11].cells[0].textContent = "M. flexor digitorum brevis";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. fibularis brevis") {
-      tableResults.rows[12].cells[0].textContent = "M. fibularis brevis";
+    if (inputValue == "M. quadratus plantae") {
+      tableResults.rows[12].cells[0].textContent = "M. quadratus plantae";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. fibularis brevis") {
-      tableResults.rows[13].cells[0].textContent = "M. fibularis brevis";
+    if (inputValue == "Mm. lumbricales") {
+      tableResults.rows[13].cells[0].textContent = "Mm. lumbricales";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (musclecounter >= 13) {
-      document.getElementById("instructions").innerHTML = "Klicke nun auf die Felder und gib die richtige Antwort ein. Die Funktion bezieht sich auf die Sprunggelenke.";
+    if (inputValue == "Mm. interossei dorsales") {
+      tableResults.rows[14].cells[0].textContent = "Mm. interossei dorsales";
+      answerInput.value = '';
+      musclecounter = musclecounter + 1;
+    }
+    if (inputValue == "Mm. interossei plantares") {
+      tableResults.rows[15].cells[0].textContent = "Mm. interossei plantares";
+      answerInput.value = '';
+      musclecounter = musclecounter + 1;
+    }
+    if (musclecounter >= 15) {
+      document.getElementById("instructions").innerHTML = "Klicke nun auf die Felder und gib die richtige Antwort ein.";
     }
 }
 }
