@@ -116,6 +116,12 @@ if (isset($_SESSION['username'])) {
                     </a>
                 </button>
 
+                <button class="quiz-preview">
+                    <a href="quizzes/FussMuskeln.php">
+                        <div style="font-size: 30px;">Muskulatur des Fußes</div>
+                    </a>
+                </button>
+
 
 
             </section>
