@@ -57,7 +57,7 @@ if (isset($_SESSION['username'])) {
 
                 <button class="quiz-preview">
                     <a href="quizzes/SchulterweitereMuskeln.php">
-                        <div style="font-size: 30px;">Mukulatur der Schulter</div>
+                        <div style="font-size: 30px;">Muskulatur der Schulter</div>
                     </a>
                 </button>
 
