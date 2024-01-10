@@ -387,7 +387,7 @@ function checkAnswer() {
                 console.log(selectedCell);
                 console.log(clickedCellIndex);
 
-            }
+                }
             }
 
             if (nextCell) {
