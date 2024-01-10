@@ -581,7 +581,7 @@ function checkAnswer() {
       musclecounter = musclecounter + 1;
     }
     if (musclecounter >= 12) {
-      document.getElementById("instructions").innerHTML = "Klicke nun auf die Felder und gib die richtige Antwort ein. Die Funktion bezieht sich aus das Kniegelenk.";
+      document.getElementById("instructions").innerHTML = "Klicke nun auf die Felder und gib die richtige Antwort ein. Die Funktion bezieht sich auf das Kniegelenk.";
     }
 }
 }
