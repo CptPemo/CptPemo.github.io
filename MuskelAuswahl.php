@@ -67,6 +67,12 @@ if (isset($_SESSION['username'])) {
                     </a>
                 </button>
 
+                <button class="quiz-preview">
+                    <a href="quizzes/Adduktoren.php">
+                        <div style="font-size: 30px;">Adduktoren</div>
+                    </a>
+                </button>
+
 
             </section>
             

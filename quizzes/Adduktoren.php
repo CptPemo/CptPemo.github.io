@@ -161,7 +161,7 @@
         <?php include '../header.html';?>           
     </header>
 
-    <div><h1 style="font-size: 40px; font-weight:400; margin: 1%;">Pelvitrochantäre Muskulatur<h1></div>
+    <div><h1 style="font-size: 40px; font-weight:400; margin: 1%;">Adduktoren<h1></div>
     <input class="guess-bar" id="textInput" type="text" placeholder="Los geht's!"> 
     <button class="check-button" id="checkButton"> Check </button>
     <button class="resign-button" id="resignButton"> Resign </button>
@@ -223,39 +223,39 @@
             <th>Funktion</th>
         </tr>
         <tr id="supraspinatus">
-            <td id="supraspinatus1">M. piriformis</td>
-            <td id="supraspinatus2">Os sacrum</td>
-            <td id="supraspinatus3">Trochanter major</td>
-            <td id="supraspinatus4">Plexus sacralis</td>
-            <td id="supraspinatus5">Abduktion, Außenrotation</td>
+            <td id="supraspinatus1">M. pectineus</td>
+            <td id="supraspinatus2">Pecten ossis pubis</td>
+            <td id="supraspinatus3">Linea pectinea femoris</td>
+            <td id="supraspinatus4">N. femoralis</td>
+            <td id="supraspinatus5">Adduktion</td>
         </tr>
         <tr id="infraspinatus">
-            <td id="infraspinatus1">M. gemellus superior</td>
-            <td id="infraspinatus2">Spina ischiadica</td>
-            <td id="infraspinatus3">Fossa trochanterica</td>
-            <td id="infraspinatus4">Plexus sacralis</td>
-            <td id="infraspinatus5">Außenrotation</td>
+            <td id="infraspinatus1">M. adductor longus</td>
+            <td id="infraspinatus2">Ramus superior ossis pubis</td>
+            <td id="infraspinatus3">Linea aspera</td>
+            <td id="infraspinatus4">N. obturatorius</td>
+            <td id="infraspinatus5">Adduktion</td>
           </tr>
           <tr id="teresminor">
-            <td id="teresminor1">M. gemellus inferior</td>
-            <td id="teresminor2">Tuber ischiadicum</td>
-            <td id="teresminor3">Fossa trochanterica</td>
-            <td id="teresminor4">Plexus sacralis</td>
-            <td id="teresminor5">Außenrotation</td>
+            <td id="teresminor1">M. adductor brevis</td>
+            <td id="teresminor2">Ramus inferior ossis pubis</td>
+            <td id="teresminor3">Linea aspera</td>
+            <td id="teresminor4">N. obturatorius</td>
+            <td id="teresminor5">Adduktion</td>
           </tr>
           <tr id="subscapulares">
-            <td id="subscapulares1">M. obturatorius internus</td>
-            <td id="subscapulares2">Membrana obturatoria</td>
-            <td id="subscapulares3">Fossa trochanterica</td>
-            <td id="subscapulares4">Plexus sacralis</td>
-            <td id="subscapulares5">Außenrotation</td>
+            <td id="subscapulares1">M. adductor magnus</td>
+            <td id="subscapulares2">Ramus inferior ossis pubis</td>
+            <td id="subscapulares3">Linea aspera</td>
+            <td id="subscapulares4">N. obturatorius</td>
+            <td id="subscapulares5">Adduktion</td>
         </tr>
         <tr id="obturext">
-            <td id="obturext1">M. obturatorius externus</td>
-            <td id="obturext2">Membrana obturatoria</td>
-            <td id="obturext3">Fossa trochanterica</td>
+            <td id="obturext1">M. gracilis</td>
+            <td id="obturext2">Ramus inferior ossis pubis</td>
+            <td id="obturext3">Pes anserinus superficialis</td>
             <td id="obturext4">N. obturatorius</td>
-            <td id="obturext5">Außenrotation</td>
+            <td id="obturext5">Adduktion</td>
         </tr>
 
       </table>
@@ -405,28 +405,28 @@ function checkAnswer() {
   }else{
     // Wenn noch kein Feld angeklickt wurde
     console.log(musclecounter);
-    if (inputValue == "M. piriformis") {
-      tableResults.rows[1].cells[0].textContent = "M. piriformis";
+    if (inputValue == "M. pectineus") {
+      tableResults.rows[1].cells[0].textContent = "M. pectineus";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. gemellus superior") {
-      tableResults.rows[2].cells[0].textContent = "M. gemellus superior";
+    if (inputValue == "M. adductor longus") {
+      tableResults.rows[2].cells[0].textContent = "M. adductor longus";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. gemellus inferior") {
-      tableResults.rows[3].cells[0].textContent = "M. gemellus inferior";
+    if (inputValue == "M. adductor brevis") {
+      tableResults.rows[3].cells[0].textContent = "M. adductor brevis";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. obturatorius internus") {
-      tableResults.rows[4].cells[0].textContent = "M. obturatorius internus";
+    if (inputValue == "M. adductor magnus") {
+      tableResults.rows[4].cells[0].textContent = "M. adductor magnus";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. obturatorius externus") {
-      tableResults.rows[5].cells[0].textContent = "M. obturatorius externus";
+    if (inputValue == "M. gracilis") {
+      tableResults.rows[5].cells[0].textContent = "M. gracilis";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
