@@ -93,6 +93,12 @@ if (isset($_SESSION['username'])) {
                 </button>
 
                 <button class="quiz-preview">
+                    <a href="quizzes/HuefteMuskeln.php">
+                        <div style="font-size: 30px;">Muskulatur der Hüfte</div>
+                    </a>
+                </button>
+
+                <button class="quiz-preview">
                     <a href="quizzes/KnieMuskeln.php">
                         <div style="font-size: 30px;">Muskulatur des Knies</div>
                     </a>
