@@ -110,6 +110,18 @@ if (isset($_SESSION['username'])) {
                     </a>
                 </button>
 
+                <button class="quiz-preview">
+                    <a href="quizzes/SprunggelenkMuskeln.php">
+                        <div style="font-size: 30px;">Muskulatur der Sprunggelenke</div>
+                    </a>
+                </button>
+
+                <button class="quiz-preview">
+                    <a href="quizzes/FussMuskeln.php">
+                        <div style="font-size: 30px;">Muskulatur des Fußes</div>
+                    </a>
+                </button>
+
 
 
             </section>
