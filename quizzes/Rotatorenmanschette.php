@@ -116,11 +116,40 @@
         border: 1px solid black;
         border-radius: 3px;
         background-color: white;
+        cursor:pointer;
+    }
+    .resign-button{
+        margin-left: 1%;
+    }
+
+    .check-button:hover,
+    .resign-button:hover{
+      background-color: black;
+      color: white;
     }
 
     footer{
         margin-top: 50px;
     }
+
+    .correct-answer {
+  visibility: visible !important;
+  outline: 2px solid black;
+}
+
+#instructions{
+  margin-left: 1%;
+  font-size: 20px;
+}
+
+#previous, #next{
+  width: 11%;
+  font-size: 15px;
+  margin-left: 1%;
+  border: 0.5px solid black;
+  cursor:pointer;
+}
+
 
 </style>
     
@@ -136,6 +165,7 @@
     <input class="guess-bar" id="textInput" type="text" placeholder="Los geht's!"> 
     <button class="check-button" id="checkButton"> Check </button>
     <button class="resign-button" id="resignButton"> Resign </button>
+    <p id="instructions">Beginne damit, die vier Muskeln der Rotatorenmanschette zu benennen.</p>
     <table class="tabelle" id="RotatorenmanschetteErgebnisse">
 
         <tr>
@@ -145,33 +175,33 @@
             <th>Innervation</th>
             <th>Funktion</th>
         </tr>
-        <tr>
-            <td id="11"></td>
-            <td id="12"></td>
-            <td id="13"></td>
-            <td id="14"></td>
-            <td id="15"></td>
+        <tr id="supraspinatus">
+            <td id="cell10"></td>
+            <td id="cell11"></td>
+            <td id="cell12"></td>
+            <td id="cell13"></td>
+            <td id="cell14"></td>
         </tr>
-        <tr>
-            <td id="21"></td>
-            <td id="22"></td>
-            <td id="23"></td>
-            <td id="24"></td>
-            <td id="25"></td>
+        <tr id="infraspinatus">
+            <td id="cell20"></td>
+            <td id="cell21"></td>
+            <td id="cell22"></td>
+            <td id="cell23"></td>
+            <td id="cell24"></td>
           </tr>
-          <tr>
-            <td id="31"></td>
-            <td id="32"></td>
-            <td id="33"></td>
-            <td id="34"></td>
-            <td id="35"></td>
+          <tr id="teresminor">
+            <td id="cell30"></td>
+            <td id="cell31"></td>
+            <td id="cell32"></td>
+            <td id="cell33"></td>
+            <td id="cell34"></td>
           </tr>
-          <tr>
-            <td id="41"></td>
-            <td id="42"></td>
-            <td id="43"></td>
-            <td id="44"></td>
-            <td id="45"></td>
+          <tr id="subscapulares">
+            <td id="cell40"></td>
+            <td id="cell41"></td>
+            <td id="cell42"></td>
+            <td id="cell43"></td>
+            <td id="cell44"></td>
         </tr>
 
       </table>
@@ -185,36 +215,38 @@
             <th>Innervation</th>
             <th>Funktion</th>
         </tr>
-        <tr>
-            <td id="11">M. supraspinatus</td>
-            <td id="12">Fossa supraspinata</td>
-            <td id="13">Tuberculum majus</td>
-            <td id="14">N. suprascapularis</td>
-            <td id="15">Abduktion</td>
+        <tr id="supraspinatus">
+            <td id="supraspinatus1">M. supraspinatus</td>
+            <td id="supraspinatus2">Fossa supraspinata</td>
+            <td id="supraspinatus3">Tuberculum majus</td>
+            <td id="supraspinatus4">N. suprascapularis</td>
+            <td id="supraspinatus5">Abduktion</td>
         </tr>
-        <tr>
-            <td id="21">M. infraspinatus</td>
-            <td id="22">Fossa infraspinata</td>
-            <td id="23">Tuberculum majus</td>
-            <td id="24">N. suprascapularis</td>
-            <td id="25">Adduktion, Außenrotation</td>
+        <tr id="infraspinatus">
+            <td id="infraspinatus1">M. infraspinatus</td>
+            <td id="infraspinatus2">Fossa infraspinata</td>
+            <td id="infraspinatus3">Tuberculum majus</td>
+            <td id="infraspinatus4">N. suprascapularis</td>
+            <td id="infraspinatus5">Adduktion, Außenrotation</td>
           </tr>
-          <tr>
-            <td id="31">M. teres minor</td>
-            <td id="32">Scapula</td>
-            <td id="33">Tuberculum majus</td>
-            <td id="34">N. axillaris</td>
-            <td id="35">Adduktion, Außenrotation</td>
+          <tr id="teresminor">
+            <td id="teresminor1">M. teres minor</td>
+            <td id="teresminor2">Scapula</td>
+            <td id="teresminor3">Tuberculum majus</td>
+            <td id="teresminor4">N. axillaris</td>
+            <td id="teresminor5">Adduktion, Außenrotation</td>
           </tr>
-          <tr>
-            <td id="41">M. subscapularis</td>
-            <td id="42">Facies costalis</td>
-            <td id="43">Tuberculum minus</td>
-            <td id="44">Nn. subscapulares</td>
-            <td id="45">Innenrotation, Adduktion</td>
+          <tr id="subscapulares">
+            <td id="subscapulares1">M. subscapularis</td>
+            <td id="subscapulares2">Facies costalis</td>
+            <td id="subscapulares3">Tuberculum minus</td>
+            <td id="subscapulares4">Nn. subscapulares</td>
+            <td id="subscapulares5">Adduktion, Innenrotation</td>
         </tr>
 
       </table>
+      <button class="check-button" id="previous"> <<  Vorheriges Quiz </button>
+      <button class="check-button" id="next"> Nächstes  Quiz >></button>
       <?php include '../popup.html'; ?>
 
 <footer class="footer">
@@ -232,6 +264,9 @@
     const answerInput = document.getElementById('textInput');
     const checkButton = document.getElementById('checkButton');
 
+    var musclecounter = 0;
+    const instructions = document.getElementById('instructions');
+
 /*
 checkButton.addEventListener('click', () => {
     const inputValue = answerInput.value;
@@ -243,6 +278,8 @@ checkButton.addEventListener('click', () => {
         console.log("geilo");
     }
 });*/
+// Globale Variable zum Speichern des Zellenindex
+let clickedCellIndex = null;
 
 // Füge Event Listener zu den Zellen hinzu
 const cells = document.querySelectorAll('td');
@@ -250,9 +287,9 @@ cells.forEach((cell, index) => {
   cell.addEventListener('click', () => {
     console.log("Row index: " + cell.closest('tr').rowIndex + " | Column index: " + cell.cellIndex);
     // Speichere den Zellenindex in der globalen Variable
-    clickedCellIndex = { row: cell.closest('tr').rowIndex, cell: cell.cellIndex };
+    clickedCellIndex = { row: cell.closest('tr').rowIndex, cell: cell.cellIndex};
     
-    console.log(clickedCellIndex);
+    console.log("Row ID: " + cell.parentElement.id + " | Cell ID: " + cell.id);
      // Entferne den dicken Rahmen von der zuletzt ausgewählten Zelle, falls vorhanden
      if (selectedCell) {;
         selectedCell.style.border = '1px solid black'; 
@@ -269,40 +306,9 @@ cells.forEach((cell, index) => {
 });
 
 
+ 
 
-
- // Globale Variable zum Speichern des Zellenindex
- let clickedCellIndex = null;
-
-// Event Listener für den Check-Button
-checkButton.addEventListener('click', () => {
-  const inputValue = answerInput.value;
-  console.log(inputValue);
-
-  // Überprüfe, ob eine Zelle geklickt wurde
-  if (clickedCellIndex !== null) {
-    // Extrahiere Zeilen- und Spaltenindizes
-    const rowIndex = clickedCellIndex.row;
-    const cellIndex = clickedCellIndex.cell;
-
-    // Hier solltest du den entsprechenden Index für die Zelle herausfinden und dann den Inhalt setzen.
-    //table.rows[rowIndex].cells[cellIndex].textContent = inputValue;
-
-    
-  console.log(inputValue);
-  console.log(table.rows[clickedCellIndex.row].cells[clickedCellIndex.cell].textContent);
-  if (inputValue === table.rows[clickedCellIndex.row].cells[clickedCellIndex.cell].textContent){
-        console.log('noicy');
-        tableResults.rows[rowIndex].cells[cellIndex].textContent = inputValue;
-    };
-
-    // Zurücksetzen der globalen Variable
-    clickedCellIndex = null;
-  }
-
-});
-
-
+// Event Listener für den Resign-Button
 resignButton.addEventListener('click', () => {
   
   console.log('resigned');
@@ -310,6 +316,132 @@ resignButton.addEventListener('click', () => {
   table.style.display = 'table';
 
 });
+
+// Event Listener für das Texteingabefeld
+answerInput.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter') {
+    // Wenn die Enter-Taste gedrückt wurde, überprüfe die Eingabe
+    checkAnswer();
+  }
+});
+
+// Event Listener für den Check-Button
+checkButton.addEventListener('click', () => {
+  // Überprüfe die Eingabe
+  checkAnswer();
+});
+
+function checkAnswer() {
+  const inputValue = answerInput.value;
+
+  // Überprüfe, ob eine Zelle geklickt wurde
+  if (clickedCellIndex !== null) {
+    // Extrahiere Zeilen- und Spaltenindizes
+    const rowIndex = clickedCellIndex.row;
+    const cellIndex = clickedCellIndex.cell;
+
+    // Überprüfe die Benutzerantwort und aktualisiere die Ergebnistabelle
+    if (inputValue === table.rows[rowIndex].cells[cellIndex].textContent) {
+      tableResults.rows[rowIndex].cells[cellIndex].textContent = inputValue;
+      answerInput.value = '';
+      // Berechne den Index für die nächste Zelle in derselben Zeile
+      const nextCellIndex = cellIndex + 1;
+      // Überprüfe, ob die nächste Zelle existiert
+      if (nextCellIndex < table.rows[rowIndex].cells.length) {
+        
+        clickedCellIndex.cell = clickedCellIndex.cell + 1;
+        simulateCellClick(rowIndex, nextCellIndex);
+  
+
+        }else{
+            // Sprung in die nächste Zeile
+            const nextCellId = 'cell' + (rowIndex + 1) + (cellIndex - 3); // Annahme: Zellen haben IDs wie "cell0", "cell1", ...
+            const nextCell = document.getElementById(nextCellId);
+            clickedCellIndex.cell = clickedCellIndex.cell - 3;
+            clickedCellIndex.row = clickedCellIndex.row + 1;
+            
+            // wenn letzte Tabellenzelle in letzter Tabellenzeile erreicht ist
+            if(clickedCellIndex.row > 4){
+                alert("Super gemacht! Hier gehts weiter:");
+            }
+
+             if (nextCell) {
+            // Setze den Rahmeneffekt zurück, wenn eine Zelle zuvor ausgewählt wurde
+                if (selectedCell) {
+            selectedCell.style.border = '1px solid black';
+            }
+
+             // Setze die ausgewählte Zelle auf die nächste Zelle
+              selectedCell = nextCell;
+
+             // Hervorhebe die nächste Zelle mit einem dicken Rahmen
+             selectedCell.style.border = '3px solid black';
+
+            // Fokussiere das Texteingabefeld für die neue Zelle
+             answerInput.focus();
+
+             console.log(selectedCell);
+            console.log(clickedCellIndex);
+
+            }
+            
+        }
+    }
+    
+  }else{
+    // Wenn noch kein Feld angeklickt wurde
+    console.log(musclecounter);
+    if (inputValue == "M. supraspinatus") {
+      tableResults.rows[1].cells[0].textContent = "M. supraspinatus";
+      answerInput.value = '';
+      musclecounter = musclecounter + 1;
+    }
+    if (inputValue == "M. infraspinatus") {
+      tableResults.rows[2].cells[0].textContent = "M. infraspinatus";
+      answerInput.value = '';
+      musclecounter = musclecounter + 1;
+    }
+    if (inputValue == "M. teres minor") {
+      tableResults.rows[3].cells[0].textContent = "M. teres minor";
+      answerInput.value = '';
+      musclecounter = musclecounter + 1;
+    }
+    if (inputValue == "M. subscapularis") {
+      tableResults.rows[4].cells[0].textContent = "M. subscapularis";
+      answerInput.value = '';
+      musclecounter = musclecounter + 1;
+    }
+    if (musclecounter >= 4) {
+      document.getElementById("instructions").innerHTML = "Klicke nun auf die Felder und gib die richtige Antwort ein. Die Auswahl springt dann automatisch.";
+    }
+}
+}
+
+function simulateCellClick(rowIndex, cellIndex) {
+  // Setze den Rahmeneffekt zurück, wenn eine Zelle zuvor ausgewählt wurde
+  
+    const nextCellId = 'cell' + (rowIndex) + (cellIndex); // Annahme: Zellen haben IDs wie "cell0", "cell1", ...
+    const nextCell = document.getElementById(nextCellId);
+
+  if (nextCell) {
+    // Setze den Rahmeneffekt zurück, wenn eine Zelle zuvor ausgewählt wurde
+    if (selectedCell) {
+      selectedCell.style.border = '1px solid black';
+    }
+
+    // Setze die ausgewählte Zelle auf die nächste Zelle
+    selectedCell = nextCell;
+
+    // Hervorhebe die nächste Zelle mit einem dicken Rahmen
+    selectedCell.style.border = '3px solid black';
+
+    // Fokussiere das Texteingabefeld für die neue Zelle
+    answerInput.focus();
+
+    console.log(selectedCell);
+    console.log(clickedCellIndex);
+  }
+}
 
 
 </script> 

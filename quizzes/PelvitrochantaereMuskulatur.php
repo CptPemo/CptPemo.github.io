@@ -265,7 +265,7 @@
             <td id="obturext5">Außenrotation</td>
         </tr>
         <tr id="quadrat">
-            <td id="quadrat1">M. quadrastus femoris</td>
+            <td id="quadrat1">M. quadratus femoris</td>
             <td id="quadrat2">Tuber ischiadicum</td>
             <td id="quadrat3">Crista intertrochanterica</td>
             <td id="quadrat4">N. gluteus inferior</td>
