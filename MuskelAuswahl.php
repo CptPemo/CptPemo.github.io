@@ -50,7 +50,7 @@ if (isset($_SESSION['username'])) {
                 >Muskeln</div>
             <section class="quiz-grid">
                 <button class="quiz-preview">
-                    <a href="quizzes/Rotatorenmanschette Kopie.php">
+                    <a href="quizzes/Rotatorenmanschette.php">
                         <div style="font-size: 30px;">Rotatorenmanschette</div>
                     </a>
                 </button>
