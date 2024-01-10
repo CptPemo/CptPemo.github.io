@@ -52,4 +52,3 @@ try {
     echo "Verbindung zur Datenbank fehlgeschlagen: " . $e->getMessage();
 }
 ?>
-<!-- ^|˜·¯¯ -->

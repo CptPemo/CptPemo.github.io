@@ -149,6 +149,16 @@
   border: 0.5px solid black;
   cursor:pointer;
 }
+.TopPart{
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  margin-top:-18px;
+}
+
+.TableSection{
+  padding-top: 220px;
+}
 
 
 </style>
@@ -160,12 +170,15 @@
     <header class="header">
         <?php include '../header.html';?>           
     </header>
-
+    <div class="TopPart">
     <div><h1 style="font-size: 40px; font-weight:400; margin: 1%;">Flexoren des Unterarms<h1></div>
     <input class="guess-bar" id="textInput" type="text" placeholder="Los geht's!"> 
     <button class="check-button" id="checkButton"> Check </button>
     <button class="resign-button" id="resignButton"> Resign </button>
     <p id="instructions">Beginne damit, die Flexoren des Unterarms zu benennen.</p>
+
+</div>
+<div class="TableSection">
     <table class="tabelle" id="FlexunterErgebnisse">
 
         <tr>
@@ -278,7 +291,7 @@
             <td>M. pronator teres - Caput humerale</td>
             <td>Epicondylus medialis humeri</td>
             <td>Facies lateralis radii</td>
-            <td>N. medianu</td>
+            <td>N. medianus</td>
             <td>Flexion, Pronation</td>
         </tr>
         <tr id="palmarislongus">
@@ -296,7 +309,7 @@
             <td>Pronation, Flexion</td>
         </tr>
         <tr id="flexcarpiulnarishum">
-            <td>M. flexor carpi ulnaris - Caput humeroulnaree</td>
+            <td>M. flexor carpi ulnaris - Caput humeroulnare</td>
             <td>Epicondylus medialis humeri</td>
             <td>Os pisiforme, Os hamatum</td>
             <td>N. ulnaris</td>
@@ -350,7 +363,7 @@
       <button class="check-button" id="previous"> <<  Vorheriges Quiz </button>
       <button class="check-button" id="next"> Nächstes  Quiz >></button>
       <?php include '../popup.html'; ?>
-
+      <div class="TableSection">
 <footer class="footer">
     <?php include '../footer.html'; ?>
 </footer> 
