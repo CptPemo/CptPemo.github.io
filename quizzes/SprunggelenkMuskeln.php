@@ -173,7 +173,7 @@
     </header>
 
     <div class="TopPart">
-        <div><h1 style="font-size: 40px; font-weight:400; margin: 1%;">Muskeln der Sprunggelenke<h1></div>
+        <div><h1 style="font-size: 40px; font-weight:400; margin: 1%;">Muskulatur der Sprunggelenke<h1></div>
         <input class="guess-bar" id="textInput" type="text" placeholder="Los geht's!"> 
         <button class="check-button" id="checkButton"> Check </button>
         <button class="resign-button" id="resignButton"> Resign </button>
@@ -359,17 +359,17 @@
           </tr>
           <tr id="teresminor">
             <td id="teresminor1">M. fibularis longus</td>
-            <td id="teresminor2"></td>
-            <td id="teresminor3"></td>
-            <td id="teresminor4"></td>
-            <td id="teresminor5"></td>
+            <td id="teresminor2">proximale Fibula</td>
+            <td id="teresminor3">Os cuneiforme mediale</td>
+            <td id="teresminor4">N. fibularis superficialis</td>
+            <td id="teresminor5">Pronation, Plantarfexion</td>
           </tr>
           <tr id="teresminor">
             <td id="teresminor1">M. fibularis brevis</td>
-            <td id="teresminor2"></td>
-            <td id="teresminor3"></td>
-            <td id="teresminor4"></td>
-            <td id="teresminor5"></td>
+            <td id="teresminor2">distale Fibula</td>
+            <td id="teresminor3">Tuberositas des Os metatarsale V</td>
+            <td id="teresminor4">N. fibularis superficialis</td>
+            <td id="teresminor5">Pronation, Plantarfexion</td>
           </tr>
           
       </table>
@@ -520,63 +520,63 @@ function checkAnswer() {
   }else{
     // Wenn noch kein Feld angeklickt wurde
     console.log(musclecounter);
-    if (inputValue == "M. rectus femoris") {
-      tableResults.rows[1].cells[0].textContent = "M. rectus femoris";
+    if (inputValue == "M. gastrocnemius - Caput mediale") {
+      tableResults.rows[1].cells[0].textContent = "M. gastrocnemius - Caput mediale";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. vastus medialis") {
-      tableResults.rows[2].cells[0].textContent = "M. vastus medialis";
+    if (inputValue == "M. gastrocnemius - Caput laterale") {
+      tableResults.rows[2].cells[0].textContent = "M. gastrocnemius - Caput laterale";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. vastus lateralis") {
-      tableResults.rows[3].cells[0].textContent = "M. vastus lateralis";
+    if (inputValue == "M. soleus") {
+      tableResults.rows[3].cells[0].textContent = "M. soleus";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. vastus intermedius") {
-      tableResults.rows[4].cells[0].textContent = "M. vastus intermedius";
+    if (inputValue == "M. plantaris") {
+      tableResults.rows[4].cells[0].textContent = "M. plantaris";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. sartorius") {
-      tableResults.rows[5].cells[0].textContent = "M. sartorius";
+    if (inputValue == "M. tibialis posterior") {
+      tableResults.rows[5].cells[0].textContent = "M. tibialis posterior";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. gracilis") {
-      tableResults.rows[6].cells[0].textContent = "M. gracilis";
+    if (inputValue == "M. flexor hallucis longus") {
+      tableResults.rows[6].cells[0].textContent = "M. flexor hallucis longus";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. semitendinosus") {
-      tableResults.rows[7].cells[0].textContent = "M. semitendinosus";
+    if (inputValue == "M. flexor digitorum longus") {
+      tableResults.rows[7].cells[0].textContent = "M. flexor digitorum longus";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. semimembranosus") {
-      tableResults.rows[8].cells[0].textContent = "M. semimembranosus";
+    if (inputValue == "M. tibialis anterior") {
+      tableResults.rows[8].cells[0].textContent = "M. tibialis anterior";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. biceps femoris - Caput longum") {
-      tableResults.rows[9].cells[0].textContent = "M. biceps femoris - Caput longum";
+    if (inputValue == "M. extensor hallucis longus") {
+      tableResults.rows[9].cells[0].textContent = "M. extensor hallucis longus";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. biceps femoris - Caput breve") {
-      tableResults.rows[10].cells[0].textContent = "M. biceps femoris - Caput breve";
+    if (inputValue == "M. extensor digitorum longus") {
+      tableResults.rows[10].cells[0].textContent = "M. extensor digitorum longus";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. popliteus") {
-      tableResults.rows[11].cells[0].textContent = "M. popliteus";
+    if (inputValue == "M. fibularis longus") {
+      tableResults.rows[11].cells[0].textContent = "M. fibularis longus";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. gastrocnemius") {
-      tableResults.rows[12].cells[0].textContent = "M. gastrocnemius";
+    if (inputValue == "M. fibularis brevis") {
+      tableResults.rows[12].cells[0].textContent = "M. fibularis brevis";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
