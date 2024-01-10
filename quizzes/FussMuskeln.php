@@ -274,6 +274,13 @@
             <td id="cell123"></td>
             <td id="cell124"></td>
           </tr>
+          <tr id="">
+            <td id="cell120"></td>
+            <td id="cell121"></td>
+            <td id="cell122"></td>
+            <td id="cell123"></td>
+            <td id="cell124"></td>
+          </tr>
 
 
       </table>
@@ -288,89 +295,96 @@
             <th>Funktion</th>
         </tr>
         <tr id="supraspinatus">
-            <td id="supraspinatus1">M. gastrocnemius - Caput mediale</td>
-            <td id="supraspinatus2">dorsal-kranial medialer Femurkondylus</td>
-            <td id="supraspinatus3">Tuber calcanei</td>
-            <td id="supraspinatus4">N. tibialis</td>
-            <td id="supraspinatus5">Supination, Plantarflexion</td>
+            <td id="supraspinatus1">M. extensor hallucis brevis</td>
+            <td id="supraspinatus2">Calcaneus</td>
+            <td id="supraspinatus3">Dorsalaponeurose der Großzehe</td>
+            <td id="supraspinatus4">N. fibularis profundus</td>
+            <td id="supraspinatus5">Dorsalextension der Großzehe</td>
         </tr>
-        <tr id="infraspinatus">
-            <td id="infraspinatus1">M. gastrocnemius - Caput laterale</td>
-            <td id="infraspinatus2">dorsal-kranial lateraler Femurkondylus</td>
-            <td id="infraspinatus3">Tuber calcanei</td>
-            <td id="infraspinatus4">N. tibialis</td>
-            <td id="infraspinatus5">Supination, Plantarflexion</td>
-          </tr>
-          <tr id="teresminor">
-            <td id="teresminor1">M. soleus</td>
-            <td id="teresminor2">dorsal-proximal Tibia und Fibula</td>
-            <td id="teresminor3">Tuber calcanei</td>
-            <td id="teresminor4">N. tibialis</td>
-            <td id="teresminor5">Supination, Plantarflexion</td>
-          </tr>
-          <tr id="teresminor">
-            <td id="teresminor1">M. plantaris</td>
-            <td id="teresminor2">kranial lateraler Femurkondylus</td>
-            <td id="teresminor3">Tuber calcanei</td>
-            <td id="teresminor4">N. tibialis</td>
-            <td id="teresminor5">Supination, Plantarflexion</td>
-          </tr>
-          <tr id="teresminor">
-            <td id="teresminor1">M. tibialis posterior</td>
-            <td id="teresminor2">Membrana interossea</td>
-            <td id="teresminor3">Ossa tarsalia</td>
-            <td id="teresminor4">N. tibialis</td>
-            <td id="teresminor5">Supination, Plantarflexion</td>
-          </tr>
-          <tr id="teresminor">
-            <td id="teresminor1">M. flexor hallucis longus</td>
-            <td id="teresminor2">Membrana interossea</td>
-            <td id="teresminor3">Endphalanx der Großzehe</td>
-            <td id="teresminor4">N. tibialis</td>
-            <td id="teresminor5">Supination, Plantarflexion, Flexion der Großzehe</td>
-          </tr>
-          <tr id="teresminor">
-            <td id="teresminor1">M. flexor digitorum longus</td>
-            <td id="teresminor2">Tibia dorsal</td>
-            <td id="teresminor3">Endphalangen</td>
-            <td id="teresminor4">N. tibialis</td>
-            <td id="teresminor5">Supination, Plantarflexion, Flexion der Zehen</td>
-          </tr>
-          <tr id="teresminor">
-            <td id="teresminor1">M. tibialis anterior</td>
-            <td id="teresminor2">Membrana interossea</td>
-            <td id="teresminor3">Os cuneiforme mediale</td>
-            <td id="teresminor4">N. fibularis profundus</td>
-            <td id="teresminor5">Supination, Dorsalextension</td>
-          </tr>
-          <tr id="teresminor">
-            <td id="teresminor1">M. extensor hallucis longus</td>
-            <td id="teresminor2">Membrana interossea</td>
-            <td id="teresminor3">Dorsalaponeurose der Großzehe</td>
-            <td id="teresminor4">N. fibularis profundus</td>
-            <td id="teresminor5">Dorsalextension, Extension der Großzehe</td>
-          </tr>
-          <tr id="teresminor">
-            <td id="teresminor1">M. extensor digitorum longus</td>
-            <td id="teresminor2">Membrana interossea</td>
-            <td id="teresminor3">Dorsalaponeurosen der Zehen</td>
-            <td id="teresminor4">N. fibularis profundus</td>
-            <td id="teresminor5">Dorsalextension, Extension der Zehen</td>
-          </tr>
-          <tr id="teresminor">
-            <td id="teresminor1">M. fibularis longus</td>
-            <td id="teresminor2">proximale Fibula</td>
-            <td id="teresminor3">Os cuneiforme mediale</td>
-            <td id="teresminor4">N. fibularis superficialis</td>
-            <td id="teresminor5">Pronation, Plantarfexion</td>
-          </tr>
-          <tr id="teresminor">
-            <td id="teresminor1">M. fibularis brevis</td>
-            <td id="teresminor2">distale Fibula</td>
-            <td id="teresminor3">Tuberositas des Os metatarsale V</td>
-            <td id="teresminor4">N. fibularis superficialis</td>
-            <td id="teresminor5">Pronation, Plantarfexion</td>
-          </tr>
+        <tr id="supraspinatus">
+            <td id="supraspinatus1">M. extensor digitorum brevis</td>
+            <td id="supraspinatus2">Calcaneus</td>
+            <td id="supraspinatus3">Dorsalaponeurosen der Zehen 2-4</td>
+            <td id="supraspinatus4">N. fibularis profundus</td>
+            <td id="supraspinatus5">Dorsalextension der Zehen 2-4</td>
+        </tr>
+        <tr id="supraspinatus">
+            <td id="supraspinatus1">M. abductor hallucis</td>
+            <td id="supraspinatus2"></td>
+            <td id="supraspinatus3"></td>
+            <td id="supraspinatus4"></td>
+            <td id="supraspinatus5"></td>
+        </tr>
+        <tr id="supraspinatus">
+            <td id="supraspinatus1">M. flexor hallucis brevis</td>
+            <td id="supraspinatus2"></td>
+            <td id="supraspinatus3"></td>
+            <td id="supraspinatus4"></td>
+            <td id="supraspinatus5"></td>
+        </tr>
+        <tr id="supraspinatus">
+            <td id="supraspinatus1">M. adductor hallucis</td>
+            <td id="supraspinatus2"></td>
+            <td id="supraspinatus3"></td>
+            <td id="supraspinatus4"></td>
+            <td id="supraspinatus5"></td>
+        </tr>
+        <tr id="supraspinatus">
+            <td id="supraspinatus1">M. abductor digiti minimi</td>
+            <td id="supraspinatus2"></td>
+            <td id="supraspinatus3"></td>
+            <td id="supraspinatus4"></td>
+            <td id="supraspinatus5"></td>
+        </tr>
+        <tr id="supraspinatus">
+            <td id="supraspinatus1">M. flexor digiti minimi brevis</td>
+            <td id="supraspinatus2"></td>
+            <td id="supraspinatus3"></td>
+            <td id="supraspinatus4"></td>
+            <td id="supraspinatus5"></td>
+        </tr>
+        <tr id="supraspinatus">
+            <td id="supraspinatus1">M. opponens digiti minimi</td>
+            <td id="supraspinatus2"></td>
+            <td id="supraspinatus3"></td>
+            <td id="supraspinatus4"></td>
+            <td id="supraspinatus5"></td>
+        </tr>
+        <tr id="supraspinatus">
+            <td id="supraspinatus1">M. flexor digitorum brevis</td>
+            <td id="supraspinatus2"></td>
+            <td id="supraspinatus3"></td>
+            <td id="supraspinatus4"></td>
+            <td id="supraspinatus5"></td>
+        </tr>
+        <tr id="supraspinatus">
+            <td id="supraspinatus1">M. quadratus plantae</td>
+            <td id="supraspinatus2"></td>
+            <td id="supraspinatus3"></td>
+            <td id="supraspinatus4"></td>
+            <td id="supraspinatus5"></td>
+        </tr>
+        <tr id="supraspinatus">
+            <td id="supraspinatus1">Mm. lumbricales</td>
+            <td id="supraspinatus2"></td>
+            <td id="supraspinatus3"></td>
+            <td id="supraspinatus4"></td>
+            <td id="supraspinatus5"></td>
+        </tr>
+        <tr id="supraspinatus">
+            <td id="supraspinatus1">Mm. interossei dorsales</td>
+            <td id="supraspinatus2"></td>
+            <td id="supraspinatus3"></td>
+            <td id="supraspinatus4"></td>
+            <td id="supraspinatus5"></td>
+        </tr>
+        <tr id="supraspinatus">
+            <td id="supraspinatus1">Mm. interossei plantares</td>
+            <td id="supraspinatus2"></td>
+            <td id="supraspinatus3"></td>
+            <td id="supraspinatus4"></td>
+            <td id="supraspinatus5"></td>
+        </tr>
           
       </table>
       <button class="check-button" id="previous"> <<  Vorheriges Quiz </button>
@@ -580,7 +594,12 @@ function checkAnswer() {
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (musclecounter >= 12) {
+    if (inputValue == "M. fibularis brevis") {
+      tableResults.rows[13].cells[0].textContent = "M. fibularis brevis";
+      answerInput.value = '';
+      musclecounter = musclecounter + 1;
+    }
+    if (musclecounter >= 13) {
       document.getElementById("instructions").innerHTML = "Klicke nun auf die Felder und gib die richtige Antwort ein. Die Funktion bezieht sich auf die Sprunggelenke.";
     }
 }
