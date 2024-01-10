@@ -327,14 +327,14 @@
             <td id="teresminor2">Membrana interossea</td>
             <td id="teresminor3">Endphalanx der Großzehe</td>
             <td id="teresminor4">N. tibialis</td>
-            <td id="teresminor5">Supination, Plantarflexion</td>
+            <td id="teresminor5">Supination, Plantarflexion, Flexion der Großzehe</td>
           </tr>
           <tr id="teresminor">
             <td id="teresminor1">M. flexor digitorum longus</td>
             <td id="teresminor2">Tibia dorsal</td>
             <td id="teresminor3">Endphalangen</td>
             <td id="teresminor4">N. tibialis</td>
-            <td id="teresminor5">Supination, Plantarflexion</td>
+            <td id="teresminor5">Supination, Plantarflexion, Flexion der Zehen</td>
           </tr>
           <tr id="teresminor">
             <td id="teresminor1">M. tibialis anterior</td>
@@ -348,14 +348,14 @@
             <td id="teresminor2">Membrana interossea</td>
             <td id="teresminor3">Dorsalaponeurose der Großzehe</td>
             <td id="teresminor4">N. fibularis profundus</td>
-            <td id="teresminor5"></td>
+            <td id="teresminor5">Dorsalextension, Extension der Großzehe</td>
           </tr>
           <tr id="teresminor">
             <td id="teresminor1">M. extensor digitorum longus</td>
             <td id="teresminor2">Membrana interossea</td>
             <td id="teresminor3">Dorsalaponeurosen der Zehen</td>
             <td id="teresminor4">N. fibularis profundus</td>
-            <td id="teresminor5"></td>
+            <td id="teresminor5">Dorsalextension, Extension der Zehen</td>
           </tr>
           <tr id="teresminor">
             <td id="teresminor1">M. fibularis longus</td>
