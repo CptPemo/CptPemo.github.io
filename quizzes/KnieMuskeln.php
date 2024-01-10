@@ -351,8 +351,8 @@
            </tr>
            <tr id="">
             <td id="1">M. gastrocnemius</td>
-            <td id="2"></td>
-            <td id="3"></td>
+            <td id="2">dorsal kranial der Femurkondylen</td>
+            <td id="3">Tuber calcanei</td>
             <td id="4">N. tibialis</td>
             <td id="5">Flexion</td>
            </tr>
