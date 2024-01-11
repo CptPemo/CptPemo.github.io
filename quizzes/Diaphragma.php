@@ -174,11 +174,11 @@
 
     <div class="TopPart">
         <div><h1 style="font-size: 40px; font-weight:400; margin: 1%; cursor: pointer;" 
-        onclick="window.location.replace('/MuskelAuswahl.php')">Muskulatur des Thorax<h1></div>
+        onclick="window.location.replace('/MuskelAuswahl.php')">Diaphragma<h1></div>
         <input class="guess-bar" id="textInput" type="text" placeholder="Los geht's!"> 
         <button class="check-button" id="checkButton"> Check </button>
         <button class="resign-button" id="resignButton"> Resign </button>
-        <p id="instructions">Beginne damit, die Muskeln des Thorax zu benennen.</p>
+        <p id="instructions">Beginne damit, die Anteile des Diaphragmas zu benennen.</p>
     </div>
 
     <div class="TableSection">
@@ -212,20 +212,6 @@
             <td id="cell33"></td>
             <td id="cell34"></td>
           </tr>
-          <tr id="subscapulares">
-            <td id="cell40"></td>
-            <td id="cell41"></td>
-            <td id="cell42"></td>
-            <td id="cell43"></td>
-            <td id="cell44"></td>
-          </tr>
-          <tr id="">
-            <td id="cell50"></td>
-            <td id="cell51"></td>
-            <td id="cell52"></td>
-            <td id="cell53"></td>
-            <td id="cell54"></td>
-          </tr>
           
 
       </table>
@@ -240,40 +226,27 @@
             <th>Funktion</th>
         </tr>
         <tr id="supraspinatus">
-            <td id="supraspinatus1">Mm. intercostales externi</td>
-            <td id="supraspinatus2">Rippenunterrand</td>
-            <td id="supraspinatus3">Rippenoberrand</td>
-            <td id="supraspinatus4">Nn. intercostales</td>
-            <td id="supraspinatus5">Inspiration</td>
+            <td id="supraspinatus1">Pars lumbalis</td>
+            <td id="supraspinatus2"></td>
+            <td id="supraspinatus3"></td>
+            <td id="supraspinatus4"></td>
+            <td id="supraspinatus5"></td>
         </tr>
         <tr id="infraspinatus">
-            <td id="infraspinatus1">Mm. intercostales interni</td>
-            <td id="infraspinatus2">Rippenoberrand</td>
-            <td id="infraspinatus3">Rippenunterrand</td>
-            <td id="infraspinatus4">Nn. intercostales</td>
-            <td id="infraspinatus5">Exspiration</td>
+            <td id="infraspinatus1">Pars costalis</td>
+            <td id="infraspinatus2"></td>
+            <td id="infraspinatus3"></td>
+            <td id="infraspinatus4"></td>
+            <td id="infraspinatus5"></td>
           </tr>
           <tr id="teresminor">
-            <td id="teresminor1">Mm. intercartilaginei</td>
-            <td id="teresminor2">Rippenoberrand</td>
-            <td id="teresminor3">Rippenunterrand</td>
-            <td id="teresminor4">Nn. intercostales</td>
-            <td id="teresminor5">Inspiration</td>
+            <td id="teresminor1">Pars sternalis</td>
+            <td id="teresminor2"></td>
+            <td id="teresminor3"></td>
+            <td id="teresminor4"></td>
+            <td id="teresminor5"></td>
           </tr>
-          <tr id="subscapulares">
-            <td id="subscapulares1">Mm. subcostales</td>
-            <td id="subscapulares2">dorsaler Rippenoberrand</td>
-            <td id="subscapulares3">Rippenunterrand 2-3-Rippen höher</td>
-            <td id="subscapulares4">Nn. intercostales</td>
-            <td id="subscapulares5">Exspiration</td>
-           </tr>
-           <tr id="">
-            <td id="1">M. transversus thoracis</td>
-            <td id="2">dorsales Sternum</td>
-            <td id="3">dorsale Rippenknorpel</td>
-            <td id="4">Nn. intercostales 2-6</td>
-            <td id="5">Exspiration</td>
-           </tr>
+          
            
 
       </table>
@@ -449,32 +422,22 @@ function checkAnswer() {
   }else{
     // Wenn noch kein Feld angeklickt wurde
     console.log(musclecounter);
-    if (inputValue == "Mm. intercostales externi") {
-      tableResults.rows[1].cells[0].textContent = "Mm. intercostales externi";
+    if (inputValue == "Pars lumbalis") {
+      tableResults.rows[1].cells[0].textContent = "Pars lumbalis";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "Mm. intercostales interni") {
-      tableResults.rows[2].cells[0].textContent = "Mm. intercostales interni";
+    if (inputValue == "Pars costalis") {
+      tableResults.rows[2].cells[0].textContent = "Pars costalis";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "Mm. intercartilaginei") {
-      tableResults.rows[3].cells[0].textContent = "Mm. intercartilaginei";
+    if (inputValue == "Pars sternalis") {
+      tableResults.rows[3].cells[0].textContent = "Pars sternalis";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "Mm. subcostales") {
-      tableResults.rows[4].cells[0].textContent = "Mm. subcostales";
-      answerInput.value = '';
-      musclecounter = musclecounter + 1;
-    }
-    if (inputValue == "M. transversus thoracis") {
-      tableResults.rows[5].cells[0].textContent = "M. transversus thoracis";
-      answerInput.value = '';
-      musclecounter = musclecounter + 1;
-    }
-    if (musclecounter >= 5) {
+    if (musclecounter >= 3) {
       document.getElementById("instructions").innerHTML = "Klicke nun auf die Felder und gib die richtige Antwort ein.";
     }
 }

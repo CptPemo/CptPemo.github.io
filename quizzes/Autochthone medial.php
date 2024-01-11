@@ -149,7 +149,6 @@
   border: 0.5px solid black;
   cursor:pointer;
 }
-
 .TopPart{
   position: fixed;
   background-color: white;
@@ -161,7 +160,6 @@
   padding-top: 220px;
 }
 
-
 </style>
     
 </head>
@@ -171,117 +169,217 @@
     <header class="header">
         <?php include '../header.html';?>           
     </header>
-
     <div class="TopPart">
-        <div><h1 style="font-size: 40px; font-weight:400; margin: 1%; cursor: pointer;" 
-        onclick="window.location.replace('/MuskelAuswahl.php')">Muskulatur des Thorax<h1></div>
-        <input class="guess-bar" id="textInput" type="text" placeholder="Los geht's!"> 
-        <button class="check-button" id="checkButton"> Check </button>
-        <button class="resign-button" id="resignButton"> Resign </button>
-        <p id="instructions">Beginne damit, die Muskeln des Thorax zu benennen.</p>
+      <div><h1 style="font-size: 40px; font-weight:400; margin: 1%; cursor: pointer;" onclick="window.location.replace('/MuskelAuswahl.php')">Autochthone Rückenmuskulatur - medialer Trakt<h1></div>
+      <input class="guess-bar" id="textInput" type="text" placeholder="Los geht's!"> 
+      <button class="check-button" id="checkButton"> Check </button>
+      <button class="resign-button" id="resignButton"> Resign </button>
+      <p id="instructions">Beginne damit, die Autochthone Rückenmuskeln zu benennen.</p>
+
     </div>
 
     <div class="TableSection">
-    <table class="tabelle" id="RotatorenmanschetteErgebnisse">
-
+      <table class="tabelle" id="MuskelErgebnisse">
+    
         <tr>
             <th>Muskel</th>
             <th>Ursprung</th>
             <th>Ansatz</th>
-            <th>Innervation</th>
             <th>Funktion</th>
         </tr>
-        <tr id="supraspinatus">
+        <tr id="1">
             <td id="cell10"></td>
             <td id="cell11"></td>
             <td id="cell12"></td>
             <td id="cell13"></td>
-            <td id="cell14"></td>
         </tr>
-        <tr id="infraspinatus">
-            <td id="cell20"></td>
-            <td id="cell21"></td>
-            <td id="cell22"></td>
-            <td id="cell23"></td>
-            <td id="cell24"></td>
-          </tr>
-          <tr id="teresminor">
-            <td id="cell30"></td>
-            <td id="cell31"></td>
-            <td id="cell32"></td>
-            <td id="cell33"></td>
-            <td id="cell34"></td>
-          </tr>
-          <tr id="subscapulares">
-            <td id="cell40"></td>
-            <td id="cell41"></td>
-            <td id="cell42"></td>
-            <td id="cell43"></td>
-            <td id="cell44"></td>
-          </tr>
-          <tr id="">
-            <td id="cell50"></td>
-            <td id="cell51"></td>
-            <td id="cell52"></td>
-            <td id="cell53"></td>
-            <td id="cell54"></td>
-          </tr>
-          
+
+        <tr id="2">
+            <td id="cell10"></td>
+            <td id="cell11"></td>
+            <td id="cell12"></td>
+            <td id="cell13"></td>
+        </tr>
+        <tr id="3">
+            <td id="cell10"></td>
+            <td id="cell11"></td>
+            <td id="cell12"></td>
+            <td id="cell13"></td>
+        </tr>
+        <tr id="4">
+            <td id="cell10"></td>
+            <td id="cell11"></td>
+            <td id="cell12"></td>
+            <td id="cell13"></td>
+        </tr>
+        <tr id="5">
+            <td id="cell10"></td>
+            <td id="cell11"></td>
+            <td id="cell12"></td>
+            <td id="cell13"></td>
+        </tr>
+        <tr id="6">
+            <td id="cell10"></td>
+            <td id="cell11"></td>
+            <td id="cell12"></td>
+            <td id="cell13"></td>
+        </tr>
+        <tr id="7">
+            <td id="cell10"></td>
+            <td id="cell11"></td>
+            <td id="cell12"></td>
+            <td id="cell13"></td>
+        </tr>
+        <tr id="8">
+            <td id="cell10"></td>
+            <td id="cell11"></td>
+            <td id="cell12"></td>
+            <td id="cell13"></td>
+        </tr>
+        <tr id="9">
+            <td id="cell10"></td>
+            <td id="cell11"></td>
+            <td id="cell12"></td>
+            <td id="cell13"></td>
+        </tr>
+        <tr id="10">
+            <td id="cell10"></td>
+            <td id="cell11"></td>
+            <td id="cell12"></td>
+            <td id="cell13"></td>
+        </tr>
+        <tr id="11">
+            <td id="cell10"></td>
+            <td id="cell11"></td>
+            <td id="cell12"></td>
+            <td id="cell13"></td>
+        </tr>
+        <tr id="12">
+            <td id="cell10"></td>
+            <td id="cell11"></td>
+            <td id="cell12"></td>
+            <td id="cell13"></td>
+        </tr>
+        <tr id="13">
+            <td id="cell10"></td>
+            <td id="cell11"></td>
+            <td id="cell12"></td>
+            <td id="cell13"></td>
+        </tr>
+        <tr id="14">
+            <td id="cell10"></td>
+            <td id="cell11"></td>
+            <td id="cell12"></td>
+            <td id="cell13"></td>
+        </tr>
+
+        
 
       </table>
 
-      <table class="tabelleLösungen" id="Rotatorenmanschette">
+      <table class="tabelleLösungen" id="Muskel">
 
         <tr>
             <th>Muskel</th>
             <th>Ursprung</th>
             <th>Ansatz</th>
-            <th>Innervation</th>
             <th>Funktion</th>
         </tr>
-        <tr id="supraspinatus">
-            <td id="supraspinatus1">Mm. intercostales externi</td>
-            <td id="supraspinatus2">Rippenunterrand</td>
-            <td id="supraspinatus3">Rippenoberrand</td>
-            <td id="supraspinatus4">Nn. intercostales</td>
-            <td id="supraspinatus5">Inspiration</td>
+        <tr id="1">
+            <td>Mm. interspinales cervicis</td>
+            <td>C2-TH1</td>
+            <td>nächst höherer Processus Spinosi</td>
+            <td>Dorsalextension</td>
         </tr>
-        <tr id="infraspinatus">
-            <td id="infraspinatus1">Mm. intercostales interni</td>
-            <td id="infraspinatus2">Rippenoberrand</td>
-            <td id="infraspinatus3">Rippenunterrand</td>
-            <td id="infraspinatus4">Nn. intercostales</td>
-            <td id="infraspinatus5">Exspiration</td>
-          </tr>
-          <tr id="teresminor">
-            <td id="teresminor1">Mm. intercartilaginei</td>
-            <td id="teresminor2">Rippenoberrand</td>
-            <td id="teresminor3">Rippenunterrand</td>
-            <td id="teresminor4">Nn. intercostales</td>
-            <td id="teresminor5">Inspiration</td>
-          </tr>
-          <tr id="subscapulares">
-            <td id="subscapulares1">Mm. subcostales</td>
-            <td id="subscapulares2">dorsaler Rippenoberrand</td>
-            <td id="subscapulares3">Rippenunterrand 2-3-Rippen höher</td>
-            <td id="subscapulares4">Nn. intercostales</td>
-            <td id="subscapulares5">Exspiration</td>
-           </tr>
-           <tr id="">
-            <td id="1">M. transversus thoracis</td>
-            <td id="2">dorsales Sternum</td>
-            <td id="3">dorsale Rippenknorpel</td>
-            <td id="4">Nn. intercostales 2-6</td>
-            <td id="5">Exspiration</td>
-           </tr>
-           
+        <tr id="2">
+            <td>Mm. interspinales thoracis</td>
+            <td>TH2, TH3, TH9-L1</td>
+            <td>nächst höherer Processus Spinosi</td>
+            <td>Dorsalextension</td>
+        </tr>
+        <tr id="3">
+            <td>Mm. interspinales lumborum</td>
+            <td>L2-L5</td>
+            <td>nächst höherer Processus Spinosi</td>
+            <td>Dorsalextension</td>
+        </tr>
+        <tr id="4">
+            <td>M. spinalis capitis</td>
+            <td>C6-TH2</td>
+            <td>Protuberantia occipitalis externa</td>
+            <td>Dorsalextension, Lateralflexion ypsilaterale Seite</td>
+        </tr>
+        <tr id="5">
+            <td>M. spinalis cervicis</td>
+            <td>C6-TH2</td>
+            <td>Processus spinosi 4-5 Wirbel darüber</td>
+            <td>Dorsalextension, Lateralflexion ypsilaterale Seite</td>
+        </tr>
+        <tr id="6">
+            <td>M. spinalis thoracis</td>
+            <td>TH10-L3</td>
+            <td>Prcessus spinosi 7-8 Wirbel darüber</td>
+            <td>Dorsalextension, Lateralflexion ypsilaterale Seite</td>
+        </tr>
+        <tr id="7">
+            <td>Mm. rotatores breves</td>
+            <td>Processus transversi C3-L4</td>
+            <td>nächst höherer Processus Spinosi</td>
+            <td>Rotation kontralaterale Seite</td>
+        </tr>
+        <tr id="8">
+            <td>Mm. rotatores longi</td>
+            <td>Processus transversi C4-L5</td>
+            <td>übernächst höherer Processus Spinosi</td>
+            <td>Rotation kontralaterale Seite</td>
+        </tr>
+        <tr id="9">
+            <td>M. multifidus cervicis</td>
+            <td>TH1-TH4, Procc. articulares C5-C7</td>
+            <td>Processus Spinosi 3-5 Wirbel höher</td>
+            <td>Dorsalextension, Lateralfelxion ypsilateral, Rotation kontralateral</td>
+        </tr>
+        <tr id="10">
+            <td>M. multifidus thoracis</td>
+            <td>TH3-TH12, Procc. mammillares L1-L4</td>
+            <td>Processus Spinosi 3-5 Wirbel höher</td>
+            <td>Dorsalextension, Lateralfelxion ypsilateral, Rotation kontralateral</td>
+        </tr>
+        <tr id="11">
+            <td>M. multifidus lumborum</td>
+            <td>Procc. mammillares L3-L5, S1-S4, Crista iliaca</td>
+            <td>Processus Spinosi 3-5 Wirbel höher</td>
+            <td>Dorsalextension, Lateralfelxion ypsilateral, Rotation kontralateral</td>
+        </tr>
+        <tr id="12">
+            <td>M. semispinalis capitis</td>
+            <td>Procc. transversi C4-TH6</td>
+            <td>Os occipitale</td>
+            <td>Dorsalextension, Lateralfelxion ypsilateral, Rotation kontralateral</td>
+        </tr>
+        <tr id="13">
+            <td>M. semispinalis cervicis</td>
+            <td>Procc. transversi TH1-TH6</td>
+            <td>Processus spinosi 5-7 Wirbel höher</td>
+            <td>Dorsalextension, Lateralflexion ypsilateral, Rotation kontralateral</td>
+        </tr>
+        <tr id="14">
+            <td>M. semispinalis thoracis</td>
+            <td>Procc. transversi TH6-TH12</td>
+            <td>Processus spinosi C6, C7, TH1-TH5</td>
+            <td>Dorsalextension, Lateralfelxion und Rotation ypsilateral, </td>
+        </tr>
+        
+       
+       
 
+       
+        
       </table>
-      <button class="check-button" id="previous" onclick="window.location.replace('HuefteMuskeln.php')"> <<  Vorheriges Quiz </button>
-      <button class="check-button" id="next" onclick="window.location.replace('SprunggelenkMuskeln.php')"> Nächstes  Quiz >></button>
+      <button class="check-button" id="previous" onclick="window.location.replace('ExtensorenUnterarm.php')"> <<  Vorheriges Quiz </button>
+      <button class="check-button" id="next" onclick="window.location.replace('Glutealmuskeln.php')"> Nächstes  Quiz >></button>
       <?php include '../popup.html'; ?>
 </div>
-
 <footer class="footer">
     <?php include '../footer.html'; ?>
 </footer> 
@@ -291,8 +389,8 @@
 
     let selectedCell = null; // für rahmen um ausgewählte zelle
 
-    const table = document.getElementById('Rotatorenmanschette');
-    const tableResults = document.getElementById('RotatorenmanschetteErgebnisse');
+    const table = document.getElementById('Muskel');
+    const tableResults = document.getElementById('MuskelErgebnisse');
 
     const answerInput = document.getElementById('textInput');
     const checkButton = document.getElementById('checkButton');
@@ -394,13 +492,13 @@ function checkAnswer() {
             clickedCellIndex.row = clickedCellIndex.row + 1;
             
             // wenn letzte Tabellenzelle in letzter Tabellenzeile erreicht ist
-            if(clickedCellIndex.row > 12){ // muss manuell angepasst werden, je nach Tabellengröße
+            if(clickedCellIndex.row > 14){ // muss manuell angepasst werden, je nach Tabellengröße
 
                 // muss manuell angepasst werden, je nach Tabellengröße
-                const nextCellId = 'cell' + (rowIndex - 11) + (cellIndex - 3); // Annahme: Zellen haben IDs wie "cell0", "cell1", ...
+                const nextCellId = 'cell' + (rowIndex - 13) + (cellIndex - 3); // Annahme: Zellen haben IDs wie "cell0", "cell1", ...
                 const nextCell = document.getElementById(nextCellId);
                 clickedCellIndex.cell = clickedCellIndex.cell - 3;
-                clickedCellIndex.row = clickedCellIndex.row - 11;
+                clickedCellIndex.row = clickedCellIndex.row - 13;
 
                 if (nextCell) {
                 // Setze den Rahmeneffekt zurück, wenn eine Zelle zuvor ausgewählt wurde
@@ -449,33 +547,81 @@ function checkAnswer() {
   }else{
     // Wenn noch kein Feld angeklickt wurde
     console.log(musclecounter);
-    if (inputValue == "Mm. intercostales externi") {
-      tableResults.rows[1].cells[0].textContent = "Mm. intercostales externi";
+    if (inputValue == "Mm. interspinales cervicis") {
+      tableResults.rows[1].cells[0].textContent = "Mm. interspinales cervicis";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "Mm. intercostales interni") {
-      tableResults.rows[2].cells[0].textContent = "Mm. intercostales interni";
+    if (inputValue == "Mm. interspinales thoracis") {
+      tableResults.rows[2].cells[0].textContent = "Mm. interspinales thoracis";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "Mm. intercartilaginei") {
-      tableResults.rows[3].cells[0].textContent = "Mm. intercartilaginei";
+    if (inputValue == "Mm. interspinales lumborum") {
+      tableResults.rows[3].cells[0].textContent = "M. flexor pollicis brevis - Caput superficiale";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "Mm. subcostales") {
-      tableResults.rows[4].cells[0].textContent = "Mm. subcostales";
+    if (inputValue == "M. spinalis capitis") {
+      tableResults.rows[4].cells[0].textContent = "M. spinalis";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. transversus thoracis") {
-      tableResults.rows[5].cells[0].textContent = "M. transversus thoracis";
+  
+    if (inputValue == "M. spinalis cervicis") {
+      tableResults.rows[5].cells[0].textContent = "M. spinalis";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (musclecounter >= 5) {
-      document.getElementById("instructions").innerHTML = "Klicke nun auf die Felder und gib die richtige Antwort ein.";
+  
+    if (inputValue == "M. spinalis thoracis") {
+      tableResults.rows[6].cells[0].textContent = "M. spinalis";
+      answerInput.value = '';
+      musclecounter = musclecounter + 1;
+    }
+  
+    if (inputValue == "Mm. rotatores breves") {
+      tableResults.rows[7].cells[0].textContent = "Mm. rotatores breves";
+      answerInput.value = '';
+      musclecounter = musclecounter + 1;
+    }
+    if (inputValue == "Mm. rotatores longi") {
+      tableResults.rows[8].cells[0].textContent = "Mm. rotatores longi";
+      answerInput.value = '';
+      musclecounter = musclecounter + 1;
+    }
+    if (inputValue == "M. multifidus cervicis") {
+      tableResults.rows[9].cells[0].textContent = "M. multifidus cervicis";
+      answerInput.value = '';
+      musclecounter = musclecounter + 1;
+    }
+    if (inputValue == "M. multifidus thoracis") {
+      tableResults.rows[10].cells[0].textContent = "M. multifidus thoracis";
+      answerInput.value = '';
+      musclecounter = musclecounter + 1;
+    }
+    if (inputValue == "M. multifidus lumborum") {
+      tableResults.rows[11].cells[0].textContent = "M. multifidus lumborum";
+      answerInput.value = '';
+      musclecounter = musclecounter + 1;
+    }
+    if (inputValue == "M. semispinalis capitis") {
+      tableResults.rows[12].cells[0].textContent = "M. semispinalis capitis";
+      answerInput.value = '';
+      musclecounter = musclecounter + 1;
+    }
+    if (inputValue == "M. semispinalis cervicis") {
+      tableResults.rows[13].cells[0].textContent = "M. semispinalis cervicis";
+      answerInput.value = '';
+      musclecounter = musclecounter + 1;
+    }
+    if (inputValue == "M. semispinalis thoracis") {
+      tableResults.rows[14].cells[0].textContent = "M. semispinalis thoracis";
+      answerInput.value = '';
+      musclecounter = musclecounter + 1;
+    }
+    if (musclecounter >= 7) {
+      document.getElementById("instructions").innerHTML = "Klicke nun auf die Felder und gib die richtige Antwort ein. Die Auswahl springt dann automatisch.";
     }
 }
 }
