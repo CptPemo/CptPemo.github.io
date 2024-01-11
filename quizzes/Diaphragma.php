@@ -212,6 +212,20 @@
             <td id="cell33"></td>
             <td id="cell34"></td>
           </tr>
+          <tr id="infraspinatus">
+            <td id="cell20"></td>
+            <td id="cell21"></td>
+            <td id="cell22"></td>
+            <td id="cell23"></td>
+            <td id="cell24"></td>
+          </tr>
+          <tr id="teresminor">
+            <td id="cell30"></td>
+            <td id="cell31"></td>
+            <td id="cell32"></td>
+            <td id="cell33"></td>
+            <td id="cell34"></td>
+          </tr>
           
 
       </table>
@@ -226,25 +240,39 @@
             <th>Funktion</th>
         </tr>
         <tr id="supraspinatus">
-            <td id="supraspinatus1">Pars lumbalis</td>
-            <td id="supraspinatus2"></td>
-            <td id="supraspinatus3"></td>
-            <td id="supraspinatus4"></td>
-            <td id="supraspinatus5"></td>
+            <td id="supraspinatus1">Pars lumbalis - Crus mediale dextrum</td>
+            <td id="supraspinatus2">Lendenwirbelkörper 1-4</td>
+            <td id="supraspinatus3">Centrum tendineum</td>
+            <td id="supraspinatus4">N. phrenicus</td>
+            <td id="supraspinatus5">Inspiration</td>
+        </tr>
+        <tr id="supraspinatus">
+            <td id="supraspinatus1">Pars lumbalis - Crus mediale sinistrum</td>
+            <td id="supraspinatus2">Lendenwirbelkörper 1-3</td>
+            <td id="supraspinatus3">Centrum tendineum</td>
+            <td id="supraspinatus4">N. phrenicus</td>
+            <td id="supraspinatus5">Inspiration</td>
+        </tr>
+        <tr id="supraspinatus">
+            <td id="supraspinatus1">Pars lumbalis - Crus laterale</td>
+            <td id="supraspinatus2">Lig. arcuatum mediale, Lig. arcuatum laterale</td>
+            <td id="supraspinatus3">Centrum tendineum</td>
+            <td id="supraspinatus4">N. phrenicus</td>
+            <td id="supraspinatus5">Inspiration</td>
         </tr>
         <tr id="infraspinatus">
             <td id="infraspinatus1">Pars costalis</td>
-            <td id="infraspinatus2"></td>
-            <td id="infraspinatus3"></td>
-            <td id="infraspinatus4"></td>
-            <td id="infraspinatus5"></td>
+            <td id="infraspinatus2">dorsale Rippenknorpel 7-12</td>
+            <td id="infraspinatus3">Centrum tendineum</td>
+            <td id="infraspinatus4">N. phrenicus</td>
+            <td id="infraspinatus5">Inspiration</td>
           </tr>
           <tr id="teresminor">
             <td id="teresminor1">Pars sternalis</td>
-            <td id="teresminor2"></td>
-            <td id="teresminor3"></td>
-            <td id="teresminor4"></td>
-            <td id="teresminor5"></td>
+            <td id="teresminor2">dorsaler Proc. xiphoideus sterni</td>
+            <td id="teresminor3">Centrum tendineum</td>
+            <td id="teresminor4">N. phrenicus</td>
+            <td id="teresminor5">Inspiration</td>
           </tr>
           
            
@@ -422,22 +450,32 @@ function checkAnswer() {
   }else{
     // Wenn noch kein Feld angeklickt wurde
     console.log(musclecounter);
-    if (inputValue == "Pars lumbalis") {
-      tableResults.rows[1].cells[0].textContent = "Pars lumbalis";
+    if (inputValue == "Pars lumbalis - Crus mediale dextrum") {
+      tableResults.rows[1].cells[0].textContent = "Pars lumbalis - Crus mediale dextrum";
+      answerInput.value = '';
+      musclecounter = musclecounter + 1;
+    }
+    if (inputValue == "Pars lumbalis - Crus mediale sinistrum") {
+      tableResults.rows[2].cells[0].textContent = "Pars lumbalis - Crus mediale sinistrum";
+      answerInput.value = '';
+      musclecounter = musclecounter + 1;
+    }
+    if (inputValue == "Pars lumbalis - Crus laterale dextrum") {
+      tableResults.rows[3].cells[0].textContent = "Pars lumbalis - Crus laterale dextrum";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
     if (inputValue == "Pars costalis") {
-      tableResults.rows[2].cells[0].textContent = "Pars costalis";
+      tableResults.rows[4].cells[0].textContent = "Pars costalis";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
     if (inputValue == "Pars sternalis") {
-      tableResults.rows[3].cells[0].textContent = "Pars sternalis";
+      tableResults.rows[5].cells[0].textContent = "Pars sternalis";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (musclecounter >= 3) {
+    if (musclecounter >= 5) {
       document.getElementById("instructions").innerHTML = "Klicke nun auf die Felder und gib die richtige Antwort ein.";
     }
 }
