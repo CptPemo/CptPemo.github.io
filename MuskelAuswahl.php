@@ -56,7 +56,11 @@ if (isset($_SESSION['username'])) {
                     </a>
                 </button>
 
-
+                <button class="quiz-preview">
+                    <a href="quizzes/Autochthone medial.php">
+                        <div style="font-size: 30px;">autochthone Rückenmuskulatur medialer Trakt</div>
+                    </a>
+                </button>
                 <button class="quiz-preview">
                     <a href="quizzes/Rotatorenmanschette.php">
                         <div style="font-size: 30px;">Rotatorenmanschette</div>
