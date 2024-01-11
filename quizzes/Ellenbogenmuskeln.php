@@ -165,7 +165,7 @@
     <input class="guess-bar" id="textInput" type="text" placeholder="Los geht's!"> 
     <button class="check-button" id="checkButton"> Check </button>
     <button class="resign-button" id="resignButton"> Resign </button>
-    <p id="instructions">Beginne damit, die Muskeln des Ellenbogengelnks zu benennen.</p>
+    <p id="instructions">Beginne damit, die Muskeln des Ellenbogengelenks zu benennen.</p>
     <table class="tabelle" id="EllenbogenErgebnisse">
 
         <tr>
@@ -288,8 +288,8 @@
             <td id="anconeus5">Extension</td>
         </tr>
       </table>
-      <button class="check-button" id="previous"> <<  Vorheriges Quiz </button>
-      <button class="check-button" id="next"> Nächstes  Quiz >></button>
+      <button class="check-button" id="previous" onclick="window.location.replace('SchulterweitereMuskeln.php')"> <<  Vorheriges Quiz </button>
+      <button class="check-button" id="next" onclick="window.location.replace('FlexorenUnterarm.php')"> Nächstes  Quiz >></button>
       <?php include '../popup.html'; ?>
 
 <footer class="footer">
@@ -404,8 +404,33 @@ function checkAnswer() {
             clickedCellIndex.row = clickedCellIndex.row + 1;
             
             // wenn letzte Tabellenzelle in letzter Tabellenzeile erreicht ist
-            if(clickedCellIndex.row > 4){
-                alert("Super gemacht! Hier gehts weiter:");
+            if(clickedCellIndex.row > 7){ // muss manuell angepasst werden, je nach Tabellengröße
+
+                // muss manuell angepasst werden, je nach Tabellengröße
+                const nextCellId = 'cell' + (rowIndex - 6) + (cellIndex - 3); // Annahme: Zellen haben IDs wie "cell0", "cell1", ...
+                const nextCell = document.getElementById(nextCellId);
+                clickedCellIndex.cell = clickedCellIndex.cell - 3;
+                clickedCellIndex.row = clickedCellIndex.row - 6;
+
+                if (nextCell) {
+                // Setze den Rahmeneffekt zurück, wenn eine Zelle zuvor ausgewählt wurde
+                if (selectedCell) {
+                 selectedCell.style.border = '1px solid black';
+                }
+
+                // Setze die ausgewählte Zelle auf die nächste Zelle
+                 selectedCell = nextCell;
+
+                // Hervorhebe die nächste Zelle mit einem dicken Rahmen
+                selectedCell.style.border = '3px solid black';
+
+                // Fokussiere das Texteingabefeld für die neue Zelle
+                 answerInput.focus();
+
+                console.log(selectedCell);
+                console.log(clickedCellIndex);
+
+                }
             }
 
              if (nextCell) {

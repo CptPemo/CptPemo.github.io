@@ -245,7 +245,7 @@
         </tr>
 
       </table>
-      <button class="check-button" id="previous" onclick="window.location.replace('ExtensorenUnterarm.php')"> <<  Vorheriges Quiz </button>
+      <button class="check-button" id="previous" onclick="window.location.replace('Handmuskeln.php')"> <<  Vorheriges Quiz </button>
       <button class="check-button" id="next" onclick="window.location.replace('PelvitrochantaereMuskulatur.php')"> Nächstes  Quiz >></button>
       <?php include '../popup.html'; ?>
 
