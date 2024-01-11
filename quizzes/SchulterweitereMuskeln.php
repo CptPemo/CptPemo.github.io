@@ -161,7 +161,7 @@
         <?php include '../header.html';?>           
     </header>
 
-    <div><h1 style="font-size: 40px; font-weight:400; margin: 1%;">Weitere Muskeln des Schultergelenks<h1></div>
+    <div><h1 style="font-size: 40px; font-weight:400; margin: 1%; cursor: pointer;" onclick="window.location.replace('/MuskelAuswahl.php')">Weitere Muskeln des Schultergelenks<h1></div>
     <input class="guess-bar" id="textInput" type="text" placeholder="Los geht's!"> 
     <button class="check-button" id="checkButton"> Check </button>
     <button class="resign-button" id="resignButton"> Resign </button>

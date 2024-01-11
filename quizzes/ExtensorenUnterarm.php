@@ -170,7 +170,7 @@
         <?php include '../header.html';?>           
     </header>
     <div class="TopPart">
-      <div><h1 style="font-size: 40px; font-weight:400; margin: 1%;">Extensoren des Unterarms<h1></div>
+      <div><h1 style="font-size: 40px; font-weight:400; margin: 1%; cursor: pointer;" onclick="window.location.replace('/MuskelAuswahl.php')">Extensoren des Unterarms<h1></div>
       <input class="guess-bar" id="textInput" type="text" placeholder="Los geht's!"> 
       <button class="check-button" id="checkButton"> Check </button>
       <button class="resign-button" id="resignButton"> Resign </button>
