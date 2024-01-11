@@ -631,21 +631,21 @@ function checkAnswer() {
       musclecounter = musclecounter + 1;
     }
     if (inputValue == "M. flexor digiti minimi brevis") {
-      tableResults.rows[11].cells[0].textContent = "M. flexor digiti minimi brevis";
+      tableResults.rows[12].cells[0].textContent = "M. flexor digiti minimi brevis";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
     if (inputValue == "M. opponens digiti minimi") {
-      tableResults.rows[11].cells[0].textContent = "M. opponens digiti minimi";
+      tableResults.rows[13].cells[0].textContent = "M. opponens digiti minimi";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
     if (inputValue == "M. palmaris brevis") {
-      tableResults.rows[11].cells[0].textContent = "M. palmaris brevis";
+      tableResults.rows[14].cells[0].textContent = "M. palmaris brevis";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (musclecounter >= 7) {
+    if (musclecounter >= 14) {
       document.getElementById("instructions").innerHTML = "Klicke nun auf die Felder und gib die richtige Antwort ein. Die Auswahl springt dann automatisch.";
     }
 }

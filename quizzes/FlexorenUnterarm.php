@@ -589,7 +589,7 @@ function checkAnswer() {
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (musclecounter >= 7) {
+    if (musclecounter >= 11) {
       document.getElementById("instructions").innerHTML = "Klicke nun auf die Felder und gib die richtige Antwort ein. Die Auswahl springt dann automatisch.";
     }
 }
