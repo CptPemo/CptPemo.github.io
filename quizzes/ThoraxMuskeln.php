@@ -173,7 +173,8 @@
     </header>
 
     <div class="TopPart">
-        <div><h1 style="font-size: 40px; font-weight:400; margin: 1%; cursor: pointer;" onclick="window.location.replace('/MuskelAuswahl.php')">Muskulatur des Thorax<h1></div>
+        <div><h1 style="font-size: 40px; font-weight:400; margin: 1%; cursor: pointer;" 
+        onclick="window.location.replace('/MuskelAuswahl.php')">Muskulatur des Thorax<h1></div>
         <input class="guess-bar" id="textInput" type="text" placeholder="Los geht's!"> 
         <button class="check-button" id="checkButton"> Check </button>
         <button class="resign-button" id="resignButton"> Resign </button>
@@ -225,56 +226,7 @@
             <td id="cell53"></td>
             <td id="cell54"></td>
           </tr>
-          <tr id="">
-            <td id="cell60"></td>
-            <td id="cell61"></td>
-            <td id="cell62"></td>
-            <td id="cell63"></td>
-            <td id="cell64"></td>
-          </tr>
-          <tr id="">
-            <td id="cell70"></td>
-            <td id="cell71"></td>
-            <td id="cell72"></td>
-            <td id="cell73"></td>
-            <td id="cell74"></td>
-          </tr>
-          <tr id="">
-            <td id="cell80"></td>
-            <td id="cell81"></td>
-            <td id="cell82"></td>
-            <td id="cell83"></td>
-            <td id="cell84"></td>
-          </tr>
-          <tr id="">
-            <td id="cell90"></td>
-            <td id="cell91"></td>
-            <td id="cell92"></td>
-            <td id="cell93"></td>
-            <td id="cell94"></td>
-          </tr>
-          <tr id="">
-            <td id="cell100"></td>
-            <td id="cell101"></td>
-            <td id="cell102"></td>
-            <td id="cell103"></td>
-            <td id="cell104"></td>
-          </tr>
-          <tr id="">
-            <td id="cell110"></td>
-            <td id="cell111"></td>
-            <td id="cell112"></td>
-            <td id="cell113"></td>
-            <td id="cell114"></td>
-          </tr>
-          <tr id="">
-            <td id="cell120"></td>
-            <td id="cell121"></td>
-            <td id="cell122"></td>
-            <td id="cell123"></td>
-            <td id="cell124"></td>
-          </tr>
-
+          
 
       </table>
 
@@ -288,89 +240,41 @@
             <th>Funktion</th>
         </tr>
         <tr id="supraspinatus">
-            <td id="supraspinatus1">M. rectus femoris</td>
-            <td id="supraspinatus2">Spina iliaca anterior inferior</td>
-            <td id="supraspinatus3">Tuberositas tibiae</td>
-            <td id="supraspinatus4">N. femoralis</td>
-            <td id="supraspinatus5">Extension</td>
+            <td id="supraspinatus1">Mm. intercostales externi</td>
+            <td id="supraspinatus2">Rippenunterrand</td>
+            <td id="supraspinatus3">Rippenoberrand</td>
+            <td id="supraspinatus4">Nn. intercostales</td>
+            <td id="supraspinatus5">Inspiration</td>
         </tr>
         <tr id="infraspinatus">
-            <td id="infraspinatus1">M. vastus medialis</td>
-            <td id="infraspinatus2">Linea aspera</td>
-            <td id="infraspinatus3">Tuberositas tibiae</td>
-            <td id="infraspinatus4">N. femoralis</td>
-            <td id="infraspinatus5">Extension</td>
+            <td id="infraspinatus1">Mm. intercostales interni</td>
+            <td id="infraspinatus2">Rippenoberrand</td>
+            <td id="infraspinatus3">Rippenunterrand</td>
+            <td id="infraspinatus4">Nn. intercostales</td>
+            <td id="infraspinatus5">Exspiration</td>
           </tr>
           <tr id="teresminor">
-            <td id="teresminor1">M. vastus lateralis</td>
-            <td id="teresminor2">Linea aspera</td>
-            <td id="teresminor3">Tuberositas tibiae</td>
-            <td id="teresminor4">N. femoralis</td>
-            <td id="teresminor5">Extension</td>
+            <td id="teresminor1">Mm. intercartilaginei</td>
+            <td id="teresminor2">Rippenoberrand</td>
+            <td id="teresminor3">Rippenunterrand</td>
+            <td id="teresminor4">Nn. intercostales</td>
+            <td id="teresminor5">Inspiration</td>
           </tr>
           <tr id="subscapulares">
-            <td id="subscapulares1">M. vastus intermedius</td>
-            <td id="subscapulares2">Femurschaft</td>
-            <td id="subscapulares3">Tuberositas tibiae</td>
-            <td id="subscapulares4">N. femoralis</td>
-            <td id="subscapulares5">Extension</td>
+            <td id="subscapulares1">Mm. subcostales</td>
+            <td id="subscapulares2">dorsaler Rippenoberrand</td>
+            <td id="subscapulares3">Rippenunterrand 2-3-Rippen höher</td>
+            <td id="subscapulares4">Nn. intercostales</td>
+            <td id="subscapulares5">Exspiration</td>
            </tr>
            <tr id="">
-            <td id="1">M. sartorius</td>
-            <td id="2">Spina iliaca anterior superior</td>
-            <td id="3">Pes anserinus superficialis</td>
-            <td id="4">N. femoralis</td>
-            <td id="5">Flexion, Innenrotation</td>
+            <td id="1">M. transversus thoracis</td>
+            <td id="2">dorsales Sternum</td>
+            <td id="3">dorsale Rippenknorpel</td>
+            <td id="4">Nn. intercostales 2-6</td>
+            <td id="5">Exspiration</td>
            </tr>
-           <tr id="">
-            <td id="1">M. gracilis</td>
-            <td id="2">Ramus inferior ossis pubis</td>
-            <td id="3">Pes anserinus superficialis</td>
-            <td id="4">N. obturatorius</td>
-            <td id="5">Flexion, Innenrotation</td>
-           </tr>
-           <tr id="">
-            <td id="1">M. semitendinosus</td>
-            <td id="2">Tuber ischiadicum</td>
-            <td id="3">Pes anserinus superficialis</td>
-            <td id="4">N. ischiadicus</td>
-            <td id="5">Flexion, Innenrotation</td>
-           </tr>
-           <tr id="">
-            <td id="1">M. semimenbranosus</td>
-            <td id="2">Tuber ischiadicum</td>
-            <td id="3">medialer Tibiakondylus</td>
-            <td id="4">N. ischiadicus</td>
-            <td id="5">Flexion, Innenrotation</td>
-           </tr>
-           <tr id="">
-            <td id="1">M. biceps femoris - Caput longum</td>
-            <td id="2">Tuber ischiadicum</td>
-            <td id="3">lateraler Tibiakondylus</td>
-            <td id="4">N. ischiadicus</td>
-            <td id="5">Flexion, Außenrotation</td>
-           </tr>
-           <tr id="">
-            <td id="1">M. biceps femoris - Caput breve</td>
-            <td id="2">Linea aspera</td>
-            <td id="3">lateraler Tibiakondylus</td>
-            <td id="4">N. ischiadicus</td>
-            <td id="5">Flexion, Außenrotation</td>
-           </tr>
-           <tr id="">
-            <td id="1">M. popliteus</td>
-            <td id="2">lateraler Femurepikondylus</td>
-            <td id="3">Facies posterior tibiae</td>
-            <td id="4">N. tibialis</td>
-            <td id="5">Flexion, Innenrotation</td>
-           </tr>
-           <tr id="">
-            <td id="1">M. gastrocnemius</td>
-            <td id="2">dorsal kranial der Femurkondylen</td>
-            <td id="3">Tuber calcanei</td>
-            <td id="4">N. tibialis</td>
-            <td id="5">Flexion</td>
-           </tr>
+           
 
       </table>
       <button class="check-button" id="previous" onclick="window.location.replace('HuefteMuskeln.php')"> <<  Vorheriges Quiz </button>
@@ -545,68 +449,33 @@ function checkAnswer() {
   }else{
     // Wenn noch kein Feld angeklickt wurde
     console.log(musclecounter);
-    if (inputValue == "M. rectus femoris") {
-      tableResults.rows[1].cells[0].textContent = "M. rectus femoris";
+    if (inputValue == "Mm. intercostales externi") {
+      tableResults.rows[1].cells[0].textContent = "Mm. intercostales externi";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. vastus medialis") {
-      tableResults.rows[2].cells[0].textContent = "M. vastus medialis";
+    if (inputValue == "Mm. intercostales interni") {
+      tableResults.rows[2].cells[0].textContent = "Mm. intercostales interni";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. vastus lateralis") {
-      tableResults.rows[3].cells[0].textContent = "M. vastus lateralis";
+    if (inputValue == "Mm. intercartilaginei") {
+      tableResults.rows[3].cells[0].textContent = "Mm. intercartilaginei";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. vastus intermedius") {
-      tableResults.rows[4].cells[0].textContent = "M. vastus intermedius";
+    if (inputValue == "Mm. subcostales") {
+      tableResults.rows[4].cells[0].textContent = "Mm. subcostales";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. sartorius") {
-      tableResults.rows[5].cells[0].textContent = "M. sartorius";
+    if (inputValue == "M. transversus thoracis") {
+      tableResults.rows[5].cells[0].textContent = "M. transversus thoracis";
       answerInput.value = '';
       musclecounter = musclecounter + 1;
     }
-    if (inputValue == "M. gracilis") {
-      tableResults.rows[6].cells[0].textContent = "M. gracilis";
-      answerInput.value = '';
-      musclecounter = musclecounter + 1;
-    }
-    if (inputValue == "M. semitendinosus") {
-      tableResults.rows[7].cells[0].textContent = "M. semitendinosus";
-      answerInput.value = '';
-      musclecounter = musclecounter + 1;
-    }
-    if (inputValue == "M. semimembranosus") {
-      tableResults.rows[8].cells[0].textContent = "M. semimembranosus";
-      answerInput.value = '';
-      musclecounter = musclecounter + 1;
-    }
-    if (inputValue == "M. biceps femoris - Caput longum") {
-      tableResults.rows[9].cells[0].textContent = "M. biceps femoris - Caput longum";
-      answerInput.value = '';
-      musclecounter = musclecounter + 1;
-    }
-    if (inputValue == "M. biceps femoris - Caput breve") {
-      tableResults.rows[10].cells[0].textContent = "M. biceps femoris - Caput breve";
-      answerInput.value = '';
-      musclecounter = musclecounter + 1;
-    }
-    if (inputValue == "M. popliteus") {
-      tableResults.rows[11].cells[0].textContent = "M. popliteus";
-      answerInput.value = '';
-      musclecounter = musclecounter + 1;
-    }
-    if (inputValue == "M. gastrocnemius") {
-      tableResults.rows[12].cells[0].textContent = "M. gastrocnemius";
-      answerInput.value = '';
-      musclecounter = musclecounter + 1;
-    }
-    if (musclecounter >= 12) {
-      document.getElementById("instructions").innerHTML = "Klicke nun auf die Felder und gib die richtige Antwort ein. Die Funktion bezieht sich auf das Kniegelenk.";
+    if (musclecounter >= 5) {
+      document.getElementById("instructions").innerHTML = "Klicke nun auf die Felder und gib die richtige Antwort ein.";
     }
 }
 }
