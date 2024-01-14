@@ -63,16 +63,16 @@
                         <img class="quizPicture" src="../bilder/Clavicula.png" oncontextmenu="return false;">
                         <div class="label" style="left: 555px; top: 240px;">1</div>
                         <div class="label" style="left: 90px; top: 290px;">2</div>
-                        <div class="line" style="top: 550px; transform: translateX(305px)rotate(90deg); width: 45px;"></div>
+                        <div class="line" style="top: 225px; transform: translateX(585px)rotate(105deg); width: 50px;"></div>
                         <div class="label" style="left: 610px; top: 160px;">3</div>
                         <div class="label" style="left: 610px; top: 540px;">3</div>
-                        <div class="line" style="top: 197px; transform: translateX(285px) rotate(25deg); width: 45px;"></div>
+                        <div class="line" style="top: 310px; transform: translateX(25px) rotate(60deg); width: 45px;"></div>
                         <div class="label" style="left: 15px; top: 250px;">4</div>
                         <div class="label" style="left: 15px; top: 500px;">4</div>
-                        <div class="line" style="top: 424px; transform: translateX(47px) rotate(90deg); width: 60px;"></div>
+                        <div class="line" style="top: 475px; transform: translateX(20px) rotate(120deg); width: 60px;"></div>
                         <div class="label" style="left: 535px; top: 460px;">5</div>
                         <div class="label" style="left: 220px; top: 500px;">6</div>
-                        <div class="line" style="top: 315px; transform: translateX(120px) rotate(75deg); width: 60px;"></div>
+                        <div class="line" style="top: 513px; transform: translateX(580px) rotate(75deg); width: 60px;"></div>
                         <div class="label" style="left: 160px; top: 480px;">7</div>
                     </div>
                 
@@ -111,7 +111,7 @@
                         <div class="answer" id="7">
                             7.
                         </div>
-                        <div class="stop-message" style="display: none;">Das Spiel ist beendet, du hast <span id="green-count-value">0</span> von 11 Punkten erreicht.</div>
+                        <div class="stop-message" style="display: none;">Das Spiel ist beendet, du hast <span id="green-count-value">0</span> von 7 Punkten erreicht.</div>
                         <button class="button-stop" id="stopButton">Quiz beenden</button>
                         <button class="button-stop" id="restartButton"> Quiz neustarten</button>
                         

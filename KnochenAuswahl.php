@@ -112,6 +112,15 @@ if (isset($_SESSION['username'])) {
                 </button> 
 
                 <button class="quiz-preview">
+                    <a href="quizzes/Clavicula.php">
+                        <div class="quiz-picture" data-keywords="Brust, Thorax, Knochen, Schlüsselbein">
+                            <img class="thumbnail" src="thumbnails/ClaviculaThumbnail.png" oncontextmenu="return false;">
+                        </div>
+                        <div class="quiz-info">Clavicula</div>
+                    </a>  
+                </button> 
+
+                <button class="quiz-preview">
                     <a href="quizzes/Scapula.php">
                         <div class="quiz-picture" data-keywords="Schulter, Skelett, Knochen, Arm, Schulterblatt">
                             <img class="thumbnail" src="thumbnails/ScapulaThumbnail.png" oncontextmenu="return false;">
