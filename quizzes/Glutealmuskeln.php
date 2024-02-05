@@ -233,7 +233,7 @@
             <td id="teresminor1">M. gluteus minimus</td>
             <td id="teresminor2">Os ilium</td>
             <td id="teresminor3">Trochanter major</td>
-            <td id="teresminor4">N. gluteus major</td>
+            <td id="teresminor4">N. gluteus superior</td>
             <td id="teresminor5">Abduktion</td>
           </tr>
           <tr id="subscapulares">
