@@ -60,7 +60,7 @@ if (isset($_SESSION['username'])) {
                         <div class="quiz-info">Knochen</div>
                     </a>
                 </button>
-
+   
                 <button class="quiz-preview">
                     <a href="MuskelAuswahl.php">
                     <div class="quiz-picture" data-keywords="Knochen">
