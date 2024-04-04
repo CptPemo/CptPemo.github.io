@@ -71,8 +71,10 @@
                         <div class="line" style="top: 135px; transform: translateX(470px) rotate(0deg); width: 10px;"></div>
                         <div class="label" style="left: 500px; top: 130px;">2</div>
 
+                        <div class="label" style="left: 140px; top: 150px;">3</div>
+
                         <div class="line" style="top: 380px; transform: translateX(170px) rotate(-30deg); width: 30px;"></div>
-                        <div class="label" style="left: 145px; top: 370px;">3</div>
+                        <div class="label" style="left: 145px; top: 370px;">5</div>
 
                         <div class="line" style="top: 310px; transform: translateX(140px) rotate(-30deg); width: 30px;"></div>
                         <div class="line" style="top: 280px; transform: translateX(95px) rotate(70deg); width: 130px;"></div>
@@ -81,7 +83,7 @@
                         <div class="label" style="left: 120px; top: 300px;">4</div>
 
                         <div class="line" style="top: 388px; transform: translateX(320px) rotate(0deg); width: 170px;"></div>
-                        <div class="label" style="left: 490px; top: 365px;">5</div>
+                        <div class="label" style="left: 490px; top: 365px;">7</div>
 
                         <div class="line" style="top: 355px; transform: translateX(330px) rotate(-45deg); width: 20px;"></div>
                         <div class="line" style="top: 355px; transform: translateX(317px) rotate(45deg); width: 20px;"></div>
@@ -113,31 +115,29 @@
                         <div class="line" style="top: 850px; transform: translateX(230px) rotate(90deg); width: 30px;"></div>
                         <div class="label" style="left: 235px; top: 805px;">14</div>
 
-                        <div class="label" style="left: 387px; top: 735px;">15</div>
-
 
                         <div class="line" style="top: 790px; transform: translateX(395px) rotate(-75deg); width: 65px;"></div>
-                        <div class="label" style="left: 420px; top: 730px;">16</div>
+                        <div class="label" style="left: 420px; top: 730px;">15</div>
 
 
                         <div class="line" style="top: 765px; transform: translateX(480px) rotate(45deg); width: 20px;"></div>
-                        <div class="label" style="left: 460px; top: 730px;">17</div>
+                        <div class="label" style="left: 460px; top: 730px;">16</div>
 
-                        <div class="label" style="left: 410px; top: 900px;">18</div>
+                        <div class="label" style="left: 410px; top: 900px;">17</div>
 
                         <div class="line" style="top: 880px; transform: translateX(225px) rotate(0deg); width: 20px;"></div>
                         <div class="line" style="top: 880px; transform: translateX(220px) rotate(90deg); width: 10px;"></div>
                         <div class="line" style="top: 880px; transform: translateX(270px) rotate(0deg); width: 20px;"></div>
                         <div class="line" style="top: 880px; transform: translateX(285px) rotate(90deg); width: 10px;"></div>
-                        <div class="label" style="left: 242px; top: 865px;">19</div>
+                        <div class="label" style="left: 242px; top: 865px;">18</div>
 
-                        <div class="label" style="left: 200px; top: 880px;">20</div>
+                        <div class="label" style="left: 210px; top: 890px;">19</div>
 
                         <div class="line" style="top: 930px; transform: translateX(290px) rotate(90deg); width: 60px;"></div>
-                        <div class="label" style="left: 300px; top: 950px;">21</div>
+                        <div class="label" style="left: 300px; top: 950px;">20</div>
 
                         <div class="line" style="top: 950px; transform: translateX(170px) rotate(90deg); width: 20px;"></div>
-                        <div class="label" style="left: 170px; top: 950px;">22</div>
+                        <div class="label" style="left: 170px; top: 950px;">21</div>
 
                         
 
@@ -205,6 +205,21 @@
                         </div>
                         <div class="answer" id="16">
                             16.
+                        </div>
+                        <div class="answer" id="17">
+                            17.
+                        </div>
+                        <div class="answer" id="18">
+                            18.
+                        </div>
+                        <div class="answer" id="19">
+                            19.
+                        </div>
+                        <div class="answer" id="20">
+                            20.
+                        </div>
+                        <div class="answer" id="21">
+                            21.
                         </div>
                         <div class="stop-message" style="display: none;">Das Spiel ist beendet.</div>
                         <button class="button-stop" id="stopButton">Quiz beenden</button>

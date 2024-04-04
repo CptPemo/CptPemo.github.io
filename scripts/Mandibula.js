@@ -2,22 +2,27 @@ const searchInput = document.getElementById('textInput');
 const stopButton = document.getElementById('stopButton');
 const restartButton = document.getElementById('restartButton'); // Add a Restart button
 const answers = [
-  { word: "Basis ossis sacri", abbreviations: [""] },
-  { word: "Pars lateralis", abbreviations: [""] },
-  { word: "Formaina sacralia anteriora", abbreviations: [""] },
-  { word: "Processus articularis superior", abbreviations: ["Proc articularis superior","Proc. articularis superior"] },
-  { word: "Promontorium", abbreviations: [""] },
-  { word: "Ala sacralis", abbreviations: [""] },
-  { word: "Apex ossis sacri", abbreviations: [""] },
-  { word: "Lineae transversae", abbreviations: [""] },
-  { word: "Hiatus sacralis", abbreviations: [""] },
-  { word: "Cornua sacralia", abbreviations: [""] },
-  { word: "Crista sacralis lateralis", abbreviations: [""] },
-  { word: "Crista sacralis mediana", abbreviations: [""] },
-  { word: "Foramina sacralia posteriora", abbreviations: [""] },
-  { word: "Crista sacralis intermedia", abbreviations: [""] },
-  { word: "Facies auricularis", abbreviations: [""] },
-  { word: "Canalis sacralis", abbreviations: [""] }
+  { word: "Caput mandibulae", abbreviations: [""] },
+  { word: "Collum mandibulae", abbreviations: [""] },
+  { word: "Processus condylaris", abbreviations: ["Proc. condylaris", "Proc condylaris"] },
+  { word: "Ramus mandibulae", abbreviations: [""] },
+  { word: "Angulus mandibulae", abbreviations: [""] },
+  { word: "Juga alveolaria", abbreviations: [""] },
+  { word: "Foramen mentale", abbreviations: [""] },
+  { word: "Incisura mandibulae", abbreviations: [""] },
+  { word: "Processus coronoideus", abbreviations: ["Proc. coronoideus", "Proc coronoideus"] },
+  { word: "Corpus mandibulae", abbreviations: [""] },
+  { word: "Foramen mandibulae", abbreviations: [""] },
+  { word: "Linea mylohyoidea", abbreviations: [""] },
+  { word: "Sulcus mylohyoideus", abbreviations: [""] },
+  { word: "Septum interalveolarium", abbreviations: [""] },
+  { word: "Lingula mandibulae", abbreviations: [""] },
+  { word: "Fovea pterygoidea", abbreviations: [""] },
+  { word: "Tuberositas pterygoidea", abbreviations: [""] },
+  { word: "Pars alveolaris", abbreviations: [""] },
+  { word: "Fovea sublingualis", abbreviations: [""] },
+  { word: "Fovea submandibularis", abbreviations: [""] },
+  { word: "Fossa digastrica", abbreviations: [""] }
   
   // Add more answers
 ];
