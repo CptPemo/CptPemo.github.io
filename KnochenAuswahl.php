@@ -50,6 +50,16 @@ if (isset($_SESSION['username'])) {
                 >Knochen</div>
 
             <section class="quiz-grid">
+
+                <button class="quiz-preview">
+                    <a href="quizzes/Atlas.php">
+                        <div class="quiz-picture" data-keywords="Kopf, Knochen, Halswirbel, Hals">
+                            <img class="thumbnail" src="thumbnails/MandibulaThumbnail.png" oncontextmenu="return false;">     
+                        </div>
+                        <div class="quiz-info">Mandibula</div>
+                    </a>
+                </button>
+
                 <button class="quiz-preview">
                     <a href="quizzes/Atlas.php">
                         <div class="quiz-picture" data-keywords="Wirbel, Wirbelsäule, Knochen, Halswirbel, Hals">
