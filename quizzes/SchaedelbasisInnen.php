@@ -70,23 +70,25 @@
                         <div class="label" style="left: 210px; top: 310px;">5</div>
                         <div class="label" style="left: 265px; top: 370px;">6</div>
                         <div class="line" style="top: 513px; transform: translateX(580px) rotate(75deg); width: 60px;"></div>
-                        <div class="label" style="left: 325px; top: 465px;">7</div>
-                        <div class="label" style="left: 20px; top: 380px;">8</div>
-                        <div class="label" style="left: 15px; top: 420px;">9</div>
-                        <div class="label" style="left: 8px; top: 475px;">10</div>
-                        <div class="label" style="left: 0px; top: 560px;">11</div>
-                        <div class="label" style="left: 520px; top: 560px;">12</div>
-                        <div class="label" style="left: 127px; top: 565px;">13</div>
-                        <div class="label" style="left: 150px; top: 578px;">14</div>
-                        <div class="label" style="left: 630px; top: 730px;">15</div>
-                        <div class="label" style="left: 615px; top: 760px;">16</div>
-                        <div class="label" style="left: 315px; top: 675px;">17</div>
-                        <div class="label" style="left: 200px; top: 690px;">18</div>
-                        <div class="label" style="left: 500px; top: 730px;">19</div>
-                        <div class="label" style="left: 420px; top: 780px;">20</div>
-                        <div class="label" style="left: 210px; top: 780px;">21</div>
-                        <div class="label" style="left: 310px; top: 770px;">22</div>
-                        <div class="label" style="left: 312px; top: 852px;">23</div>
+                        <div class="label" style="left: 20px; top: 380px;">7</div>
+                        <div class="label" style="left: 15px; top: 420px;">8</div>
+                        <div class="label" style="left: 8px; top: 475px;">9</div>
+                        <div class="label" style="left: 0px; top: 560px;">10</div>
+                        <div class="label" style="left: 325px; top: 430px;">11</div>
+                        <div class="label" style="left: 325px; top: 465px;">12</div>
+                        <div class="label" style="left: 320px; top: 540px;">13</div>
+                        <div class="label" style="left: 520px; top: 560px;">14</div>
+                        <div class="label" style="left: 127px; top: 565px;">15</div>
+                        <div class="label" style="left: 150px; top: 578px;">16</div>
+                        <div class="label" style="left: 630px; top: 730px;">17</div>
+                        <div class="label" style="left: 615px; top: 760px;">18</div>
+                        <div class="label" style="left: 315px; top: 675px;">19</div>
+                        <div class="label" style="left: 200px; top: 690px;">20</div>
+                        <div class="label" style="left: 500px; top: 730px;">21</div>
+                        <div class="label" style="left: 420px; top: 780px;">22</div>
+                        <div class="label" style="left: 210px; top: 780px;">23</div>
+                        <div class="label" style="left: 310px; top: 770px;">24</div>
+                        <div class="label" style="left: 312px; top: 852px;">25</div>
                     </div>
                 
                 <div class="answerFrame">
