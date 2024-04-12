@@ -52,7 +52,7 @@ if (isset($_SESSION['username'])) {
             <section class="quiz-grid">
 
                 <button class="quiz-preview">
-                    <a href="quizzes/Atlas.php">
+                    <a href="quizzes/Mandibula.php">
                         <div class="quiz-picture" data-keywords="Kopf, Knochen, Halswirbel, Hals">
                             <img class="thumbnail" src="thumbnails/MandibulaThumbnail.png" oncontextmenu="return false;">     
                         </div>
