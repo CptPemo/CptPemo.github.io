@@ -32,6 +32,7 @@ const answers = [
   { word: "Fossa cranii posterior", abbreviations: [""] },
   { word: "Crista occipitalis interna", abbreviations: [""] },
   { word: "Protuberantia occiptalis interna", abbreviations: [""] },
+  { word: "Sulcus sinus transversi", abbreviations: [""] }
 
   
   // Add more answers

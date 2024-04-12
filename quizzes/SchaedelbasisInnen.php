@@ -289,6 +289,6 @@
             <?php include '../footer.html'; ?>
         </footer>  
     <script src="../scripts/checkpopup.js"></script>
-    <script src="../scripts/SchaedelbasisInen.js"></script>
+    <script src="../scripts/SchaedelbasisInnen.js"></script>
     </body>
 </html>
