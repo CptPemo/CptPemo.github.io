@@ -122,10 +122,10 @@
                         
                         <div class="label" style="left: 150px; top: 578px;">18</div>
                         
-                        <div class="label" style="left: 630px; top: 730px;">19</div>
-                        <div class="line" style="top: 640px; transform: translateX(375px) rotate(45deg); width: 300px;"></div>
+                        <div class="label" style="left: 415px; top: 475px;">19</div>
+                        <div class="line" style="top: 515px; transform: translateX(405px) rotate(-70deg); width: 30px;"></div>
                         
-                        <div class="label" style="left: 615px; top: 760px;">20</div>
+                        <div class="label" style="left: 315px; top: 675px;">20</div>
 
                         <div class="label" style="left: 315px; top: 555px;">21</div>
 
@@ -136,7 +136,7 @@
                         <div class="line" style="top: 522px; transform: translateX(290px) rotate(65deg); width: 40px;"></div>
 
 
-                        <div class="label" style="left: 315px; top: 675px;">23</div>
+                        
                         
                         <div class="label" style="left: 330px; top: 640px;">24</div>
                         <div class="line" style="top: 655px; transform: translateX(360px) rotate(0deg); width: 35px;"></div>
@@ -147,18 +147,22 @@
                         <div class="label" style="left: 500px; top: 730px;">26</div>
                         <div class="line" style="top: 715px; transform: translateX(490px) rotate(90deg); width: 50px;"></div>
                         
-                        <div class="label" style="left: 420px; top: 780px;">25</div>
+                        
 
-                        <div class="label" style="left: 420px; top: 840px;">26</div>
+                        
                         
                         <div class="label" style="left: 160px; top: 730px;">27</div>
                         <div class="line" style="top: 690px; transform: translateX(120px) rotate(80deg); width: 90px;"></div>
 
                         <div class="label" style="left: 210px; top: 780px;">28</div>
 
+                        <div class="label" style="left: 420px; top: 780px;">28</div>
+
                         <div class="label" style="left: 310px; top: 770px;">29</div>
                         
                         <div class="label" style="left: 312px; top: 852px;">30</div>
+
+                        <div class="label" style="left: 420px; top: 840px;">31</div>
                     </div>
                 
 
@@ -197,7 +201,80 @@
                         <div class="answer" id="7">
                             7.
                         </div>
-                        <div class="stop-message" style="display: none;">Das Spiel ist beendet, du hast <span id="green-count-value">0</span> von 7 Punkten erreicht.</div>
+                        <div class="answer" id="8">
+                            8.
+                        </div>
+                        <div class="answer" id="9">
+                            9.
+                        </div>
+                        <div class="answer" id="10">
+                            10.
+                        </div>
+                        <div class="answer" id="11">
+                            11.
+                        </div>
+                        <div class="answer" id="12">
+                            12.
+                        </div>
+                        <div class="answer" id="13">
+                            13.
+                        </div>
+                        <div class="answer" id="14">
+                            14.
+                        </div>
+                        <div class="answer" id="15">
+                            15.
+                        </div>
+                        <div class="answer" id="16">
+                            16.
+                        </div>
+                        <div class="answer" id="17">
+                            17.
+                        </div>
+                        <div class="answer" id="18">
+                            18.
+                        </div>
+                        <div class="answer" id="19">
+                            19.
+                        </div>
+                        <div class="answer" id="20">
+                            20.
+                        </div>
+                        <div class="answer" id="21">
+                            21.
+                        </div>
+                        <div class="answer" id="22">
+                            22.
+                        </div>
+                        <div class="answer" id="23">
+                            23.
+                        </div>
+                        <div class="answer" id="24">
+                            24.
+                        </div>
+                        <div class="answer" id="25">
+                            25.
+                        </div>
+                        <div class="answer" id="26">
+                            26.
+                        </div>
+                        <div class="answer" id="27">
+                            27.
+                        </div>
+                        <div class="answer" id="28">
+                            28.
+                        </div>
+                        <div class="answer" id="29">
+                            29.
+                        </div>
+                        <div class="answer" id="30">
+                            30.
+                        </div>
+                        <div class="answer" id="31">
+                            31.
+                        </div>
+
+                        <div class="stop-message" style="display: none;">Das Spiel ist beendet, du hast <span id="green-count-value">0</span> von 31 Punkten erreicht.</div>
                         <button class="button-stop" id="stopButton">Quiz beenden</button>
                         <button class="button-stop" id="restartButton"> Quiz neustarten</button>
                         
@@ -212,6 +289,6 @@
             <?php include '../footer.html'; ?>
         </footer>  
     <script src="../scripts/checkpopup.js"></script>
-    <script src="../scripts/Clavicula.js"></script>
+    <script src="../scripts/SchaedelbasisInen.js"></script>
     </body>
 </html>
