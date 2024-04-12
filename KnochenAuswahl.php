@@ -49,18 +49,16 @@ if (isset($_SESSION['username'])) {
                 margin-left: 2%"
                 >Knochen</div>
 
-                <section class="quiz-grid">
-
-<button class="quiz-preview">
-    <a href="quizzes/SchaedelbasisInnen.php">
-        <div class="quiz-picture" data-keywords="Kopf, Knochen, Schädel, Basis, Hals">
-            <img class="thumbnail" src="thumbnails/SchaedelbasisInnenThumbnail.png" oncontextmenu="return false;">     
-        </div>
-        <div class="quiz-info">Schädelbasis Innen</div>
-    </a>
-</button>
-
             <section class="quiz-grid">
+
+                <button class="quiz-preview">
+                    <a href="quizzes/SchaedelbasisInnen.php">
+                        <div class="quiz-picture" data-keywords="Kopf, Knochen, Schädel, Basis, Hals">
+                            <img class="thumbnail" src="thumbnails/SchaedelbasisInnenThumbnail.png" oncontextmenu="return false;">     
+                        </div>
+                        <div class="quiz-info">Schädelbasis Innen</div>
+                    </a>
+                </button>
 
                 <button class="quiz-preview">
                     <a href="quizzes/Mandibula.php">
