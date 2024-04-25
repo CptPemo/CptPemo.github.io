@@ -51,6 +51,16 @@ if (isset($_SESSION['username'])) {
 
             <section class="quiz-grid">
 
+
+            <button class="quiz-preview">
+                    <a href="quizzes/SchaedelbasisAussen.php">
+                        <div class="quiz-picture" data-keywords="Kopf, Knochen, Schädel, Basis, Hals">
+                            <img class="thumbnail" src="thumbnails/SchaedelbasisAussenThumbnail.png" oncontextmenu="return false;">     
+                        </div>
+                        <div class="quiz-info">Schädelbasis Außen</div>
+                    </a>
+                </button>
+
                 <button class="quiz-preview">
                     <a href="quizzes/SchaedelbasisInnen.php">
                         <div class="quiz-picture" data-keywords="Kopf, Knochen, Schädel, Basis, Hals">
