@@ -21,7 +21,7 @@ const answers = [
   { word: "Hiatus canalis nervi petrosi minoris", abbreviations: [""] },
   { word: "Hiatus canalis nervi petrosi majoris", abbreviations: [""] },
   { word: "Foramen Lacerum", abbreviations: [""] },
-  { word: "Foramen magnum", abbreviations: [""] }, //Nummer 20
+  { word: "Foramen magnum", abbreviations: [""] }, 
   { word: "Clivus", abbreviations: [""] },
   { word: "Dorsum sellae", abbreviations: [""] },
   { word: "Processus clinoideus posterior", abbreviations: [""] },
@@ -32,7 +32,6 @@ const answers = [
   { word: "Fossa cranii posterior", abbreviations: [""] },
   { word: "Crista occipitalis interna", abbreviations: [""] },
   { word: "Protuberantia occiptalis interna", abbreviations: [""] },
-  { word: "Sulcus sinus transversi", abbreviations: [""] }
 
   
   // Add more answers

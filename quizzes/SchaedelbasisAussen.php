@@ -63,45 +63,95 @@
                     <div class="pictureFrame">
                         <img class="quizPicture" src="../bilder/SchaedelbasisAußen.png" oncontextmenu="return false;">
                         <div class="label" style="left: 310px; top: 255px;">1</div>
+
                         <div class="label" style="left: 310px; top: 285px;">2</div>
-                        <div class="line" style="top: 225px; transform: translateX(585px)rotate(105deg); width: 50px;"></div>
+
                         <div class="label" style="left: 190px; top: 275px;">4</div>
+
                         <div class="label" style="left: 215px; top: 163px;">3</div>
+                        
                         <div class="label" style="left: 120px; top: 250px;">5</div>
+                        
                         <div class="label" style="left: 175px; top: 350px;">6</div>
-                        <div class="line" style="top: 513px; transform: translateX(580px) rotate(75deg); width: 60px;"></div>
+                        
                         <div class="label" style="left: 344px; top: 380px;">7</div>
+                        
                         <div class="label" style="left: 365px; top: 285px;">8</div>
+                        <div class="line" style="top: 325px; transform: translateX(325px)rotate(85deg); width: 30px;"></div>
+                        
+                        
                         <div class="label" style="left: 360px; top: 175px;">9</div>
+                        
                         <div class="label" style="left: 270px; top: 280px;">10</div>
+                        
                         <div class="label" style="left: 420px; top: 325px;">11</div>
+                        
                         <div class="label" style="left: 334px; top: 314px;">12</div>
+                        
                         <div class="label" style="left: 272px; top: 370px;">13</div>
+                        
                         <div class="label" style="left: 200px; top: 400px;">14</div>
+                        
                         <div class="label" style="left: 450px; top: 395px;">15</div>
+                        
                         <div class="label" style="left: 200px; top: 440px;">16</div>
+                        
                         <div class="label" style="left: 300px; top: 460px;">17</div>
+                        
                         <div class="label" style="left: 500px; top: 400px;">18</div>
+                        
                         <div class="label" style="left: 490px; top: 440px;">19</div>
+                        <div class="line" style="top: 470px; transform: translateX(425px)rotate(-40deg); width: 30px;"></div>
+
+                        
                         <div class="label" style="left: 490px; top: 460px;">20</div>
-                        <div class="label" style="left: 430px; top: 490px;">21</div>
-                        <div class="label" style="left: 450px; top: 510px;">22</div>
+                        
+                        <div class="label" style="left: 440px; top: 490px;">21</div>
+                        
+                        <div class="label" style="left: 470px; top: 510px;">22</div>
+                        
                         <div class="label" style="left: 240px; top: 510px;">23</div>
+                        <div class="line" style="top: 545px; transform: translateX(180px)rotate(-40deg); width: 30px;"></div>
+
                         <div class="label" style="left: 230px; top: 550px;">24</div>
+                        <div class="line" style="top: 585px; transform: translateX(170px)rotate(-40deg); width: 30px;"></div>
+
                         <div class="label" style="left: 35px; top: 530px;">25</div>
+                        <div class="line" style="top: 550px; transform: translateX(25px)rotate(0deg); width: 55px;"></div>
+                        
                         <div class="label" style="left: 635px; top: 530px;">26</div>
+                        <div class="line" style="top: 550px; transform: translateX(510px) rotate(0deg); width: 85px;"></div>
+                        
+                        
                         <div class="label" style="left: 145px; top: 530px;">27</div>
+                        <div class="line" style="top: 575px; transform: translateX(110px)rotate(90deg); width: 30px;"></div>
+                        
                         <div class="label" style="left: 130px; top: 560px;">28</div>
+                        <div class="line" style="top: 600px; transform: translateX(90px)rotate(90deg); width: 30px;"></div>
+
                         <div class="label" style="left: 89px; top: 585px;">29</div>
+                        
                         <div class="label" style="left: 35px; top: 500px;">30</div>
+                        <div class="line" style="top: 517px; transform: translateX(25px)rotate(0deg); width: 90px;"></div>
+                        
+                        
                         <div class="label" style="left: 145px; top: 460px;">31</div>
+                        
                         <div class="label" style="left: 80px; top: 420px;">32</div>
+                        
                         <div class="label" style="left: 350px; top: 490px;">33</div>
+                        
                         <div class="label" style="left: 340px; top: 670px;">34</div>
+                        
                         <div class="label" style="left: 480px; top: 670px;">35</div>
-                        <div class="label" style="left: 450px; top: 700px;">36</div>
-                        <div class="label" style="left: 320px; top: 820px;">37</div>
-                        <div class="label" style="left: 347px; top: 985px;">38</div>
+                        <div class="line" style="top: 680px; transform: translateX(420px)rotate(40deg); width: 30px;"></div>
+
+                        
+                        <div class="label" style="left: 445px; top: 700px;">36</div>
+                        
+                        <div class="label" style="left: 345px; top: 820px;">37</div>
+                        
+                        <div class="label" style="left: 347px; top: 970px;">38</div>
                     </div>
             
                 <div class="answerFrame">
